@@ -4,7 +4,7 @@
 
 Based off the [Android sister app](https://github.com/Bacoknight/DurPhys) created by [Kay Tukendorf](https://github.com/Bacoknight).
 
-This app is designed to work with iPhone 5S and above. iPads are not actively supported but the app should still be mostly functionaly on them.
+This app is designed to work with iPhone 5S and above. iPads are not actively supported but the app should still be mostly functional on them.
 
 ### Current Progress:
 - [x] Set up of underlying app structure (complete 10/07/2019).
