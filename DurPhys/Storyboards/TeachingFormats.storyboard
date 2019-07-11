@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lectures-->
+        <scene sceneID="pCi-t3-O6L">
+            <objects>
+                <viewController storyboardIdentifier="Lectures" title="Lectures" id="FOk-6D-Gue" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5K5-WV-dZj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nk3-MT-pke"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lectures" id="Lgw-LE-nRR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSG-PH-nx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1349" y="965"/>
+        </scene>
+        <!--Teaching Formats-->
+        <scene sceneID="EDa-ya-kE0">
+            <objects>
+                <tabBarController storyboardIdentifier="Teaching Formats" title="Teaching Formats" automaticallyAdjustsScrollViewInsets="NO" id="zDu-Hi-dEl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fh7-2q-opz">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FOk-6D-Gue" kind="relationship" relationship="viewControllers" id="0Fi-Xl-uD7"/>
+                        <segue destination="tRe-EB-vh4" kind="relationship" relationship="viewControllers" id="SIU-J5-uSj"/>
+                        <segue destination="jm2-Dk-wo3" kind="relationship" relationship="viewControllers" id="iRG-K5-aQz"/>
+                        <segue destination="JLX-u3-o1b" kind="relationship" relationship="viewControllers" id="bnw-qc-qr2"/>
+                        <segue destination="ndN-un-unI" kind="relationship" relationship="viewControllers" id="eON-Pk-lcL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yb-I0-59N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="106"/>
+        </scene>
+        <!--Tutorials-->
+        <scene sceneID="D0L-6r-m9h">
+            <objects>
+                <viewController title="Tutorials" id="tRe-EB-vh4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9g9-a0-5su">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6n3-yF-33t"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tutorials" id="PjD-EC-8F6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SD1-xm-Y7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584" y="965"/>
+        </scene>
+        <!--Homework-->
+        <scene sceneID="xeC-jG-q5R">
+            <objects>
+                <viewController title="Homework" id="jm2-Dk-wo3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cQ-RT-OhH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dhO-fA-Ycp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Homework" id="hwN-ab-PIc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9M-kt-1b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="965"/>
+        </scene>
+        <!--Labs-->
+        <scene sceneID="3MZ-wk-sZE">
+            <objects>
+                <viewController title="Labs" id="JLX-u3-o1b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U3K-v7-Fq7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nLR-Mp-ARS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Labs" id="0Ew-rd-bRX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIQ-LI-Mhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="965"/>
+        </scene>
+        <!--Exams-->
+        <scene sceneID="xAp-7F-56q">
+            <objects>
+                <viewController title="Exams" id="ndN-un-unI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AdR-gY-o5e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vb9-HP-dp5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exams" id="oy6-R9-tC1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnx-hc-u7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="965"/>
+        </scene>
+    </scenes>
+</document>
