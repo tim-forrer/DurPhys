@@ -21,6 +21,10 @@
 		E940831422D4E5F900CDF8B4 /* ImportantContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */; };
 		E940831622D4E60900CDF8B4 /* TeachingFormats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831522D4E60900CDF8B4 /* TeachingFormats.storyboard */; };
 		E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FA22D7469000B49E11 /* Utils.swift */; };
+		E9A0B2FE22D76FF700B49E11 /* NavigationDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FD22D76FF700B49E11 /* NavigationDrawerViewController.swift */; };
+		E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */; };
+		E9A0B30622D7777600B49E11 /* NavigationDrawerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30522D7777600B49E11 /* NavigationDrawerTableViewCell.swift */; };
+		E9A0B30822D7799000B49E11 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30722D7799000B49E11 /* WebPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportantContacts.storyboard; sourceTree = "<group>"; };
 		E940831522D4E60900CDF8B4 /* TeachingFormats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeachingFormats.storyboard; sourceTree = "<group>"; };
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E9A0B2FD22D76FF700B49E11 /* NavigationDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerViewController.swift; sourceTree = "<group>"; };
+		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E9A0B30522D7777600B49E11 /* NavigationDrawerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerTableViewCell.swift; sourceTree = "<group>"; };
+		E9A0B30722D7799000B49E11 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +80,12 @@
 		E94082EE22D48F8600CDF8B4 /* DurPhys */ = {
 			isa = PBXGroup;
 			children = (
+				E9A0B30422D7773D00B49E11 /* Custom */,
 				E9A0B2F722D7335C00B49E11 /* Storyboards */,
 				E9A0B2F622D7333800B49E11 /* ViewControllers */,
 				E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */,
-				E940830322D490B800CDF8B4 /* MainMenuCollectionViewCell.swift */,
 				E94082F622D48F8700CDF8B4 /* Assets.xcassets */,
 				E94082FB22D48F8800CDF8B4 /* Info.plist */,
-				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
 			);
 			path = DurPhys;
 			sourceTree = "<group>";
@@ -86,8 +93,8 @@
 		E9A0B2F622D7333800B49E11 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9A0B2FF22D7701D00B49E11 /* MainMenu */,
 				E940830B22D4D21100CDF8B4 /* DuoViewController.swift */,
-				E940830122D48FCB00CDF8B4 /* MainMenuViewController.swift */,
 				E940830722D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift */,
 				E940830922D4D08200CDF8B4 /* UniversityEmailViewController.swift */,
 			);
@@ -99,12 +106,33 @@
 			children = (
 				E940830D22D4E52700CDF8B4 /* BrowserScreens.storyboard */,
 				E940831122D4E5E700CDF8B4 /* CourseInformation.storyboard */,
+				E94082F322D48F8600CDF8B4 /* Main.storyboard */,
 				E940830F22D4E5B200CDF8B4 /* GettingAround.storyboard */,
 				E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */,
-				E94082F322D48F8600CDF8B4 /* Main.storyboard */,
 				E940831522D4E60900CDF8B4 /* TeachingFormats.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E9A0B2FF22D7701D00B49E11 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */,
+				E940830122D48FCB00CDF8B4 /* MainMenuViewController.swift */,
+				E9A0B2FD22D76FF700B49E11 /* NavigationDrawerViewController.swift */,
+				E9A0B30722D7799000B49E11 /* WebPageViewController.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		E9A0B30422D7773D00B49E11 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E940830322D490B800CDF8B4 /* MainMenuCollectionViewCell.swift */,
+				E9A0B30522D7777600B49E11 /* NavigationDrawerTableViewCell.swift */,
+				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +213,13 @@
 				E940830822D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift in Sources */,
 				E940830C22D4D21100CDF8B4 /* DuoViewController.swift in Sources */,
 				E940830A22D4D08200CDF8B4 /* UniversityEmailViewController.swift in Sources */,
+				E9A0B2FE22D76FF700B49E11 /* NavigationDrawerViewController.swift in Sources */,
+				E9A0B30622D7777600B49E11 /* NavigationDrawerTableViewCell.swift in Sources */,
 				E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
+				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
+				E9A0B30822D7799000B49E11 /* WebPageViewController.swift in Sources */,
 				E940830422D490B800CDF8B4 /* MainMenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

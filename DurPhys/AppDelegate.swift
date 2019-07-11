@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UITabBar.appearance().barTintColor = UIColor(red: 104/255, green: 36/255, blue: 109/255, alpha: 0.1)
         UITabBar.appearance().tintColor = UIColor(red: 203/255, green: 168/255, blue: 177/255, alpha: 1.0)
+        
+        let containerViewController = ContainerViewController()
+        
+        window!.rootViewController = containerViewController
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

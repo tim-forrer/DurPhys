@@ -41,6 +41,13 @@ class MainMenuViewController: UIViewController{
         mainMenuCollectionView.delegate = self
     }
     
+    // MARK: - ADD NAVDRAW STUFF (Might need to delete)
+    var delegate: MainMenuViewControllerDelegate?
+    
+    @IBAction func menuToggle(_ sender: Any) {
+        delegate?.toggleNavDrawer()
+    }
+    
 }
 
 // MARK: - Layout
@@ -109,4 +116,11 @@ extension MainMenuViewController: UICollectionViewDelegate {
         let newViewController = newStoryboard.instantiateViewController(withIdentifier: viewControllerName)
         navigationController?.pushViewController(newViewController, animated: true)
     }
+}
+
+extension MainMenuViewController: NavigationDrawerViewControllerDelegate{
+}
+
+protocol MainMenuViewControllerDelegate {
+    func toggleNavDrawer()
 }
