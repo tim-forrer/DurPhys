@@ -106,7 +106,7 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
     }
     
     func addChildSidePanelController(_ navigationDrawerController: NavigationDrawerViewController) {
-        navigationDrawerController.delegate = mainMenuViewController
+        //navigationDrawerController.delegate = mainMenuViewController
         view.insertSubview(navigationDrawerController.view, at: 0)
         
         addChild(navigationDrawerController)
