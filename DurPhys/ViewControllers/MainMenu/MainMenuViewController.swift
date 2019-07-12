@@ -23,7 +23,7 @@ class MainMenuViewController: UIViewController{
         "Teaching Formats",
         "Physics Portal (Homework Hand-In)",
         "University Email",
-        "D.U.O."
+        "D.U.O.",
     ]
     
     let mainMenuImages: [UIImage] = [
@@ -63,35 +63,14 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
-        let imageView = cell.mainMenuImage!
-        let label = cell.mainMenuLabel!
-        
-        imageView.image = mainMenuImages[indexPath.item]
-        imageView.frame.size.height = cell.frame.size.width - 5
-        imageView.frame.size.width = cell.frame.size.width - 10
-        
-        cell.mainMenuLabel.text = mainMenuOptions[indexPath.item]
-        let labelText = cell.mainMenuLabel!
-        label.frame.size.height = Utils.heightForView(text: labelText.text!, font: labelText.font!, width: cell.frame.width)
-        label.frame.size.width = cell.frame.size.width
-        label.center.x = cell.frame.size.width / 2
-        label.center.y = cell.mainMenuImage.frame.size.height + (cell.frame.size.height - cell.mainMenuImage.frame.size.height) / 2
+        cell.imageView.image = mainMenuImages[indexPath.item]
+        cell.label.text = mainMenuOptions[indexPath.item]
         
         cell.layer.borderColor = UIColor.darkGray.cgColor
         cell.layer.borderWidth = CGFloat(0.5)
         cell.layer.cornerRadius = CGFloat(10)
         
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
-        let padding: CGFloat = 40
-        let cellWidth = (collectionView.frame.size.width - padding) / 2
-        let labelText = mainMenuOptions[indexPath.item]
-        let cellHeight = cellWidth + Utils.heightForView(text: labelText, font: cell.mainMenuLabel.font!, width: cell.frame.width) + 70
-        
-        return CGSize(width: cellWidth, height: cellHeight)
     }
     
 }
@@ -122,5 +101,5 @@ extension MainMenuViewController: UICollectionViewDelegate {
     }
 }
 
-extension MainMenuViewController: NavigationDrawerViewControllerDelegate{
+extension MainMenuViewController: NavDrawerViewControllerDelegate{
 }

@@ -13,9 +13,9 @@ class ContainerViewController: UIViewController {
     
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
-    var navigationDrawerViewController: NavigationDrawerViewController?
+    var navDrawerViewController: NavDrawerViewController?
     
-    let centerPanelExpandedOffset: CGFloat = 90
+    let centerPanelExpandedOffset: CGFloat = 40
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +38,8 @@ private extension UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    static func navigationDrawerViewController() -> NavigationDrawerViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "navigationDrawerViewController") as? NavigationDrawerViewController
+    static func navDrawerViewController() -> NavDrawerViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier: "navDrawerViewController") as? NavDrawerViewController
     }
     
     static func mainMenuViewController() -> MainMenuViewController? {
@@ -57,15 +57,16 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
         }
         let shouldExpand = !navDrawerShowing
         animateNavDrawer(shouldExpand: shouldExpand)
+        showShadowForMainMenuViewController(shouldExpand)
         navDrawerShowing = !navDrawerShowing
     }
     
     func addNavDrawerViewController() {
-        guard navigationDrawerViewController == nil else { return }
+        guard navDrawerViewController == nil else { return }
         
-        if let vc = UIStoryboard.navigationDrawerViewController() {
+        if let vc = UIStoryboard.navDrawerViewController() {
             addChildSidePanelController(vc)
-            navigationDrawerViewController = vc
+            navDrawerViewController = vc
         }
     }
     
@@ -74,8 +75,8 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
             animateCenterPanelXPosition(targetPosition: mainMenuNavigationController.view.frame.width - centerPanelExpandedOffset)
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { _ in
-                self.navigationDrawerViewController?.view.removeFromSuperview()
-                self.navigationDrawerViewController = nil
+                self.navDrawerViewController?.view.removeFromSuperview()
+                self.navDrawerViewController = nil
             }
         }
     }
@@ -91,12 +92,12 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
         }, completion: completion)
     }
     
-    func addChildSidePanelController(_ navigationDrawerController: NavigationDrawerViewController) {
-        //navigationDrawerController.delegate = mainMenuViewController
-        view.insertSubview(navigationDrawerController.view, at: 0)
+    func addChildSidePanelController(_ navDrawerController: NavDrawerViewController) {
+        //navDrawerController.delegate = mainMenuViewController
+        view.insertSubview(navDrawerController.view, at: 0)
         
-        addChild(navigationDrawerController)
-        navigationDrawerController.didMove(toParent: self)
+        addChild(navDrawerController)
+        navDrawerController.didMove(toParent: self)
     }
     
     func showShadowForMainMenuViewController(_ shouldShowShadow: Bool) {
