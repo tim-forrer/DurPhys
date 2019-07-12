@@ -15,6 +15,7 @@ class ContainerViewController: UIViewController {
     var mainMenuViewController: MainMenuViewController!
     var navDrawerViewController: NavDrawerViewController?
     
+    
     let centerPanelExpandedOffset: CGFloat = 40
     
     override func viewDidLoad() {
@@ -103,8 +104,10 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
     func showShadowForMainMenuViewController(_ shouldShowShadow: Bool) {
         if shouldShowShadow {
             mainMenuNavigationController.view.layer.shadowOpacity = 0.8
+            mainMenuViewController.mainMenuVisualEffectView.alpha = 0.2
         } else {
             mainMenuNavigationController.view.layer.shadowOpacity = 0.0
+            mainMenuViewController.mainMenuVisualEffectView.alpha = 1.0
         }
     }
 }

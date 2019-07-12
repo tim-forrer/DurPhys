@@ -37,6 +37,8 @@ class MainMenuViewController: UIViewController{
     ]
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
+    @IBOutlet weak var mainMenuVisualEffectView: UIVisualEffectView!
+    
     
     // MARK: - Init
     override func viewDidLoad() {
@@ -45,7 +47,7 @@ class MainMenuViewController: UIViewController{
         mainMenuCollectionView.delegate = self
     }
     
-    // MARK: - ADD NAVDRAW STUFF (Might need to delete)
+    // MARK: - Navigation Bar Actions
     var delegate: MainMenuViewControllerDelegate?
     
     @IBAction func menuToggle(_ sender: Any) {
@@ -54,7 +56,7 @@ class MainMenuViewController: UIViewController{
     
 }
 
-// MARK: - Layout
+// MARK: - Collection View Layout
 extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -63,6 +65,7 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
+        
         cell.imageView.image = mainMenuImages[indexPath.item]
         cell.label.text = mainMenuOptions[indexPath.item]
         
@@ -76,7 +79,7 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 }
 
 
-// MARK: - Actions
+// MARK: - Collection View Actions
 extension MainMenuViewController: UICollectionViewDelegate {
     //Selects the view controller to navigate to based on which cell in the collection view was selected
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

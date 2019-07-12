@@ -10,17 +10,13 @@ import UIKit
 
 class NavDrawerViewController: UITableViewController {
     
-    // MARK: - Init
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    // MARK: - Declarations
     
     let sections = [
-    "Technological Matters",
-    "Feeling Unwell?",
-    "DU Societies",
-    "General",
+        "Technological Matters",
+        "Feeling Unwell?",
+        "DU Societies",
+        "General",
     ]
     
     
@@ -68,6 +64,16 @@ class NavDrawerViewController: UITableViewController {
         ],
     ]
     
+    @IBOutlet weak var loginButton: UIButton!
+    
+    // MARK: - Init
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loginButton.layer.borderWidth = CGFloat(1)
+        loginButton.layer.borderColor = UIColor.blue.cgColor
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
@@ -90,6 +96,7 @@ class NavDrawerViewController: UITableViewController {
         return cell
     }
     
+    
     // MARK: - Actions
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -105,7 +112,10 @@ class NavDrawerViewController: UITableViewController {
         performSegue(withIdentifier: "navDrawerToWebPage", sender: cellText)
         
     }
-
+    
+    @IBAction func loginPressed(_ sender: Any) {
+    }
+    
 }
 
 protocol NavDrawerViewControllerDelegate {
