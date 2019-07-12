@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MainMenuViewControllerDelegate {
+    func toggleNavDrawer()
+}
+
 class MainMenuViewController: UIViewController{
     
     // MARK: - Declarations
@@ -45,7 +49,7 @@ class MainMenuViewController: UIViewController{
     var delegate: MainMenuViewControllerDelegate?
     
     @IBAction func menuToggle(_ sender: Any) {
-        delegate?.toggleNavDrawer()
+       delegate?.toggleNavDrawer()
     }
     
 }
@@ -119,8 +123,4 @@ extension MainMenuViewController: UICollectionViewDelegate {
 }
 
 extension MainMenuViewController: NavigationDrawerViewControllerDelegate{
-}
-
-protocol MainMenuViewControllerDelegate {
-    func toggleNavDrawer()
 }

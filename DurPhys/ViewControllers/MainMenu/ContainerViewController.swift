@@ -9,20 +9,10 @@
 import UIKit
 
 class ContainerViewController: UIViewController {
-    enum SlideOutState {
-        case navigationDrawHidden
-        case navigationDrawShowing
-    }
+    var navDrawerShowing = false
     
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
-    
-    var currentState: SlideOutState = .navigationDrawHidden {
-        didSet {
-            let shouldShowShadow = currentState != .navigationDrawHidden
-            showShadowForMainMenuViewController(shouldShowShadow)
-        }
-    }
     var navigationDrawerViewController: NavigationDrawerViewController?
     
     let centerPanelExpandedOffset: CGFloat = 90
@@ -61,14 +51,13 @@ private extension UIStoryboard {
 
 extension ContainerViewController: MainMenuViewControllerDelegate {
     
-    func toggleNavDrawer() {
-        let notAlreadyExpanded = (currentState != .navigationDrawShowing)
-        
-        if notAlreadyExpanded {
+    func toggleNavDrawer(){
+        if !navDrawerShowing {
             addNavDrawerViewController()
         }
-        
-        animateNavDrawer(shouldExpand: notAlreadyExpanded)
+        let shouldExpand = !navDrawerShowing
+        animateNavDrawer(shouldExpand: shouldExpand)
+        navDrawerShowing = !navDrawerShowing
     }
     
     func addNavDrawerViewController() {
@@ -82,12 +71,9 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
     
     func animateNavDrawer(shouldExpand: Bool) {
         if shouldExpand {
-            currentState = .navigationDrawShowing
-            animateCenterPanelXPosition(
-                targetPosition: mainMenuNavigationController.view.frame.width - centerPanelExpandedOffset)
+            animateCenterPanelXPosition(targetPosition: mainMenuNavigationController.view.frame.width - centerPanelExpandedOffset)
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { _ in
-                self.currentState = .navigationDrawShowing
                 self.navigationDrawerViewController?.view.removeFromSuperview()
                 self.navigationDrawerViewController = nil
             }
