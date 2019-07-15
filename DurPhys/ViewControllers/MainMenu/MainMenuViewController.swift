@@ -30,7 +30,7 @@ class MainMenuViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "menuToWebPage" {
             let destVC = segue.destination as! WebPageViewController
-            destVC.menuOption = sender as? Option
+            destVC.option = sender as? Option
         }
     }
     
@@ -56,12 +56,12 @@ class MainMenuViewController: UIViewController{
 extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Option.menuOptions().count
+        return Option.options().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
-        let menuOptions = Option.menuOptions()
+        let menuOptions = Option.options()
         cell.imageView.image = menuOptions[indexPath.item].image
         cell.label.text = menuOptions[indexPath.item].label
         
@@ -79,7 +79,7 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 extension MainMenuViewController: UICollectionViewDelegate {
     //Selects the view controller to navigate to based on which cell in the collection view was selected
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let menuOption = Option.menuOptions()[indexPath.row]
+        let menuOption = Option.options()[indexPath.row]
         performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
     }
 }

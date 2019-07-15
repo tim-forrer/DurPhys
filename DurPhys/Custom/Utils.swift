@@ -43,7 +43,7 @@ class Option {
         self.loginPossible = loginPossible
     }
     
-    class func options() -> [ption] {
+    class func options() -> [Option] {
         var options: [Option] = []
     
         let gettingAround = Option(name: "gettingAround",
@@ -100,8 +100,4 @@ class Option {
     
     }
     
-}
-
-class NavDrawerOptions {
-    var options: [Option]
 }

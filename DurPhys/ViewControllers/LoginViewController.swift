@@ -13,7 +13,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     
     // MARK: - Declarations
     var webView: WKWebView!
-    var menuOption: Option!
+    var option: Option!
     
     
     // MARK: - Init
@@ -26,11 +26,11 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: menuOption.url!)!
+        let url = URL(string: option.url!)!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = false
         
-        if menuOption.loginPossible {
+        if option.loginPossible {
             print("Attempting login")
         }
     }
