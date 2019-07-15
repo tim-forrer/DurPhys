@@ -70,8 +70,6 @@ class NavDrawerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.layer.borderWidth = CGFloat(1)
-        loginButton.layer.borderColor = UIColor.blue.cgColor
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -102,7 +100,7 @@ class NavDrawerViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "navDrawerToWebPage" {
             let destVC = segue.destination as! WebPageViewController
-            destVC.labelText = sender as? String
+            destVC.menuOption = sender as? MenuOption
         }
     }
     

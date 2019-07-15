@@ -9,14 +9,14 @@
 import UIKit
 
 class ContainerViewController: UIViewController {
-    var navDrawerShowing = false
     
+    // MARK: - Init
+    var navDrawerShowing = false
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
     var navDrawerViewController: NavDrawerViewController?
     
-    
-    let centerPanelExpandedOffset: CGFloat = 40
+    let centerPanelExpandedOffset: CGFloat = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,11 @@ class ContainerViewController: UIViewController {
         // wrap the mainMenuViewController in a navigation controller, so we can push views to it
         // and display bar button items in the navigation bar
         mainMenuNavigationController = UINavigationController(rootViewController: mainMenuViewController)
+        mainMenuNavigationController.navigationBar.barTintColor = Utils.palatinate
+        mainMenuNavigationController.navigationBar.isTranslucent = false
+        mainMenuNavigationController.navigationBar.tintColor = .white
+        mainMenuNavigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
         view.addSubview(mainMenuNavigationController.view)
         addChild(mainMenuNavigationController)
         

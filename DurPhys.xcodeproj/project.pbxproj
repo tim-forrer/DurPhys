@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		229BB45722DC7EA60053FD2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* LoginViewController.swift */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
 		E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94082F622D48F8700CDF8B4 /* Assets.xcassets */; };
@@ -23,10 +24,10 @@
 		E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FA22D7469000B49E11 /* Utils.swift */; };
 		E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */; };
 		E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */; };
-		E9A0B30822D7799000B49E11 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30722D7799000B49E11 /* WebPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229BB45622DC7EA60053FD2B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94082F422D48F8600CDF8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
 		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		E9A0B30722D7799000B49E11 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,7 @@
 				E940830B22D4D21100CDF8B4 /* DuoViewController.swift */,
 				E940830722D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift */,
 				E940830922D4D08200CDF8B4 /* UniversityEmailViewController.swift */,
+				229BB45622DC7EA60053FD2B /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,7 +119,6 @@
 				E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */,
 				E940830122D48FCB00CDF8B4 /* MainMenuViewController.swift */,
 				E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */,
-				E9A0B30722D7799000B49E11 /* WebPageViewController.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
-				E9A0B30822D7799000B49E11 /* WebPageViewController.swift in Sources */,
 				E940830422D490B800CDF8B4 /* MainMenuCollectionViewCell.swift in Sources */,
+				229BB45722DC7EA60053FD2B /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
