@@ -62,10 +62,10 @@
                                                         </subviews>
                                                     </view>
                                                     <constraints>
-                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="leading" secondItem="qaV-zw-P1y" secondAttribute="leading" id="3Ns-Pw-obj"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="6bf-Z7-a5t" secondAttribute="bottom" constant="2" id="51j-HZ-4ht"/>
-                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="top" secondItem="qaV-zw-P1y" secondAttribute="top" id="NT6-uO-WJN"/>
-                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="centerX" secondItem="qaV-zw-P1y" secondAttribute="centerX" id="uXj-ZT-sIc"/>
+                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="leading" secondItem="qaV-zw-P1y" secondAttribute="leading" id="N1o-dk-B83"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="6bf-Z7-a5t" secondAttribute="bottom" constant="2" id="aOD-M6-PWj"/>
+                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="centerX" secondItem="qaV-zw-P1y" secondAttribute="centerX" id="s52-fB-XXf"/>
+                                                        <constraint firstItem="6bf-Z7-a5t" firstAttribute="top" secondItem="qaV-zw-P1y" secondAttribute="top" id="uUF-tG-Qiu"/>
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="imageView" destination="7VR-cL-8Id" id="IoO-wZ-O2z"/>
