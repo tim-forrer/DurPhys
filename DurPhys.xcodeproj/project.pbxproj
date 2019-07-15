@@ -16,7 +16,6 @@
 		E940830822D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940830722D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift */; };
 		E940830A22D4D08200CDF8B4 /* UniversityEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940830922D4D08200CDF8B4 /* UniversityEmailViewController.swift */; };
 		E940830C22D4D21100CDF8B4 /* DuoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940830B22D4D21100CDF8B4 /* DuoViewController.swift */; };
-		E940830E22D4E52700CDF8B4 /* BrowserScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940830D22D4E52700CDF8B4 /* BrowserScreens.storyboard */; };
 		E940831022D4E5B200CDF8B4 /* GettingAround.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940830F22D4E5B200CDF8B4 /* GettingAround.storyboard */; };
 		E940831222D4E5E700CDF8B4 /* CourseInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831122D4E5E700CDF8B4 /* CourseInformation.storyboard */; };
 		E940831422D4E5F900CDF8B4 /* ImportantContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */; };
@@ -38,7 +37,6 @@
 		E940830722D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsPortalViewController.swift; sourceTree = "<group>"; };
 		E940830922D4D08200CDF8B4 /* UniversityEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEmailViewController.swift; sourceTree = "<group>"; };
 		E940830B22D4D21100CDF8B4 /* DuoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoViewController.swift; sourceTree = "<group>"; };
-		E940830D22D4E52700CDF8B4 /* BrowserScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserScreens.storyboard; sourceTree = "<group>"; };
 		E940830F22D4E5B200CDF8B4 /* GettingAround.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GettingAround.storyboard; sourceTree = "<group>"; };
 		E940831122D4E5E700CDF8B4 /* CourseInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CourseInformation.storyboard; sourceTree = "<group>"; };
 		E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportantContacts.storyboard; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		E9A0B2F722D7335C00B49E11 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				E940830D22D4E52700CDF8B4 /* BrowserScreens.storyboard */,
 				E940831122D4E5E700CDF8B4 /* CourseInformation.storyboard */,
 				E94082F322D48F8600CDF8B4 /* Main.storyboard */,
 				E940830F22D4E5B200CDF8B4 /* GettingAround.storyboard */,
@@ -193,7 +190,6 @@
 				E940831022D4E5B200CDF8B4 /* GettingAround.storyboard in Resources */,
 				E940831622D4E60900CDF8B4 /* TeachingFormats.storyboard in Resources */,
 				E940831422D4E5F900CDF8B4 /* ImportantContacts.storyboard in Resources */,
-				E940830E22D4E52700CDF8B4 /* BrowserScreens.storyboard in Resources */,
 				E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */,
 				E940831222D4E5E700CDF8B4 /* CourseInformation.storyboard in Resources */,
 				E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */,

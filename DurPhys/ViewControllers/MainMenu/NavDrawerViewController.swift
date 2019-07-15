@@ -100,7 +100,7 @@ class NavDrawerViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "navDrawerToWebPage" {
             let destVC = segue.destination as! WebPageViewController
-            destVC.menuOption = sender as? MenuOption
+            destVC.menuOption = sender as? Option
         }
     }
     

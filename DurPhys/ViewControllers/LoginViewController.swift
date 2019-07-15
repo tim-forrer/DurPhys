@@ -13,7 +13,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     
     // MARK: - Declarations
     var webView: WKWebView!
-    var menuOption: MenuOption!
+    var menuOption: Option!
     
     
     // MARK: - Init
