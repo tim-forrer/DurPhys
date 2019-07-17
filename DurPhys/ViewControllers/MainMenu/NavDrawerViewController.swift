@@ -12,57 +12,7 @@ class NavDrawerViewController: UITableViewController {
     
     // MARK: - Declarations
     
-    let sections = [
-        "Technological Matters",
-        "Feeling Unwell?",
-        "DU Societies",
-        "General",
-    ]
-    
-    
-    let drawerOptions = [
-        [
-            "Getting Connected",
-            "Office 365"
-        ],
-        [
-            "Physical Wellbeing",
-            "Mental Wellbeing",
-            "Letting University Know"
-        ],
-        [
-            "PhysSoc",
-            "AstroSoc",
-            "DUSEDs",
-            "DSU Website"
-        ],
-        [
-            "Report Bugs",
-            "About"
-        ],
-    ]
-    
-    let icons = [
-        [
-            UIImage(named: "gettingConnected"),
-            UIImage(named: "office365"),
-        ],
-        [
-            UIImage(named: "physicalWellbeing"),
-            UIImage(named: "mentalWellbeing"),
-            UIImage(named: "lettingUniKnow"),
-        ],
-        [
-            UIImage(named: "physsoc"),
-            UIImage(named: "astrosoc"),
-            UIImage(named: "duseds"),
-            UIImage(named: "dsu"),
-        ],
-        [
-            UIImage(named: "bugs"),
-            UIImage(named: "about"),
-        ],
-    ]
+    let navOptions = Option.navOptions()
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -70,26 +20,61 @@ class NavDrawerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        var sections: [String] = []
+        for section in navOptions {
+            for item in section {
+                if !sections.contains(item.section!) {
+                    sections.append(item.section!)
+                }
+            }
+        }
         return sections.count
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return drawerOptions[section].count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection sectionIndex: Int) -> Int {
+        var sections: [String] = []
+        for section in navOptions {
+            for item in section {
+                if !sections.contains(item.section!) {
+                    sections.append(item.section!)
+                }
+            }
+        }
+        
+        var itemsInSection: Int = 0
+        for section in navOptions {
+            for item in section {
+                if item.section == sections[sectionIndex] {
+                    itemsInSection += 1
+                }
+            }
+        }
+        return itemsInSection
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var sections: [String] = []
+        for section in navOptions {
+            for item in section {
+                if !sections.contains(item.section!) {
+                    sections.append(item.section!)
+                }
+            }
+        }
         return sections[section]
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "navDrawerCell", for: indexPath)
-        cell.imageView?.image = icons[indexPath.section][indexPath.row]
+
+        cell.imageView?.image = navOptions[indexPath.section][indexPath.row].image
         cell.imageView?.tintColor = UIColor(red: 104/255, green: 36/255, blue: 109/255, alpha: 1.0)
         
-        cell.textLabel?.text = drawerOptions[indexPath.section][indexPath.row]
+        cell.textLabel?.text = navOptions[indexPath.section][indexPath.row].label
         
         return cell
     }
@@ -106,8 +91,18 @@ class NavDrawerViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        let cellText = cell?.textLabel?.text
-        performSegue(withIdentifier: "navDrawerToWebPage", sender: cellText)
+        func getNavOption() -> Option {
+            for section in navOptions {
+                for item in section {
+                    if item.label == cell?.textLabel?.text {
+                        return item
+                    }
+                }
+            }
+            return navOptions[0][0] //just a random default value so there is a return outside of the nested loops
+        }
+        let navOption = getNavOption()
+        performSegue(withIdentifier: "navDrawerToWebPage", sender: navOption)
         
     }
     

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		229BB45722DC7EA60053FD2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* LoginViewController.swift */; };
+		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
+		229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* WebPageViewController.swift */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
 		E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94082F622D48F8700CDF8B4 /* Assets.xcassets */; };
@@ -26,7 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		229BB45622DC7EA60053FD2B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
+		229BB45622DC7EA60053FD2B /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94082F422D48F8600CDF8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 				E940830B22D4D21100CDF8B4 /* DuoViewController.swift */,
 				E940830722D4CC2D00CDF8B4 /* PhysicsPortalViewController.swift */,
 				E940830922D4D08200CDF8B4 /* UniversityEmailViewController.swift */,
-				229BB45622DC7EA60053FD2B /* LoginViewController.swift */,
+				229BB45622DC7EA60053FD2B /* WebPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +108,7 @@
 				E940830F22D4E5B200CDF8B4 /* GettingAround.storyboard */,
 				E940831322D4E5F900CDF8B4 /* ImportantContacts.storyboard */,
 				E940831522D4E60900CDF8B4 /* TeachingFormats.storyboard */,
+				2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				E940831422D4E5F900CDF8B4 /* ImportantContacts.storyboard in Resources */,
 				E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */,
 				E940831222D4E5E700CDF8B4 /* CourseInformation.storyboard in Resources */,
+				2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */,
 				E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +216,7 @@
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				E940830422D490B800CDF8B4 /* MainMenuCollectionViewCell.swift in Sources */,
-				229BB45722DC7EA60053FD2B /* LoginViewController.swift in Sources */,
+				229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

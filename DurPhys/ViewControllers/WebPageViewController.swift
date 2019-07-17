@@ -16,6 +16,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     var option: Option!
     
     
+    
     // MARK: - Init
     override func loadView() {
         webView = WKWebView()
@@ -34,4 +35,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
             print("Attempting login")
         }
     }
+    
+    
+    
 }

@@ -56,12 +56,12 @@ class MainMenuViewController: UIViewController{
 extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Option.options().count
+        return Option.menuOptions().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
-        let menuOptions = Option.options()
+        let menuOptions = Option.menuOptions()
         cell.imageView.image = menuOptions[indexPath.item].image
         cell.label.text = menuOptions[indexPath.item].label
         
@@ -77,9 +77,8 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 
 // MARK: - Collection View Actions
 extension MainMenuViewController: UICollectionViewDelegate {
-    //Selects the view controller to navigate to based on which cell in the collection view was selected
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let menuOption = Option.options()[indexPath.row]
+        let menuOption = Option.menuOptions()[indexPath.row]
         performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
     }
 }

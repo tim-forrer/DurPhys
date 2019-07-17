@@ -45,7 +45,7 @@ class Option {
         self.loginPossible = loginPossible
     }
     
-    class func options() -> [Option] {
+    class func menuOptions() -> [Option] {
         var options: [Option] = []
     
         let gettingAround = Option(name: "gettingAround",
@@ -107,6 +107,126 @@ class Option {
     
         return options
     
+    }
+    
+    class func navOptions() -> [[Option]] {
+        var options: [[Option]] = []
+        
+        //technological matters
+        let gettingConnected = Option(name: "gettingConnected",
+                                      label: "Getting Connected",
+                                      section: "Technological Matters",
+                                      url: "https://www.dur.ac.uk/cis/wireless/",
+                                      image: UIImage(named: "gettingConnected")!,
+                                      loginPossible: false)
+
+        let office = Option(name: "office",
+                            label: "Office365",
+                            section: "Technological Matters",
+                            url: "https://www.microsoft.com/en-gb/education/products/office",
+                            image: UIImage(named: "office365")!,
+                            loginPossible: false)
+        
+        let technologicalMatters = [gettingConnected,
+                                    office]
+        
+        //feeling unwell
+        let physicalWellbeing = Option(name: "physicalWellbeing",
+                                       label: "Physical Wellbeing",
+                                       section: "Feeling Unwell?",
+                                       url: "https://www.dur.ac.uk/experience/welcome/medical/register/",
+                                       image: UIImage(named: "physicalWellbeing")!,
+                                       loginPossible: false)
+
+        let mentalWellbeing = Option(name: "mentalWellbeing",
+                                     label: "Mental Wellbeing",
+                                     section: "Feeling Unwell?",
+                                     url: "https://www.dur.ac.uk/counselling.service/",
+                                     image: UIImage(named: "mentalWellbeing")!,
+                                     loginPossible: false)
+
+        let lettingUniKnow = Option(name: "lettingUniKnow",
+                                    label: "Letting University Know",
+                                    section: "Feeling Unwell?",
+                                    url: "https://www.dur.ac.uk/student.registry/assessment/concessions.appeals/",
+                                    image: UIImage(named: "lettingUniKnow")!,
+                                    loginPossible: false)
+        
+        let feelingUnwell = [physicalWellbeing,
+                             mentalWellbeing,
+                             lettingUniKnow]
+        
+        
+        //du societies
+        let physSoc = Option(name: "physSoc",
+                             label: "PhysSoc",
+                             section: "DU Societies",
+                             url: "https://www.dur.ac.uk/student.registry/assessment/concessions.appeals/",
+                             image: UIImage(named: "physSoc")!,
+                             loginPossible: false)
+        
+        let astroSoc = Option(name: "astroSoc",
+                              label: "AstroSoc",
+                              section: "DU Societies",
+                              url: "https://www.durhamsu.com/groups/astronomical",
+                              image: UIImage(named: "astroSoc")!,
+                              loginPossible: false)
+
+        let duseds = Option(name: "duseds",
+                            label: "DUSEDS",
+                            section: "DU Societies",
+                            url: "https://www.facebook.com/DurhamSEDS/",
+                            image: UIImage(named: "duseds")!,
+                            loginPossible: false)
+        
+        let dsu = Option(name: "dsu",
+                         label: "DSU",
+                         section: "DU Societies",
+                         url: "https://www.durhamsu.com/",
+                         image: UIImage(named: "dsu")!,
+                         loginPossible: false)
+        
+        let duSocieties = [physSoc,
+                           astroSoc,
+                           duseds,
+                           dsu]
+        
+        //general
+        let reportBugs = Option(name: "reportBugs", label: "Report Bugs", section: "General", url: """
+            mailto:physics.app@durham.ac.uk?subject=Bug Report&body=Please describe your issue as best you can using the following prompts.
+            
+            Device:
+            
+            Action take to experience bug:
+            
+            Expected Result:
+            
+            Actual Result:
+            
+            Any other comments:
+            
+            Thanks very much! Your help is greatly appreciated. Hope you have a great day!
+            """,
+                        
+            image: UIImage(named:"reportBugs")!,
+            loginPossible: false)
+
+        let about = Option(name: "about",
+                           label: "About",
+                           section: "General",
+                           url: nil,
+                           image: UIImage(named: "about")!,
+                           loginPossible: false)
+        
+        let general = [reportBugs,
+                       about]
+        
+        options.append(technologicalMatters)
+        options.append(feelingUnwell)
+        options.append(duSocieties)
+        options.append(general)
+        
+        return options
     }
     
 }

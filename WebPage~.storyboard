@@ -107,7 +107,7 @@
                     <connections>
                         <outlet property="mainMenuCollectionView" destination="HhF-cz-F8N" id="6SD-nc-Hv7"/>
                         <outlet property="mainMenuVisualEffectView" destination="IF2-mm-nmO" id="5Hu-Td-7tO"/>
-                        <segue destination="BpD-lT-x7V" kind="show" identifier="menuToWebPage" id="1CO-as-LWc"/>
+                        <segue destination="eSp-dQ-JeP" kind="show" identifier="menuToWebPage" id="1CO-as-LWc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdV-Yr-hsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,6 +124,32 @@
                 <tapGestureRecognizer id="cEH-4Z-5Ny"/>
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="-392.41071428571428"/>
+        </scene>
+        <!--Web Page View Controller-->
+        <scene sceneID="bz8-B6-6U9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKj-eF-AlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="webPageViewController" id="eSp-dQ-JeP" customClass="WebPageViewController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AoK-bl-upu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-vH-GEy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tmz-sm-2qo"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="545" y="359"/>
         </scene>
         <!--NavDrawerViewController-->
         <scene sceneID="MPr-B6-1aO">
@@ -201,20 +227,12 @@
                     <navigationItem key="navigationItem" id="91k-Ah-Uoz"/>
                     <connections>
                         <outlet property="loginButton" destination="AyI-mA-UY8" id="WUp-5s-4iV"/>
-                        <segue destination="BpD-lT-x7V" kind="show" identifier="navDrawerToWebPage" id="OgO-mn-8Ht"/>
+                        <segue destination="eSp-dQ-JeP" kind="show" identifier="navDrawerToWebPage" id="OgO-mn-8Ht"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rE-du-vET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="226.08695652173915" y="-392.41071428571428"/>
-        </scene>
-        <!--webPageViewController-->
-        <scene sceneID="Uv1-RP-vh2">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="webPageViewController" storyboardName="WebPage" referencedIdentifier="webPageViewController" id="BpD-lT-x7V" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IVI-n4-krO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="545" y="359"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
