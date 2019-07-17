@@ -12,8 +12,11 @@ class ContainerViewController: UIViewController {
     
     // MARK: - Init
     var navDrawerShowing = false
+    
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
+    
+    var navDrawerNavController: UINavigationController!
     var navDrawerViewController: NavDrawerViewController?
     
     let centerPanelExpandedOffset: CGFloat = 100
@@ -103,6 +106,7 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
         view.insertSubview(navDrawerController.view, at: 0)
         
         addChild(navDrawerController)
+        
         navDrawerController.didMove(toParent: self)
     }
     

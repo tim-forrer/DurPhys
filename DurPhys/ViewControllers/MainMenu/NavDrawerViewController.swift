@@ -20,7 +20,6 @@ class NavDrawerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -161,7 +161,7 @@ class Option {
         let physSoc = Option(name: "physSoc",
                              label: "PhysSoc",
                              section: "DU Societies",
-                             url: "https://www.dur.ac.uk/student.registry/assessment/concessions.appeals/",
+                             url: "https://www.durhamsu.com/groups/physics-20b9",
                              image: UIImage(named: "physSoc")!,
                              loginPossible: false)
         
@@ -197,7 +197,7 @@ class Option {
             
             Device:
             
-            Action take to experience bug:
+            Action taken to experience bug:
             
             Expected Result:
             
