@@ -23,7 +23,11 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        if option.loginPossible {
+            navBar.isHidden = true
+        } else {
+            navigationController?.setNavigationBarHidden(true, animated: false)
+        }
         
         navBarTitle.title = option.label
         
@@ -37,6 +41,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
         }
     }
     @IBAction func backButtonPressed(_ sender: Any) {
-        
+        dismiss(animated: true) {
+        }
     }
 }

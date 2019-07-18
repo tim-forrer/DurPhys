@@ -15,8 +15,7 @@ class ContainerViewController: UIViewController {
     
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
-    
-    var navDrawerNavController: UINavigationController!
+
     var navDrawerViewController: NavDrawerViewController?
     
     let centerPanelExpandedOffset: CGFloat = 100

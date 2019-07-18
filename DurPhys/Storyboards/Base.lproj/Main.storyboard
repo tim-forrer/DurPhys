@@ -123,7 +123,7 @@
                 </swipeGestureRecognizer>
                 <tapGestureRecognizer id="cEH-4Z-5Ny"/>
             </objects>
-            <point key="canvasLocation" x="957.97101449275374" y="-392.41071428571428"/>
+            <point key="canvasLocation" x="1868.1159420289857" y="-392.41071428571428"/>
         </scene>
         <!--NavDrawerViewController-->
         <scene sceneID="MPr-B6-1aO">
@@ -206,7 +206,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rE-du-vET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226.08695652173915" y="-392.41071428571428"/>
+            <point key="canvasLocation" x="1136.231884057971" y="-392.41071428571428"/>
         </scene>
         <!--webPageViewController-->
         <scene sceneID="Uv1-RP-vh2">
@@ -215,6 +215,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVI-n4-krO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="545" y="359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yen-Rc-h1b">
+            <objects>
+                <navigationController storyboardIdentifier="navDrawerNavController" automaticallyAdjustsScrollViewInsets="NO" id="EY2-5G-DPr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qAH-9r-E4P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JCa-aZ-go2" kind="relationship" relationship="rootViewController" id="pct-qT-SuB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdd-Ni-b5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226.08695652173915" y="-392.41071428571428"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
