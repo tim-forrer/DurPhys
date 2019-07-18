@@ -79,7 +79,14 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 extension MainMenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let menuOption = Option.menuOptions()[indexPath.row]
-        performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
+        if menuOption.url != nil {
+            performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
+        } else {
+            let nextStoryboard = UIStoryboard(name: menuOption.label, bundle: nil)
+            let newViewController = nextStoryboard.instantiateViewController(withIdentifier: menuOption.label)
+            navigationController?.pushViewController(newViewController, animated: true)
+            
+        }
     }
 }
 

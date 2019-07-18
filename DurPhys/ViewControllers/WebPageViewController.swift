@@ -14,10 +14,18 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
     // MARK: - Declarations
     @IBOutlet weak var webView: WKWebView!
     
+    @IBOutlet weak var navBar: UINavigationBar!
+    
+    @IBOutlet weak var navBarTitle: UINavigationItem!
+    
     var option: Option!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        navBarTitle.title = option.label
         
         webView.navigationDelegate = self
         let url = URL(string: option.url!)!
@@ -28,6 +36,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
             print("Attempting login")
         }
     }
-    
-    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        
+    }
 }

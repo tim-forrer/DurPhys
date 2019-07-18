@@ -19,24 +19,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-yh-tQn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-Ax-WBj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="N8O-a4-Yi9"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="Oa7-tZ-U2T">
+                                        <barButtonItem key="leftBarButtonItem" title="DurPhys" id="Q8g-Wa-McB">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="eSp-dQ-JeP" id="dvL-cT-t9Q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Zmp-Ax-WBj" firstAttribute="trailing" secondItem="tmz-sm-2qo" secondAttribute="trailing" id="5ZM-yp-vlW"/>
+                            <constraint firstItem="CQg-yh-tQn" firstAttribute="top" secondItem="Zmp-Ax-WBj" secondAttribute="bottom" id="A3Y-Wt-wRg"/>
+                            <constraint firstItem="Zmp-Ax-WBj" firstAttribute="top" secondItem="tmz-sm-2qo" secondAttribute="top" id="DDh-0j-YsP"/>
+                            <constraint firstItem="Zmp-Ax-WBj" firstAttribute="leading" secondItem="tmz-sm-2qo" secondAttribute="leading" id="Loa-A2-c1i"/>
                             <constraint firstItem="CQg-yh-tQn" firstAttribute="trailing" secondItem="tmz-sm-2qo" secondAttribute="trailing" id="NWR-SD-bwo"/>
                             <constraint firstAttribute="bottom" secondItem="CQg-yh-tQn" secondAttribute="bottom" id="Ohb-Di-PuI"/>
-                            <constraint firstItem="CQg-yh-tQn" firstAttribute="top" secondItem="tmz-sm-2qo" secondAttribute="top" id="hYW-vV-bR3"/>
                             <constraint firstItem="CQg-yh-tQn" firstAttribute="leading" secondItem="tmz-sm-2qo" secondAttribute="leading" id="r0m-4k-yOf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tmz-sm-2qo"/>
                     </view>
                     <connections>
+                        <outlet property="navBar" destination="Zmp-Ax-WBj" id="7pO-Go-O3J"/>
+                        <outlet property="navBarTitle" destination="Oa7-tZ-U2T" id="asf-QF-mqw"/>
                         <outlet property="webView" destination="CQg-yh-tQn" id="zD2-D0-wfA"/>
                     </connections>
                 </viewController>
