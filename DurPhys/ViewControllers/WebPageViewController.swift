@@ -25,11 +25,16 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
         
         if option.loginPossible {
             navBar.isHidden = true
+            
         } else {
             navigationController?.setNavigationBarHidden(true, animated: false)
+            
+            navBarTitle.title = option.label
+            let navBarAppearance = UINavigationBar.appearance()
+            navBarAppearance.barTintColor = Utils.palatinate
+            navBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            
         }
-        
-        navBarTitle.title = option.label
         
         webView.navigationDelegate = self
         let url = URL(string: option.url!)!

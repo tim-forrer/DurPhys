@@ -18,7 +18,6 @@ class MainMenuViewController: UIViewController{
     // MARK: - Declarations
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
-    @IBOutlet weak var mainMenuVisualEffectView: UIVisualEffectView!
     
     // MARK: - Init
     override func viewDidLoad() {
@@ -63,6 +62,7 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCell", for: indexPath) as! MainMenuCollectionViewCell
         let menuOptions = Option.menuOptions()
         cell.imageView.image = menuOptions[indexPath.item].image
+        cell.imageView.tintColor = Utils.palatinate
         cell.label.text = menuOptions[indexPath.item].label
         
         cell.layer.borderColor = UIColor.darkGray.cgColor
