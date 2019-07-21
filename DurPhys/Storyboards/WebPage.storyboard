@@ -31,10 +31,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="N8O-a4-Yi9"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.40784313725490196" green="0.14117647058823529" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Title" id="Oa7-tZ-U2T">
                                         <barButtonItem key="leftBarButtonItem" title="DurPhys" id="Q8g-Wa-McB">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="eSp-dQ-JeP" id="dvL-cT-t9Q"/>
                                             </connections>

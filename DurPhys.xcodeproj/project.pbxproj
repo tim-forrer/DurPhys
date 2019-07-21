@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		226EFF1A22E078FA00226D86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EFF1922E078FA00226D86 /* WebKit.framework */; };
 		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
+		22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9822E469A7002F91A7 /* LecturesViewController.swift */; };
+		22916A9B22E48410002F91A7 /* TutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9A22E48410002F91A7 /* TutorialsViewController.swift */; };
+		22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9C22E4842E002F91A7 /* LabsViewController.swift */; };
+		22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9E22E4843A002F91A7 /* ExamsViewController.swift */; };
+		22916AA122E48453002F91A7 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916AA022E48453002F91A7 /* HomeworkViewController.swift */; };
 		229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* WebPageViewController.swift */; };
+		2F7CA5A5C3EECFE8C2A50047 /* Pods_DurPhys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A6D5777642D7A868CFEE77 /* Pods_DurPhys.framework */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
 		E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94082F622D48F8700CDF8B4 /* Assets.xcassets */; };
@@ -27,7 +33,14 @@
 /* Begin PBXFileReference section */
 		226EFF1922E078FA00226D86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
+		22916A9822E469A7002F91A7 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
+		22916A9A22E48410002F91A7 /* TutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsViewController.swift; sourceTree = "<group>"; };
+		22916A9C22E4842E002F91A7 /* LabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsViewController.swift; sourceTree = "<group>"; };
+		22916A9E22E4843A002F91A7 /* ExamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
+		22916AA022E48453002F91A7 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 		229BB45622DC7EA60053FD2B /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		925CC78D287E9A59F2529394 /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.release.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
+		C8A6D5777642D7A868CFEE77 /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94082F422D48F8600CDF8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +55,7 @@
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
 		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		F1E011F81D994A5A2279A22A /* Pods-DurPhys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.debug.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226EFF1A22E078FA00226D86 /* WebKit.framework in Frameworks */,
+				2F7CA5A5C3EECFE8C2A50047 /* Pods_DurPhys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +75,30 @@
 			isa = PBXGroup;
 			children = (
 				226EFF1922E078FA00226D86 /* WebKit.framework */,
+				C8A6D5777642D7A868CFEE77 /* Pods_DurPhys.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22916A9722E46956002F91A7 /* Teaching Formats */ = {
+			isa = PBXGroup;
+			children = (
+				22916A9822E469A7002F91A7 /* LecturesViewController.swift */,
+				22916A9A22E48410002F91A7 /* TutorialsViewController.swift */,
+				22916A9C22E4842E002F91A7 /* LabsViewController.swift */,
+				22916A9E22E4843A002F91A7 /* ExamsViewController.swift */,
+				22916AA022E48453002F91A7 /* HomeworkViewController.swift */,
+			);
+			path = "Teaching Formats";
+			sourceTree = "<group>";
+		};
+		2505150C73E7BCD55449778E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1E011F81D994A5A2279A22A /* Pods-DurPhys.debug.xcconfig */,
+				925CC78D287E9A59F2529394 /* Pods-DurPhys.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E94082E322D48F8600CDF8B4 = {
@@ -70,6 +107,7 @@
 				E94082EE22D48F8600CDF8B4 /* DurPhys */,
 				E94082ED22D48F8600CDF8B4 /* Products */,
 				226EFF1822E078FA00226D86 /* Frameworks */,
+				2505150C73E7BCD55449778E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +135,8 @@
 		E9A0B2F622D7333800B49E11 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9A0B2FF22D7701D00B49E11 /* MainMenu */,
+				22916A9722E46956002F91A7 /* Teaching Formats */,
+				E9A0B2FF22D7701D00B49E11 /* Main Menu */,
 				229BB45622DC7EA60053FD2B /* WebPageViewController.swift */,
 			);
 			path = ViewControllers;
@@ -116,14 +155,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		E9A0B2FF22D7701D00B49E11 /* MainMenu */ = {
+		E9A0B2FF22D7701D00B49E11 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
 				E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */,
 				E940830122D48FCB00CDF8B4 /* MainMenuViewController.swift */,
 				E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */,
 			);
-			path = MainMenu;
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 		E9A0B30422D7773D00B49E11 /* Custom */ = {
@@ -142,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94082FE22D48F8800CDF8B4 /* Build configuration list for PBXNativeTarget "DurPhys" */;
 			buildPhases = (
+				C9BD862A1B92B86A0C7A5775 /* [CP] Check Pods Manifest.lock */,
 				E94082E822D48F8600CDF8B4 /* Sources */,
 				E94082E922D48F8600CDF8B4 /* Frameworks */,
 				E94082EA22D48F8600CDF8B4 /* Resources */,
+				FF46631E4FFF245DC2003063 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +246,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9BD862A1B92B86A0C7A5775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DurPhys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF46631E4FFF245DC2003063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DurPhys/Pods-DurPhys-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DurPhys/Pods-DurPhys-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DurPhys/Pods-DurPhys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E94082E822D48F8600CDF8B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,9 +295,14 @@
 			files = (
 				E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */,
 				E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */,
+				22916AA122E48453002F91A7 /* HomeworkViewController.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
+				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
+				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
+				22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */,
+				22916A9B22E48410002F91A7 /* TutorialsViewController.swift in Sources */,
 				E940830422D490B800CDF8B4 /* MainMenuCollectionViewCell.swift in Sources */,
 				229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */,
 			);
@@ -352,6 +440,7 @@
 		};
 		E94082FF22D48F8800CDF8B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E011F81D994A5A2279A22A /* Pods-DurPhys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +458,7 @@
 		};
 		E940830022D48F8800CDF8B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 925CC78D287E9A59F2529394 /* Pods-DurPhys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

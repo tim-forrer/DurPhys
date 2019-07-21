@@ -14,12 +14,19 @@ class NavDrawerViewController: UITableViewController {
     
     let navOptions = Option.navOptions()
     
+    @IBOutlet weak var navDrawerTableView: UITableView!
     @IBOutlet weak var loginButton: UIButton!
     
     // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navDrawerTableView.layer.masksToBounds = false
+        navDrawerTableView.layer.shadowColor = UIColor.black.cgColor
+        navDrawerTableView.layer.shadowRadius = 20.0
+        navDrawerTableView.layer.shadowOpacity = 1.0
+        navDrawerTableView.layer.shadowOffset = .zero
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

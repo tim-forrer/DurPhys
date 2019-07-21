@@ -113,7 +113,8 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
         if shouldShowShadow {
             mainMenuNavigationController.view.layer.shadowOpacity = 0.8
         } else {
-            mainMenuNavigationController.view.layer.shadowOpacity = 0.0
+            mainMenuNavigationController.view.layer.shadowOpacity = 0.8
         }
     }
+    
 }

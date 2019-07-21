@@ -109,7 +109,7 @@
         <scene sceneID="MPr-B6-1aO">
             <objects>
                 <tableViewController storyboardIdentifier="navDrawerViewController" title="NavDrawerViewController" id="JCa-aZ-go2" customClass="NavDrawerViewController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BWb-uY-NjI">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BWb-uY-NjI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,6 +178,7 @@
                     <navigationItem key="navigationItem" id="91k-Ah-Uoz"/>
                     <connections>
                         <outlet property="loginButton" destination="AyI-mA-UY8" id="WUp-5s-4iV"/>
+                        <outlet property="navDrawerTableView" destination="BWb-uY-NjI" id="ZlE-up-Ggm"/>
                         <segue destination="BpD-lT-x7V" kind="show" identifier="navDrawerToWebPage" id="OgO-mn-8Ht"/>
                     </connections>
                 </tableViewController>
@@ -195,7 +196,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1CO-as-LWc"/>
+        <segue reference="OgO-mn-8Ht"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
