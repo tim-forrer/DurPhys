@@ -1,16 +1,16 @@
 PODS:
-  - YoutubePlayer-in-WKWebView (0.3.0)
+  - SwipeableTabBarController (2.1.1)
 
 DEPENDENCIES:
-  - YoutubePlayer-in-WKWebView (~> 0.3.0)
+  - SwipeableTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - YoutubePlayer-in-WKWebView
+    - SwipeableTabBarController
 
 SPEC CHECKSUMS:
-  YoutubePlayer-in-WKWebView: 17a33b2fa619d357c9ddd763942ce556660facae
+  SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
 
-PODFILE CHECKSUM: 90d3107fef63cf012ae71532e9a2915e5374978f
+PODFILE CHECKSUM: 615909fcc644ac5dfc3083f6a924ddb0bd94cca0
 
 COCOAPODS: 1.7.4

@@ -7,6 +7,6 @@ target 'DurPhys' do
 
   # Pods for DurPhys
 
-  pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
+  pod "SwipeableTabBarController"
 
 end

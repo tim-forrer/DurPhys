@@ -7,78 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BBC582FCEA1B2926269F3CCE3F1D923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4BBBDD52873061AC9A8355C11FCA5B44 /* YoutubePlayer-in-WKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */; };
-		59D23F20D08B8AEC3A129495478F1F5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		803A943F40E9733AC61489FB25186CF9 /* YoutubePlayer-in-WKWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AD84D555FE3F3C4519344CBBAB1D565 /* WKYTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */; };
-		B78CE18F078CD706B50F2C2ABF92638B /* Pods-DurPhys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */; };
-		CCF11406FC25C84082E70B3DE2871690 /* WKYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D334D5A0AA88F6DEE11C8667AAE43596 /* WKYTPlayerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */; };
-		F79EA9AA1B6798CAFB30469BF0914B97 /* Pods-DurPhys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11F021E646C2EE3196AA97DE4DEFE585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FC9CB61C74ACDEB4B225968F020940 /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CCC5C914C09629148F0A07CA4A1D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD074C0561CA1C4023B2EC44518021E /* SwipeAnimationType.swift */; };
+		599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81FE13176923607CBA7EBFCD641A6 /* SwipeTransitionAnimator.swift */; };
+		5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1ABC01ED4D6ED979DF01DF6111856 /* UIKit+Extensions.swift */; };
+		8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FD2BBA1CBE76321B43C96BBDCBFC33 /* SwipeInteractor.swift */; };
+		9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159AAAFACAE54318CFD7439377A305A /* SwipeableTabBarController.swift */; };
+		BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7B17EB849C2A41C9640D0E96D94ED /* SwipeTransitioningProtocol.swift */; };
+		DFA0105C5D089C5E6714B431B51EC5F5 /* Pods-DurPhys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E32A27B258284C2282E1E3947574B13E /* Pods-DurPhys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */; };
+		F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16592CBB38BE250607074DDAD429A68D /* SwipeableTabBarController-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CF8DD239C9397CDBC8710B781AA3A9A6 /* PBXContainerItemProxy */ = {
+		5AC593500FA890875CAD1AD6E83AAC58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DABE3AD6EBA3822D4F04FBC550E7158D;
-			remoteInfo = "YoutubePlayer-in-WKWebView";
+			remoteGlobalIDString = 3CD2985EC5826C32DE2E7CBE62FB81ED;
+			remoteInfo = SwipeableTabBarController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DurPhys-umbrella.h"; sourceTree = "<group>"; };
-		158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKYTPlayerView.h; path = WKYTPlayerView/WKYTPlayerView.h; sourceTree = "<group>"; };
+		0FB81FE13176923607CBA7EBFCD641A6 /* SwipeTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionAnimator.swift; path = SwipeableTabBarController/Classes/SwipeTransitionAnimator.swift; sourceTree = "<group>"; };
+		16592CBB38BE250607074DDAD429A68D /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		2A223FF02FAE49D562896B112C4C99F9 /* SwipeableTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwipeableTabBarController-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		357EE4CD84D04533B1837ADC2862049F /* Pods-DurPhys-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DurPhys-frameworks.sh"; sourceTree = "<group>"; };
+		44C1ABC01ED4D6ED979DF01DF6111856 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		5E08F98323ACC587C90EDBA6B4FB8DDE /* Pods-DurPhys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DurPhys.debug.xcconfig"; sourceTree = "<group>"; };
+		6159AAAFACAE54318CFD7439377A305A /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F7B17EB849C2A41C9640D0E96D94ED /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		69D17D22497CD98E976478D603C5560A /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
 		6E1C6416C5077B06112C3DF87A78C413 /* Pods-DurPhys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DurPhys.modulemap"; sourceTree = "<group>"; };
 		741681C9112CB8D88DC5B8BC64CABED2 /* Pods-DurPhys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DurPhys-acknowledgements.plist"; sourceTree = "<group>"; };
 		7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DurPhys-dummy.m"; sourceTree = "<group>"; };
-		88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKYTPlayerView.m; path = WKYTPlayerView/WKYTPlayerView.m; sourceTree = "<group>"; };
-		9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayer-in-WKWebView-umbrella.h"; sourceTree = "<group>"; };
-		965D60F2F3EC242D5E7B46E28328D76A /* YoutubePlayer-in-WKWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayer-in-WKWebView-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DurPhys.framework; path = "Pods-DurPhys.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubePlayer-in-WKWebView-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FD2BBA1CBE76321B43C96BBDCBFC33 /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
 		AEBF018C026F892B99E59E86940E7DE9 /* Pods-DurPhys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DurPhys-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C5D0E1D6F68A4742F5D1157B65EA5C98 /* YoutubePlayer-in-WKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubePlayer-in-WKWebView-Info.plist"; sourceTree = "<group>"; };
-		D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YoutubePlayer-in-WKWebView.xcconfig"; sourceTree = "<group>"; };
-		D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WKYTPlayerView.bundle; path = WKYTPlayerView/WKYTPlayerView.bundle; sourceTree = "<group>"; };
-		DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubePlayer_in_WKWebView.framework; path = "YoutubePlayer-in-WKWebView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15440A756E2DF83E9E00B5BF4F8A69A /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		D0FC9CB61C74ACDEB4B225968F020940 /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		D6B4737911C2FDFB92B63A5D8725F417 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
 		EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
-		FD64B190B67BDAB0692FC8236296B99C /* YoutubePlayer-in-WKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YoutubePlayer-in-WKWebView.modulemap"; sourceTree = "<group>"; };
+		FCD074C0561CA1C4023B2EC44518021E /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
 		FF9EE180A01327A8518D675E84A56018 /* Pods-DurPhys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DurPhys-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83B31952B9520750E964E0A44C07C4B5 /* Frameworks */ = {
+		09B81CDE76191C834662505FE81A34E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BBC582FCEA1B2926269F3CCE3F1D923 /* Foundation.framework in Frameworks */,
+				32CCC5C914C09629148F0A07CA4A1D63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2672EE986806A4A83D0CA59FFB0ED86 /* Frameworks */ = {
+		9D6AF86D8051D2321F9EACB991DFD1B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D23F20D08B8AEC3A129495478F1F5A /* Foundation.framework in Frameworks */,
+				11F021E646C2EE3196AA97DE4DEFE585 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49AE3566D9DAC22AD399C49EC523D64D /* Pods */ = {
+		1EAE358E2B86DE686EA569C499177AF7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AAAA31A5C7782BB86B3BB1EB150609ED /* YoutubePlayer-in-WKWebView */,
+				3AA1DCCE42BD9A7774849CB8B1B13C1C /* SwipeableTabBarController */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3AA1DCCE42BD9A7774849CB8B1B13C1C /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				6159AAAFACAE54318CFD7439377A305A /* SwipeableTabBarController.swift */,
+				FCD074C0561CA1C4023B2EC44518021E /* SwipeAnimationType.swift */,
+				A2FD2BBA1CBE76321B43C96BBDCBFC33 /* SwipeInteractor.swift */,
+				0FB81FE13176923607CBA7EBFCD641A6 /* SwipeTransitionAnimator.swift */,
+				65F7B17EB849C2A41C9640D0E96D94ED /* SwipeTransitioningProtocol.swift */,
+				44C1ABC01ED4D6ED979DF01DF6111856 /* UIKit+Extensions.swift */,
+				645ED65DFADA5E9F0FA853A4ACF9568E /* Support Files */,
+			);
+			path = SwipeableTabBarController;
 			sourceTree = "<group>";
 		};
 		4F6A06B821308AC52787CE5E41D7A8D9 /* Pods-DurPhys */ = {
@@ -98,27 +118,27 @@
 			path = "Target Support Files/Pods-DurPhys";
 			sourceTree = "<group>";
 		};
-		543307710A7455C74CEBE5C92AB24151 /* Products */ = {
+		645ED65DFADA5E9F0FA853A4ACF9568E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15440A756E2DF83E9E00B5BF4F8A69A /* SwipeableTabBarController.modulemap */,
+				D6B4737911C2FDFB92B63A5D8725F417 /* SwipeableTabBarController.xcconfig */,
+				16592CBB38BE250607074DDAD429A68D /* SwipeableTabBarController-dummy.m */,
+				2A223FF02FAE49D562896B112C4C99F9 /* SwipeableTabBarController-Info.plist */,
+				69D17D22497CD98E976478D603C5560A /* SwipeableTabBarController-prefix.pch */,
+				D0FC9CB61C74ACDEB4B225968F020940 /* SwipeableTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeableTabBarController";
+			sourceTree = "<group>";
+		};
+		6C625A87CFE387E390D5E48CF4F2A329 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */,
-				DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */,
+				65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		631A4EDBD5F5F3F6E0B2E98A0CAD6E27 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FD64B190B67BDAB0692FC8236296B99C /* YoutubePlayer-in-WKWebView.modulemap */,
-				D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */,
-				AB1EE9B7060F10507AB79214957DE146 /* YoutubePlayer-in-WKWebView-dummy.m */,
-				C5D0E1D6F68A4742F5D1157B65EA5C98 /* YoutubePlayer-in-WKWebView-Info.plist */,
-				965D60F2F3EC242D5E7B46E28328D76A /* YoutubePlayer-in-WKWebView-prefix.pch */,
-				9148B6B8D7184C7C910A7578F8671685 /* YoutubePlayer-in-WKWebView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YoutubePlayer-in-WKWebView";
 			sourceTree = "<group>";
 		};
 		8E5ABEAEB516863B15BCC6884FADDE41 /* Targets Support Files */ = {
@@ -127,26 +147,6 @@
 				4F6A06B821308AC52787CE5E41D7A8D9 /* Pods-DurPhys */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		A0C98DE340FB510B3FC001EC726AE66E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D45E0C906890686D770071E3F267394C /* WKYTPlayerView.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		AAAA31A5C7782BB86B3BB1EB150609ED /* YoutubePlayer-in-WKWebView */ = {
-			isa = PBXGroup;
-			children = (
-				158814EAEF2AA7E7ACA32043557997DD /* WKYTPlayerView.h */,
-				88C2C92BB7DDC17915FF28A029F18130 /* WKYTPlayerView.m */,
-				A0C98DE340FB510B3FC001EC726AE66E /* Resources */,
-				631A4EDBD5F5F3F6E0B2E98A0CAD6E27 /* Support Files */,
-			);
-			name = "YoutubePlayer-in-WKWebView";
-			path = "YoutubePlayer-in-WKWebView";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -162,8 +162,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				49AE3566D9DAC22AD399C49EC523D64D /* Pods */,
-				543307710A7455C74CEBE5C92AB24151 /* Products */,
+				1EAE358E2B86DE686EA569C499177AF7 /* Pods */,
+				6C625A87CFE387E390D5E48CF4F2A329 /* Products */,
 				8E5ABEAEB516863B15BCC6884FADDE41 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -179,61 +179,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		17828FFF5E257528483A782A6C37CA18 /* Headers */ = {
+		9C59F06087E33542B3DD0D7DCEF588E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF11406FC25C84082E70B3DE2871690 /* WKYTPlayerView.h in Headers */,
-				803A943F40E9733AC61489FB25186CF9 /* YoutubePlayer-in-WKWebView-umbrella.h in Headers */,
+				314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0B922DE710FB46069683BE606529C31 /* Headers */ = {
+		DEBD58E30D3214DD35B536558500F093 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79EA9AA1B6798CAFB30469BF0914B97 /* Pods-DurPhys-umbrella.h in Headers */,
+				DFA0105C5D089C5E6714B431B51EC5F5 /* Pods-DurPhys-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B1FF38B64A48D62A04E90AC633E8ACFF /* Pods-DurPhys */ = {
+		3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4270B012A86449DAFBD5313AB0022B4E /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */;
+			buildConfigurationList = 6D390677976E50C06A225290B486C2F0 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
 			buildPhases = (
-				A0B922DE710FB46069683BE606529C31 /* Headers */,
-				0DDCA4252095071612E544C95C71CA95 /* Sources */,
-				B2672EE986806A4A83D0CA59FFB0ED86 /* Frameworks */,
-				A5DBB07E25421AC987613C62A263BF91 /* Resources */,
+				9C59F06087E33542B3DD0D7DCEF588E7 /* Headers */,
+				529A58483395B7C0A4D60B9FBCCAB4EC /* Sources */,
+				09B81CDE76191C834662505FE81A34E2 /* Frameworks */,
+				E63E0922028368AA411D27B22BF93A72 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C84F129B27E3A2675B6ACD1665D1322 /* PBXTargetDependency */,
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = 65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1FF38B64A48D62A04E90AC633E8ACFF /* Pods-DurPhys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94CA69E928EF667347EADB1ECDD8A28A /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */;
+			buildPhases = (
+				DEBD58E30D3214DD35B536558500F093 /* Headers */,
+				A121B2B6A7A305F2E82B6C6CD6086DB3 /* Sources */,
+				9D6AF86D8051D2321F9EACB991DFD1B5 /* Frameworks */,
+				33BA588A6C58334B9016051A4CC4F367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556780656119484253D382D2C0CAD66B /* PBXTargetDependency */,
 			);
 			name = "Pods-DurPhys";
 			productName = "Pods-DurPhys";
 			productReference = 9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 047221B88B466188D7B28CF17DB79C8D /* Build configuration list for PBXNativeTarget "YoutubePlayer-in-WKWebView" */;
-			buildPhases = (
-				17828FFF5E257528483A782A6C37CA18 /* Headers */,
-				DC2087E01AAFD2B9411B8C3022709F9A /* Sources */,
-				83B31952B9520750E964E0A44C07C4B5 /* Frameworks */,
-				8175522B524A37D3936801F6C2DE743F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "YoutubePlayer-in-WKWebView";
-			productName = "YoutubePlayer-in-WKWebView";
-			productReference = DE0FAB1DA724AB86C0E299518F5E580A /* YoutubePlayer_in_WKWebView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -244,6 +243,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					3CD2985EC5826C32DE2E7CBE62FB81ED = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -253,26 +257,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 543307710A7455C74CEBE5C92AB24151 /* Products */;
+			productRefGroup = 6C625A87CFE387E390D5E48CF4F2A329 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B1FF38B64A48D62A04E90AC633E8ACFF /* Pods-DurPhys */,
-				DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */,
+				3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8175522B524A37D3936801F6C2DE743F /* Resources */ = {
+		33BA588A6C58334B9016051A4CC4F367 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D334D5A0AA88F6DEE11C8667AAE43596 /* WKYTPlayerView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5DBB07E25421AC987613C62A263BF91 /* Resources */ = {
+		E63E0922028368AA411D27B22BF93A72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,38 +285,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DDCA4252095071612E544C95C71CA95 /* Sources */ = {
+		529A58483395B7C0A4D60B9FBCCAB4EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78CE18F078CD706B50F2C2ABF92638B /* Pods-DurPhys-dummy.m in Sources */,
+				F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */,
+				9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */,
+				48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */,
+				8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */,
+				599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */,
+				BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */,
+				5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC2087E01AAFD2B9411B8C3022709F9A /* Sources */ = {
+		A121B2B6A7A305F2E82B6C6CD6086DB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD84D555FE3F3C4519344CBBAB1D565 /* WKYTPlayerView.m in Sources */,
-				4BBBDD52873061AC9A8355C11FCA5B44 /* YoutubePlayer-in-WKWebView-dummy.m in Sources */,
+				E32A27B258284C2282E1E3947574B13E /* Pods-DurPhys-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C84F129B27E3A2675B6ACD1665D1322 /* PBXTargetDependency */ = {
+		556780656119484253D382D2C0CAD66B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "YoutubePlayer-in-WKWebView";
-			target = DABE3AD6EBA3822D4F04FBC550E7158D /* YoutubePlayer-in-WKWebView */;
-			targetProxy = CF8DD239C9397CDBC8710B781AA3A9A6 /* PBXContainerItemProxy */;
+			name = SwipeableTabBarController;
+			target = 3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */;
+			targetProxy = 5AC593500FA890875CAD1AD6E83AAC58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04E0929F5E4C645165F49E78F365EE9E /* Debug */ = {
+		045A0CF4EAEB5E4B4D9ABDD7DC71C0AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E08F98323ACC587C90EDBA6B4FB8DDE /* Pods-DurPhys.debug.xcconfig */;
+			baseConfigurationReference = EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -344,10 +352,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -413,6 +422,44 @@
 			};
 			name = Debug;
 		};
+		2710FEB4F79E5F30ED69B21F3673D4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E08F98323ACC587C90EDBA6B4FB8DDE /* Pods-DurPhys.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,48 +520,9 @@
 			};
 			name = Release;
 		};
-		7481FA72BBE706C71620F5E16D566835 /* Release */ = {
+		96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C283CCE0FDEDC41C8F0F0FB568F14500 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */;
+			baseConfigurationReference = D6B4737911C2FDFB92B63A5D8725F417 /* SwipeableTabBarController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -525,8 +533,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,9 +542,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView.modulemap";
-				PRODUCT_MODULE_NAME = YoutubePlayer_in_WKWebView;
-				PRODUCT_NAME = YoutubePlayer_in_WKWebView;
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -547,9 +555,9 @@
 			};
 			name = Debug;
 		};
-		C388FB829F42D2C5EDBFE005872CC531 /* Release */ = {
+		DB0105A2B135ED80686657AFE9F8C1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00EE8FB7AEDEC0FFCC62CA1B90C8010 /* YoutubePlayer-in-WKWebView.xcconfig */;
+			baseConfigurationReference = D6B4737911C2FDFB92B63A5D8725F417 /* SwipeableTabBarController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -560,8 +568,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,9 +577,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YoutubePlayer-in-WKWebView/YoutubePlayer-in-WKWebView.modulemap";
-				PRODUCT_MODULE_NAME = YoutubePlayer_in_WKWebView;
-				PRODUCT_NAME = YoutubePlayer_in_WKWebView;
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -586,29 +594,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		047221B88B466188D7B28CF17DB79C8D /* Build configuration list for PBXNativeTarget "YoutubePlayer-in-WKWebView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C283CCE0FDEDC41C8F0F0FB568F14500 /* Debug */,
-				C388FB829F42D2C5EDBFE005872CC531 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4270B012A86449DAFBD5313AB0022B4E /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04E0929F5E4C645165F49E78F365EE9E /* Debug */,
-				7481FA72BBE706C71620F5E16D566835 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
 				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D390677976E50C06A225290B486C2F0 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */,
+				DB0105A2B135ED80686657AFE9F8C1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94CA69E928EF667347EADB1ECDD8A28A /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2710FEB4F79E5F30ED69B21F3673D4F6 /* Debug */,
+				045A0CF4EAEB5E4B4D9ABDD7DC71C0AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
