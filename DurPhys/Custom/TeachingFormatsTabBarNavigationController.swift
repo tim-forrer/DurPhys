@@ -12,12 +12,12 @@ class TeachingFormatsTabBarNavigationController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.barTintColor = Utils.palatinate
-        tabBar.tintColor = .white
+        tabBarStyle()
     }
     
     func tabBarStyle() {
-        
+        tabBar.barTintColor = Utils.palatinate
+        tabBar.tintColor = .white
     }
     
     

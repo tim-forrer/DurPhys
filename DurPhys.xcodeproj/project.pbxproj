@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226BDB5322E619BA005D298E /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BDB5222E619BA005D298E /* Option.swift */; };
 		226EFF1A22E078FA00226D86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EFF1922E078FA00226D86 /* WebKit.framework */; };
 		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
 		22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9822E469A7002F91A7 /* LecturesViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226BDB5222E619BA005D298E /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		226EFF1922E078FA00226D86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
 		22916A9822E469A7002F91A7 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
 				22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */,
 				22AE6A1E22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift */,
+				226BDB5222E619BA005D298E /* Option.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
+				226BDB5322E619BA005D298E /* Option.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
