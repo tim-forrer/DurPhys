@@ -18,3 +18,8 @@ This app is designed to work with iPhone 5S and above. iPads are not actively su
 - [ ] JS Injection of aforementioned credientials into PSP, Email and DUO pages.
 - [ ] Scrape the physics staff page for use in Important Contacts.
 - [ ] Scrape appropriate module information for use in Course Information.
+
+### Dependancies:
+
+Thanks to the following people for their libraries which have been implemented in this project:
+* [Marcos Griselli](https://github.com/marcosgriselli) for his [Swipeable Tab Bar Controller](https://github.com/marcosgriselli/SwipeableTabBarController)
