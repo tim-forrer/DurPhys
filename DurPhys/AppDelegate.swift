@@ -18,9 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        UITabBar.appearance().barTintColor = Utils.palatinate
-        UITabBar.appearance().tintColor = Utils.heather
-        
         let containerViewController = ContainerViewController()
         
         window!.rootViewController = containerViewController

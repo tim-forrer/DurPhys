@@ -82,8 +82,8 @@ extension MainMenuViewController: UICollectionViewDelegate {
         if menuOption.url != nil {
             performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
         } else {
-            let nextStoryboard = UIStoryboard(name: menuOption.label, bundle: nil)
-            let newViewController = nextStoryboard.instantiateViewController(withIdentifier: menuOption.label)
+            let nextStoryboard = UIStoryboard(name: menuOption.label!, bundle: nil)
+            let newViewController = nextStoryboard.instantiateViewController(withIdentifier: menuOption.label!)
             navigationController?.pushViewController(newViewController, animated: true)
             
         }

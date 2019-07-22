@@ -26,8 +26,8 @@
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-Ev-eFC">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="601"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Lectures are a quintessential part of being a university student. Unfortunately, as a STEM student, you will have more scheduled lectures than your peers. While it may seem frustrating that your days are spend in lecture theatres, you will come to appreciate them once exam season arrives.  Lectures are an invaluable way to get important concepts across, and it really is up to you how you seize these opportunities. Lectures are never compulsory, but it would be wise to attend, as learning things before the exam season makes it easier to remember them when you truly need to i.e. during your exams (phrasing?).  While most people hand-write their notes (studies show this helps you to remember better), some people prefer using laptops or tablets to take down some notes. Regardless of what you choose, it is imperative to take effective notes so that you actually understand them. Since you aren’t marked on your notes, you can personalise them as much as you wish, as long as the information you are being taught also comes through.  The introduction of Encore at Durham means that all lectures will be recorded. While this may seem like a silver bullet for your studies, it requires more willpower than simply attending the lecture in the first place, and it sets a dangerous precedent for your personal organisation. It also only records what is presented on the projector and the lecturers voice, so anything written on the whiteboard will not be available in the recording. That being said, if you can dedicate time to watch these lectures and take proper notes, then this innovation will give you more freedom to study when you want.  Watch the video below to see and example of a good set of lecture notes from someone who prefers writing in prose. </mutableString>
+                                                <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Lectures are a quintessential part of being a university student. Unfortunately, as a STEM student, you will have more scheduled lectures than your peers. While it may seem frustrating that your days are spend in lecture theatres, you will come to appreciate them once exam season arrives.  Lectures are an invaluable way to get important concepts across, and it really is up to you how you seize these opportunities. Lectures are never compulsory, but it would be wise to attend, as learning things before the exam season makes it easier to remember them when you truly need to i.e. during your exams (phrasing?).  While most people hand-write their notes (studies show this helps you to remember better), some people prefer using laptops or tablets to take down some notes. Regardless of what you choose, it is imperative to take effective notes so that you actually understand them. Since you aren’t marked on your notes, you can personalise them as much as you wish, as long as the information you are being taught also comes through.  The introduction of Encore at Durham means that all lectures will be recorded. While this may seem like a silver bullet for your studies, it requires more willpower than simply attending the lecture in the first place, and it sets a dangerous precedent for your personal organisation. It also only records what is presented on the projector and the lecturers voice, so anything written on the whiteboard will not be available in the recording. That being said, if you can dedicate time to watch these lectures and take proper notes, then this innovation will give you more freedom to study when you want.  Watch the video below to see and example of a good set of lecture notes from someone who prefers writing in prose. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -60,42 +60,38 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE8-gO-TgQ">
-                                                <rect key="frame" x="0.0" y="924" width="414" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE8-gO-TgQ" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="924" width="398" height="30"/>
                                                 <state key="normal" title="Durham Blog - Personal Experiences"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="durhamBlogPressed:" destination="FOk-6D-Gue" eventType="touchUpInside" id="nZS-ML-CL9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-g9-Ee3">
-                                                <rect key="frame" x="0.0" y="962" width="414" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-g9-Ee3" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="962" width="398" height="30"/>
                                                 <state key="normal" title="10 Ways to Take Better Notes - Save the Student"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="betterNotesPressed:" destination="FOk-6D-Gue" eventType="touchUpInside" id="02V-Dm-EZR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="lE8-gO-TgQ" secondAttribute="trailing" id="0G5-Lp-6sc"/>
+                                            <constraint firstAttribute="trailing" secondItem="lE8-gO-TgQ" secondAttribute="trailing" constant="8" id="0G5-Lp-6sc"/>
                                             <constraint firstAttribute="trailing" secondItem="gCh-Ev-eFC" secondAttribute="trailing" id="0zK-bs-a6P"/>
                                             <constraint firstItem="GGF-g9-Ee3" firstAttribute="top" secondItem="lE8-gO-TgQ" secondAttribute="bottom" constant="8" id="6Q3-L5-Tn6"/>
                                             <constraint firstAttribute="bottom" secondItem="GGF-g9-Ee3" secondAttribute="bottom" constant="8" id="6Xq-vA-X3n"/>
-                                            <constraint firstItem="lE8-gO-TgQ" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" id="8oe-M8-Lva"/>
+                                            <constraint firstItem="lE8-gO-TgQ" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" constant="8" id="8oe-M8-Lva"/>
                                             <constraint firstItem="AbK-Oy-c6o" firstAttribute="top" secondItem="5De-JA-mkU" secondAttribute="bottom" constant="8" id="9pi-Q5-keG"/>
                                             <constraint firstItem="2nF-lN-PLd" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" constant="8" id="CDG-2C-9Hz"/>
-                                            <constraint firstItem="GGF-g9-Ee3" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" id="DAQ-fX-qCF"/>
+                                            <constraint firstItem="GGF-g9-Ee3" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" constant="8" id="DAQ-fX-qCF"/>
                                             <constraint firstItem="AbK-Oy-c6o" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" constant="8" id="Ds7-rj-em6"/>
                                             <constraint firstItem="5De-JA-mkU" firstAttribute="top" secondItem="gCh-Ev-eFC" secondAttribute="bottom" constant="8" id="HxA-eq-OK4"/>
-                                            <constraint firstItem="2nF-lN-PLd" firstAttribute="top" secondItem="AbK-Oy-c6o" secondAttribute="bottom" constant="8" id="ITV-gi-Rw2"/>
-                                            <constraint firstItem="GGF-g9-Ee3" firstAttribute="top" secondItem="lE8-gO-TgQ" secondAttribute="bottom" constant="8" id="KcD-bB-sJ5"/>
                                             <constraint firstItem="gCh-Ev-eFC" firstAttribute="top" secondItem="JNR-JX-CGN" secondAttribute="top" id="LxJ-js-K2f"/>
                                             <constraint firstItem="lE8-gO-TgQ" firstAttribute="top" secondItem="2nF-lN-PLd" secondAttribute="bottom" constant="8" id="T0T-Jn-DRq"/>
                                             <constraint firstAttribute="trailing" secondItem="AbK-Oy-c6o" secondAttribute="trailing" constant="8" id="Wcm-ax-erL"/>
-                                            <constraint firstItem="lE8-gO-TgQ" firstAttribute="top" secondItem="2nF-lN-PLd" secondAttribute="bottom" constant="8" id="d6e-Lx-g2t"/>
-                                            <constraint firstItem="AbK-Oy-c6o" firstAttribute="top" secondItem="5De-JA-mkU" secondAttribute="bottom" constant="8" id="lTJ-3z-Ak7"/>
                                             <constraint firstItem="gCh-Ev-eFC" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" id="pzU-RX-Sd8"/>
-                                            <constraint firstAttribute="trailing" secondItem="GGF-g9-Ee3" secondAttribute="trailing" id="vu6-Cc-ZUF"/>
+                                            <constraint firstAttribute="trailing" secondItem="GGF-g9-Ee3" secondAttribute="trailing" constant="8" id="vu6-Cc-ZUF"/>
                                             <constraint firstItem="2nF-lN-PLd" firstAttribute="top" secondItem="AbK-Oy-c6o" secondAttribute="bottom" constant="8" id="yGn-zK-TK8"/>
                                             <constraint firstItem="5De-JA-mkU" firstAttribute="leading" secondItem="JNR-JX-CGN" secondAttribute="leading" constant="8" id="zO9-Gu-4vi"/>
                                         </constraints>
@@ -132,6 +128,7 @@
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="webView" destination="AbK-Oy-c6o" id="In4-JN-gjH"/>
+                        <segue destination="L6M-Ke-RIn" kind="showDetail" identifier="lecturesToWebPage" id="GDK-Hl-Fqd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSG-PH-nx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,7 +138,7 @@
         <!--Teaching Formats-->
         <scene sceneID="EDa-ya-kE0">
             <objects>
-                <tabBarController storyboardIdentifier="Teaching Formats" title="Teaching Formats" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="zDu-Hi-dEl" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Teaching Formats" title="Teaching Formats" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="zDu-Hi-dEl" customClass="TeachingFormatsTabBarNavigationController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fh7-2q-opz">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -178,37 +175,22 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="1320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBN-1O-8aW" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IWn-gP-9l3">
                                                 <rect key="frame" x="0.0" y="8" width="414" height="250"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Tutorials are designed to test your abstract thought, a vital component of any successful physicist. The questions will be related to topics you are currently studying, but the questions will require you to consider the physical reasoning behind the conclusions drawn in lectures.  Tutorials are another tool used to detect weaknesses in your understanding, and while you shouldn’t expect to be able to answer every question definitively, you should be able to present your case to the other students, using mathematical and physics axioms to win their favour.  The groups are quite small in first year, and each tutorial leader will have a different style of carrying out their tutorials.</mutableString>
+                                                <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Tutorials are designed to test your abstract thought, a vital component of any successful physicist. The questions will be related to topics you are currently studying, but the questions will require you to consider the physical reasoning behind the conclusions drawn in lectures.  Tutorials are another tool used to detect weaknesses in your understanding, and while you shouldn’t expect to be able to answer every question definitively, you should be able to present your case to the other students, using mathematical and physics axioms to win their favour.  The groups are quite small in first year, and each tutorial leader will have a different style of carrying out their tutorials.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Useful Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNB-Om-pEb">
-                                                <rect key="frame" x="8" y="266" width="94" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DE-hI-EJw">
-                                                <rect key="frame" x="8" y="295" width="398" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="1DE-hI-EJw" secondAttribute="bottom" constant="8" id="5zv-xf-o5r"/>
                                             <constraint firstAttribute="trailing" secondItem="IWn-gP-9l3" secondAttribute="trailing" id="8YQ-8G-coT"/>
-                                            <constraint firstItem="pNB-Om-pEb" firstAttribute="top" secondItem="IWn-gP-9l3" secondAttribute="bottom" constant="8" id="Nv4-lL-lz5"/>
-                                            <constraint firstItem="1DE-hI-EJw" firstAttribute="leading" secondItem="MBN-1O-8aW" secondAttribute="leading" constant="8" id="SiC-6t-nRW"/>
-                                            <constraint firstItem="pNB-Om-pEb" firstAttribute="leading" secondItem="MBN-1O-8aW" secondAttribute="leading" constant="8" id="eVL-lC-VfD"/>
                                             <constraint firstItem="IWn-gP-9l3" firstAttribute="top" secondItem="MBN-1O-8aW" secondAttribute="top" constant="8" id="mf7-7K-HXE"/>
-                                            <constraint firstAttribute="trailing" secondItem="1DE-hI-EJw" secondAttribute="trailing" constant="8" id="paV-nV-LY4"/>
                                             <constraint firstItem="IWn-gP-9l3" firstAttribute="leading" secondItem="MBN-1O-8aW" secondAttribute="leading" id="tBv-FE-hAQ"/>
-                                            <constraint firstItem="1DE-hI-EJw" firstAttribute="top" secondItem="pNB-Om-pEb" secondAttribute="bottom" constant="8" id="tRM-8V-YOj"/>
+                                            <constraint firstAttribute="bottom" secondItem="IWn-gP-9l3" secondAttribute="bottom" constant="8" id="zPI-m8-BFG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -238,7 +220,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SD1-xm-Y7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594.20289855072474" y="1166.5178571428571"/>
+            <point key="canvasLocation" x="-609" y="1167"/>
+        </scene>
+        <!--webPageViewController-->
+        <scene sceneID="HeU-Wk-rGH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="webPageViewController" storyboardName="WebPage" referencedIdentifier="webPageViewController" id="L6M-Ke-RIn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v1d-Mv-rQh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYe-4x-eWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="1831"/>
         </scene>
         <!--Homework-->
         <scene sceneID="xeC-jG-q5R">
@@ -258,12 +250,12 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="1320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-pk-g1k" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="299.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="375.66666666666669"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U06-T3-FmA">
                                                 <rect key="frame" x="0.0" y="8" width="414" height="216.66666666666666"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Homework is used to assess your understanding of the course throughout the year and to highlight potential weaknesses earlier on so that you have time to remedy them.  In first year, these homeworks are compulsory. The feedback you get should be actionable and serve as a starting point for your own personal study. Some of the homework questions may cause you to question things you have been taught up to this point, and it is vital that you iron out these discrepancies before you progress further, as a lot of concepts and tools you learn about in first year will return frequently, disguised as more difficult physics.</mutableString>
+                                                <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Homework is used to assess your understanding of the course throughout the year and to highlight potential weaknesses earlier on so that you have time to remedy them.  In first year, these homeworks are compulsory. The feedback you get should be actionable and serve as a starting point for your own personal study. Some of the homework questions may cause you to question things you have been taught up to this point, and it is vital that you iron out these discrepancies before you progress further, as a lot of concepts and tools you learn about in first year will return frequently, disguised as more difficult physics.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -273,23 +265,45 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTB-kT-Row">
-                                                <rect key="frame" x="0.0" y="261.66666666666669" width="414" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTB-kT-Row" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="261.66666666666669" width="398" height="30"/>
+                                                <state key="normal" title="Problem Solving Strategies"/>
+                                                <connections>
+                                                    <action selector="problemSolvingStrategiesPressed:" destination="jm2-Dk-wo3" eventType="touchUpInside" id="McO-Te-WzL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJv-8m-Vea" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="299.66666666666669" width="398" height="30"/>
+                                                <state key="normal" title="Instructions for Level 1 Weekly Problems"/>
+                                                <connections>
+                                                    <action selector="instructionsForWeeklyProblemsPressed:" destination="jm2-Dk-wo3" eventType="touchUpInside" id="5NR-3x-oGw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBi-1o-uyY" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="337.66666666666669" width="398" height="30"/>
+                                                <state key="normal" title="10 Steps to Solving Physics Problems"/>
+                                                <connections>
+                                                    <action selector="tenStepsPressed:" destination="jm2-Dk-wo3" eventType="touchUpInside" id="CZr-uW-ERG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="sTB-kT-Row" firstAttribute="top" secondItem="whe-jc-bsg" secondAttribute="bottom" constant="8" id="26v-fT-VG3"/>
                                             <constraint firstItem="sTB-kT-Row" firstAttribute="top" secondItem="whe-jc-bsg" secondAttribute="bottom" constant="8" id="7kI-2b-VLy"/>
+                                            <constraint firstAttribute="trailing" secondItem="PBi-1o-uyY" secondAttribute="trailing" constant="8" id="DmA-K1-rUh"/>
+                                            <constraint firstItem="PBi-1o-uyY" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" constant="8" id="U5E-7D-Uhj"/>
                                             <constraint firstItem="U06-T3-FmA" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" id="Vli-CO-Yqe"/>
                                             <constraint firstItem="whe-jc-bsg" firstAttribute="top" secondItem="U06-T3-FmA" secondAttribute="bottom" constant="8" id="YeC-NG-uZK"/>
                                             <constraint firstItem="U06-T3-FmA" firstAttribute="top" secondItem="LSP-pk-g1k" secondAttribute="top" constant="8" id="aeQ-VH-qBg"/>
                                             <constraint firstItem="whe-jc-bsg" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" constant="8" id="cNl-WG-bxT"/>
-                                            <constraint firstAttribute="trailing" secondItem="sTB-kT-Row" secondAttribute="trailing" id="g5H-FM-a2I"/>
-                                            <constraint firstItem="sTB-kT-Row" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" id="jxt-Ly-zCo"/>
-                                            <constraint firstAttribute="bottom" secondItem="sTB-kT-Row" secondAttribute="bottom" constant="8" id="vAc-wU-Txy"/>
+                                            <constraint firstAttribute="bottom" secondItem="PBi-1o-uyY" secondAttribute="bottom" constant="8" id="cQg-7T-IWj"/>
+                                            <constraint firstAttribute="trailing" secondItem="oJv-8m-Vea" secondAttribute="trailing" constant="8" id="eSk-jI-dVJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="sTB-kT-Row" secondAttribute="trailing" constant="8" id="g5H-FM-a2I"/>
+                                            <constraint firstItem="sTB-kT-Row" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" constant="8" id="jxt-Ly-zCo"/>
+                                            <constraint firstItem="PBi-1o-uyY" firstAttribute="top" secondItem="oJv-8m-Vea" secondAttribute="bottom" constant="8" id="mvj-1d-cHx"/>
+                                            <constraint firstItem="oJv-8m-Vea" firstAttribute="top" secondItem="sTB-kT-Row" secondAttribute="bottom" constant="8" id="o48-Mz-BZ2"/>
                                             <constraint firstAttribute="trailing" secondItem="U06-T3-FmA" secondAttribute="trailing" id="xfP-5O-agA"/>
+                                            <constraint firstItem="oJv-8m-Vea" firstAttribute="leading" secondItem="LSP-pk-g1k" secondAttribute="leading" constant="8" id="yw7-LH-8iM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -316,10 +330,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Homework" id="hwN-ab-PIc"/>
                     <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <segue destination="L6M-Ke-RIn" kind="showDetail" identifier="homeworkToWebPage" id="4H2-Ry-32c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9M-kt-1b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156.52173913043478" y="1166.5178571428571"/>
+            <point key="canvasLocation" x="155.07246376811597" y="1166.5178571428571"/>
         </scene>
         <!--Labs-->
         <scene sceneID="3MZ-wk-sZE">
@@ -343,8 +360,8 @@
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-Mi-Hsq">
                                                 <rect key="frame" x="0.0" y="8" width="414" height="250"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Laboratory time is an opportunity to learn without having to stay still for 50 minutes. Labs in Physics usually last 3 hours, and in first year you’ll have one a week.  During labs you will be taught invaluable skills that transcend physics, and while tedious, error analysis will cause you to really consider how useful your results are.   Essential to labs is preparation. You should go into each session with a solid theoretical knowledge and make clear notes of your work to aid in report writing.  The video below gives a good example of how to conduct experiments. </mutableString>
+                                                <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Laboratory time is an opportunity to learn without having to stay still for 50 minutes. Labs in Physics usually last 3 hours, and in first year you’ll have one a week.  During labs you will be taught invaluable skills that transcend physics, and while tedious, error analysis will cause you to really consider how useful your results are.   Essential to labs is preparation. You should go into each session with a solid theoretical knowledge and make clear notes of your work to aid in report writing.  The video below gives a good example of how to conduct experiments. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -365,9 +382,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-jV-ngl">
-                                                <rect key="frame" x="0.0" y="554" width="414" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-jV-ngl" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="554" width="398" height="30"/>
+                                                <state key="normal" title="Level 1 Labs Homepage"/>
+                                                <connections>
+                                                    <action selector="labsPressed:" destination="JLX-u3-o1b" eventType="touchUpInside" id="usH-5l-r3U"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-0t-hft">
                                                 <rect key="frame" x="8" y="266" width="44" height="21"/>
@@ -376,19 +396,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="R2l-h5-vY3" firstAttribute="top" secondItem="eH7-Ve-CW8" secondAttribute="bottom" constant="8" id="2tz-ih-3Cb"/>
                                             <constraint firstItem="R2l-h5-vY3" firstAttribute="leading" secondItem="aqB-57-o1T" secondAttribute="leading" constant="8" id="EGr-ZM-CH4"/>
                                             <constraint firstAttribute="trailing" secondItem="eH7-Ve-CW8" secondAttribute="trailing" constant="8" id="M0T-xW-7Wi"/>
                                             <constraint firstItem="eH7-Ve-CW8" firstAttribute="leading" secondItem="aqB-57-o1T" secondAttribute="leading" constant="8" id="QRf-J2-4we"/>
                                             <constraint firstItem="MV0-Mi-Hsq" firstAttribute="top" secondItem="aqB-57-o1T" secondAttribute="top" constant="8" id="UGG-sz-pCD"/>
-                                            <constraint firstItem="KTm-jV-ngl" firstAttribute="top" secondItem="R2l-h5-vY3" secondAttribute="bottom" constant="8" id="Wp7-Bt-i6O"/>
                                             <constraint firstAttribute="bottom" secondItem="KTm-jV-ngl" secondAttribute="bottom" constant="8" id="ZBc-Lo-xST"/>
-                                            <constraint firstAttribute="trailing" secondItem="KTm-jV-ngl" secondAttribute="trailing" id="aos-jq-Uqu"/>
+                                            <constraint firstAttribute="trailing" secondItem="KTm-jV-ngl" secondAttribute="trailing" constant="8" id="aos-jq-Uqu"/>
                                             <constraint firstAttribute="trailing" secondItem="MV0-Mi-Hsq" secondAttribute="trailing" id="bPx-Hc-wRF"/>
                                             <constraint firstItem="eH7-Ve-CW8" firstAttribute="top" secondItem="qCt-0t-hft" secondAttribute="bottom" constant="8" id="dWd-zY-GcM"/>
-                                            <constraint firstItem="KTm-jV-ngl" firstAttribute="leading" secondItem="aqB-57-o1T" secondAttribute="leading" id="hFt-ed-gGf"/>
+                                            <constraint firstItem="KTm-jV-ngl" firstAttribute="leading" secondItem="aqB-57-o1T" secondAttribute="leading" constant="8" id="hFt-ed-gGf"/>
                                             <constraint firstItem="qCt-0t-hft" firstAttribute="leading" secondItem="aqB-57-o1T" secondAttribute="leading" constant="8" id="jBY-Tg-osx"/>
                                             <constraint firstItem="KTm-jV-ngl" firstAttribute="top" secondItem="R2l-h5-vY3" secondAttribute="bottom" constant="8" id="uQ1-XI-Lm2"/>
                                             <constraint firstItem="qCt-0t-hft" firstAttribute="top" secondItem="MV0-Mi-Hsq" secondAttribute="bottom" constant="8" id="vbg-vF-RFK"/>
@@ -422,6 +441,7 @@
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="webView" destination="eH7-Ve-CW8" id="5gy-JM-rQD"/>
+                        <segue destination="L6M-Ke-RIn" kind="showDetail" identifier="labsToWebPage" id="7UQ-fa-Qgl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIQ-LI-Mhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,12 +466,12 @@
                                 <rect key="frame" x="0.0" y="97" width="414" height="1320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ht-Nw-OZA" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="734.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="810.33333333333337"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxn-0K-tew">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="400.33333333333331"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Some of you fear them. Some of you love them. You all have to do them. Given the fact that you’re at Durham University, you probably don’t fare too badly in exams, and marks hovering around 95% are standard for you. Exams at Durham will rarely go that well for you. While the concept is still the same, the questions asked will require more lateral thinking, will be more time pressured, and will be heavily dependent on exam technique as well as brute knowledge. Thankfully, the physics department (typo on original app here) is one of the nicer departments here, and there are a whole host of resources available for you, including past papers and their respective mark schemes. Studying these is what most people find the most effective method (phrasing?) for preparing for your exams. Similar questions and concepts crop up all the time, and if you’ve tackled the question before, you can easily do well in exams. Bear in mind though that there is no holy grail for revision. It is important to set aside a good amount of time to find out HOW you learn best, before you try actually learning.   See the video and links below for more information regarding exams at Durham, and generally how best to prepare for exams at university. </mutableString>
+                                                <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Some of you fear them. Some of you love them. You all have to do them. Given the fact that you’re at Durham University, you probably don’t fare too badly in exams, and marks hovering around 95% are standard for you. Exams at Durham will rarely go that well for you. While the concept is still the same, the questions asked will require more lateral thinking, will be more time pressured, and will be heavily dependent on exam technique as well as brute knowledge. Thankfully, the physics department (typo on original app here) is one of the nicer departments here, and there are a whole host of resources available for you, including past papers and their respective mark schemes. Studying these is what most people find the most effective method (phrasing?) for preparing for your exams. Similar questions and concepts crop up all the time, and if you’ve tackled the question before, you can easily do well in exams. Bear in mind though that there is no holy grail for revision. It is important to set aside a good amount of time to find out HOW you learn best, before you try actually learning.   See the video and links below for more information regarding exams at Durham, and generally how best to prepare for exams at university. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -478,25 +498,48 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co3-yf-55Y">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co3-yf-55Y" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="696.33333333333337" width="398" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Exams Techniques Advice"/>
+                                                <connections>
+                                                    <action selector="examTechniquesPressed:" destination="ndN-un-unI" eventType="touchUpInside" id="sUT-C2-ski"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-yp-Pl4" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="772.33333333333337" width="398" height="30"/>
+                                                <state key="normal" title="How to Pass a Physics Exam - WikiHow"/>
+                                                <connections>
+                                                    <action selector="howToPassPressed:" destination="ndN-un-unI" eventType="touchUpInside" id="Dgz-ag-q1O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKq-h8-yRs" customClass="UICustomButton" customModule="DurPhys" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="734.33333333333337" width="398" height="30"/>
+                                                <state key="normal" title="How to Study Physics - GoConqr"/>
+                                                <connections>
+                                                    <action selector="howToStudyPhysicsPressed:" destination="ndN-un-unI" eventType="touchUpInside" id="a5d-zY-7U1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="qfY-yp-Pl4" firstAttribute="top" secondItem="dKq-h8-yRs" secondAttribute="bottom" constant="8" id="34L-xl-wdi"/>
+                                            <constraint firstAttribute="trailing" secondItem="dKq-h8-yRs" secondAttribute="trailing" constant="8" id="7La-kT-Co9"/>
                                             <constraint firstItem="8jv-hf-hYe" firstAttribute="top" secondItem="Mxn-0K-tew" secondAttribute="bottom" constant="8" id="AXg-kC-STi"/>
                                             <constraint firstItem="co3-yf-55Y" firstAttribute="top" secondItem="IU9-tR-MBd" secondAttribute="bottom" constant="8" id="BMY-WC-Ccg"/>
                                             <constraint firstAttribute="trailing" secondItem="Mxn-0K-tew" secondAttribute="trailing" id="Jtr-Om-x8g"/>
+                                            <constraint firstAttribute="bottom" secondItem="qfY-yp-Pl4" secondAttribute="bottom" constant="8" id="QdR-YQ-hgb"/>
                                             <constraint firstItem="GPH-Dx-igd" firstAttribute="top" secondItem="8jv-hf-hYe" secondAttribute="bottom" constant="8" id="Rzw-5p-0Lz"/>
                                             <constraint firstItem="IU9-tR-MBd" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="TV3-3F-tVM"/>
                                             <constraint firstItem="Mxn-0K-tew" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" id="Upk-Oi-isu"/>
                                             <constraint firstItem="GPH-Dx-igd" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="Vxm-k3-XxI"/>
                                             <constraint firstAttribute="trailing" secondItem="co3-yf-55Y" secondAttribute="trailing" constant="8" id="cma-hO-sOe"/>
-                                            <constraint firstAttribute="bottom" secondItem="co3-yf-55Y" secondAttribute="bottom" constant="8" id="eFR-53-P5U"/>
                                             <constraint firstItem="8jv-hf-hYe" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="eV6-sp-PL4"/>
                                             <constraint firstAttribute="trailing" secondItem="GPH-Dx-igd" secondAttribute="trailing" constant="8" id="fRM-OE-DSv"/>
+                                            <constraint firstAttribute="trailing" secondItem="qfY-yp-Pl4" secondAttribute="trailing" constant="8" id="jaU-Es-wza"/>
+                                            <constraint firstItem="qfY-yp-Pl4" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="nIK-jP-CL1"/>
                                             <constraint firstItem="Mxn-0K-tew" firstAttribute="top" secondItem="4ht-Nw-OZA" secondAttribute="top" id="qMR-KD-Rtp"/>
+                                            <constraint firstItem="dKq-h8-yRs" firstAttribute="top" secondItem="co3-yf-55Y" secondAttribute="bottom" constant="8" id="vNw-3U-HC7"/>
+                                            <constraint firstItem="dKq-h8-yRs" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="vhe-KQ-RLI"/>
                                             <constraint firstItem="IU9-tR-MBd" firstAttribute="top" secondItem="GPH-Dx-igd" secondAttribute="bottom" constant="8" id="zbb-RT-gvy"/>
                                             <constraint firstItem="co3-yf-55Y" firstAttribute="leading" secondItem="4ht-Nw-OZA" secondAttribute="leading" constant="8" id="zmq-Og-U9F"/>
                                         </constraints>
@@ -527,6 +570,7 @@
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="webView" destination="GPH-Dx-igd" id="yao-hk-fYq"/>
+                        <segue destination="L6M-Ke-RIn" kind="showDetail" identifier="examsToWebPage" id="yyR-qa-bYR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnx-hc-u7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -534,4 +578,7 @@
             <point key="canvasLocation" x="1782.608695652174" y="1166.5178571428571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yyR-qa-bYR"/>
+    </inferredMetricsTieBreakers>
 </document>

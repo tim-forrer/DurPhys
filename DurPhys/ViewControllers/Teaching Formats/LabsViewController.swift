@@ -10,6 +10,13 @@ import UIKit
 import WebKit
 
 class LabsViewController: UIViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "labsToWebPage" {
+            let destVC = segue.destination as! WebPageViewController
+            destVC.option = sender as? Option
+        }
+    }
 
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
@@ -22,4 +29,9 @@ class LabsViewController: UIViewController {
         
     }
     
+    @IBAction func labsPressed(_ sender: Any) {
+        let option = Option.nilOption()
+        option.url = "https://www.dur.ac.uk/physics/students/labs/level1/"
+        performSegue(withIdentifier: "labsToWebPage", sender: option)
+    }
 }

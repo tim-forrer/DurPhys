@@ -46,7 +46,6 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
         }
     }
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true) {
-        }
+        self.dismiss(animated: true) {}
     }
 }

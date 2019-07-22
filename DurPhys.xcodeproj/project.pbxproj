@@ -15,6 +15,8 @@
 		22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9E22E4843A002F91A7 /* ExamsViewController.swift */; };
 		22916AA122E48453002F91A7 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916AA022E48453002F91A7 /* HomeworkViewController.swift */; };
 		229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* WebPageViewController.swift */; };
+		22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */; };
+		22AE6A1F22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1E22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift */; };
 		2F7CA5A5C3EECFE8C2A50047 /* Pods_DurPhys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A6D5777642D7A868CFEE77 /* Pods_DurPhys.framework */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		22916A9E22E4843A002F91A7 /* ExamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
 		22916AA022E48453002F91A7 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 		229BB45622DC7EA60053FD2B /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
+		22AE6A1E22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachingFormatsTabBarNavigationController.swift; sourceTree = "<group>"; };
 		925CC78D287E9A59F2529394 /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.release.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
 		C8A6D5777642D7A868CFEE77 /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +89,9 @@
 			children = (
 				22916A9822E469A7002F91A7 /* LecturesViewController.swift */,
 				22916A9A22E48410002F91A7 /* TutorialsViewController.swift */,
+				22916AA022E48453002F91A7 /* HomeworkViewController.swift */,
 				22916A9C22E4842E002F91A7 /* LabsViewController.swift */,
 				22916A9E22E4843A002F91A7 /* ExamsViewController.swift */,
-				22916AA022E48453002F91A7 /* HomeworkViewController.swift */,
 			);
 			path = "Teaching Formats";
 			sourceTree = "<group>";
@@ -170,6 +174,8 @@
 			children = (
 				E940830322D490B800CDF8B4 /* MainMenuCollectionViewCell.swift */,
 				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
+				22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */,
+				22AE6A1E22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 				E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */,
 				E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */,
 				22916AA122E48453002F91A7 /* HomeworkViewController.swift in Sources */,
+				22AE6A1F22E5B56B009A22D5 /* TeachingFormatsTabBarNavigationController.swift in Sources */,
+				22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,

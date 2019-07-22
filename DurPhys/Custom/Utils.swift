@@ -29,20 +29,30 @@ class Utils {
 
 class Option {
     
-    let name: String
-    let label: String
-    let section: String?
-    let url: String?
-    let image: UIImage
-    let loginPossible: Bool
+    var name: String?
+    var label: String?
+    var section: String?
+    var url: String?
+    var image: UIImage?
+    var loginPossible: Bool
     
-    init(name: String, label: String, section:String?, url: String?, image: UIImage, loginPossible: Bool) {
+    init(name: String?, label: String?, section:String?, url: String?, image: UIImage?, loginPossible: Bool) {
         self.name = name
         self.label = label
         self.section = section
         self.url = url
         self.image = image
         self.loginPossible = loginPossible
+    }
+    
+    class func nilOption() -> Option {
+        let option = Option(name: nil,
+                            label: nil,
+                            section: nil,
+                            url: nil,
+                            image: nil,
+                            loginPossible: false)
+        return option
     }
     
     class func menuOptions() -> [Option] {

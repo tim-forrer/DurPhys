@@ -179,7 +179,7 @@
                     <connections>
                         <outlet property="loginButton" destination="AyI-mA-UY8" id="WUp-5s-4iV"/>
                         <outlet property="navDrawerTableView" destination="BWb-uY-NjI" id="ZlE-up-Ggm"/>
-                        <segue destination="BpD-lT-x7V" kind="show" identifier="navDrawerToWebPage" id="OgO-mn-8Ht"/>
+                        <segue destination="BpD-lT-x7V" kind="showDetail" identifier="navDrawerToWebPage" id="OgO-mn-8Ht"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rE-du-vET" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,11 +192,11 @@
                 <viewControllerPlaceholder storyboardIdentifier="webPageViewController" storyboardName="WebPage" referencedIdentifier="webPageViewController" id="BpD-lT-x7V" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVI-n4-krO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="359"/>
+            <point key="canvasLocation" x="1496" y="42"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OgO-mn-8Ht"/>
+        <segue reference="1CO-as-LWc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
