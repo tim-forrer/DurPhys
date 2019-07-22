@@ -23,3 +23,4 @@ This app is designed to work with iPhone 5S and above. iPads are not actively su
 
 Thanks to the following people for their libraries which have been implemented in this project:
 * [Marcos Griselli](https://github.com/marcosgriselli) for his [Swipeable Tab Bar Controller](https://github.com/marcosgriselli/SwipeableTabBarController)
+* [Mapbox](https://www.mapbox.com/) for their [Mapbox SDK for iOS](https://www.mapbox.com/install/ios/)
