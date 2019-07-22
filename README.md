@@ -10,11 +10,11 @@ This app is designed to work with iPhone 5S and above. iPads are not actively su
 - [x] Set up of underlying app structure.
 - [x] Design of main menu.
 - [x] Navigation Drawer
-- [ ] Design Teaching Formats pages (almost done, just missing button links and colouring of background).
+- [x] Design Teaching Formats pages.
+- [ ] Set up mapbox (or similarly appropriate API).
   
 ### Still to do:
-- [ ] App login using https://timetable.dur.ac.uk to verify credentials.
+- [ ] App login using https://timetable.dur.ac.uk to verify credentials (may change the test url).
 - [ ] JS Injection of aforementioned credientials into PSP, Email and DUO pages.
 - [ ] Scrape the physics staff page for use in Important Contacts.
 - [ ] Scrape appropriate module information for use in Course Information.
-- [ ] Set up mapbox (or similarly appropriate API).
