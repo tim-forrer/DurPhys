@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		130E4F7F994B9DA11A5CD8D4 /* Pods_DurPhys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9AB21E4084C5E8B3787A1E /* Pods_DurPhys.framework */; };
+		2258339622E713B100FF50BE /* Education.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2258339522E713B100FF50BE /* Education.storyboard */; };
 		226BDB5322E619BA005D298E /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BDB5222E619BA005D298E /* Option.swift */; };
 		226EFF1A22E078FA00226D86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EFF1922E078FA00226D86 /* WebKit.framework */; };
 		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		0B937455ADF37453D2596A37 /* Pods-DurPhys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.debug.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.debug.xcconfig"; sourceTree = "<group>"; };
 		0DA29ED068EA6A8959D155DF /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.release.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
+		2258339522E713B100FF50BE /* Education.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Education.storyboard; sourceTree = "<group>"; };
 		226BDB5222E619BA005D298E /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		226EFF1922E078FA00226D86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				E94082F322D48F8600CDF8B4 /* Main.storyboard */,
 				E940831122D4E5E700CDF8B4 /* Course Information (Weekly Timetables).storyboard */,
 				E940830F22D4E5B200CDF8B4 /* Getting Around.storyboard */,
+				2258339522E713B100FF50BE /* Education.storyboard */,
 				E940831322D4E5F900CDF8B4 /* Important Contacts.storyboard */,
 				E940831522D4E60900CDF8B4 /* Teaching Formats.storyboard */,
 				2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */,
@@ -250,6 +253,7 @@
 				E940831222D4E5E700CDF8B4 /* Course Information (Weekly Timetables).storyboard in Resources */,
 				2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */,
 				E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */,
+				2258339622E713B100FF50BE /* Education.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

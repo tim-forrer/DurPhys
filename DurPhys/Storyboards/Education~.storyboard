@@ -42,6 +42,22 @@
             </objects>
             <point key="canvasLocation" x="648" y="843"/>
         </scene>
+        <!--Education-->
+        <scene sceneID="Si8-Dj-2Ko">
+            <objects>
+                <viewController title="Education" id="mFb-Mb-0s0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="99K-0m-zgB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jvh-NT-skR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Education" id="6Mk-OS-AV0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2g-N2-9S4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="138"/>
+        </scene>
         <!--Getting Around-->
         <scene sceneID="I3L-gT-0rZ">
             <objects>
@@ -52,7 +68,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QRL-xq-IaX" kind="relationship" relationship="viewControllers" id="NsU-0K-FMN"/>
+                        <segue destination="mFb-Mb-0s0" kind="relationship" relationship="viewControllers" id="NsU-0K-FMN"/>
                         <segue destination="YZ3-X7-SBd" kind="relationship" relationship="viewControllers" id="394-pf-xeG"/>
                         <segue destination="L3l-uI-Y3b" kind="relationship" relationship="viewControllers" id="DhW-jJ-7fu"/>
                     </connections>
@@ -60,16 +76,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0O0-8e-R0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1091" y="138"/>
-        </scene>
-        <!--Education-->
-        <scene sceneID="VoN-QV-XJu">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Education" id="QRL-xq-IaX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="G9O-k5-iPb"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u1R-4l-MBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="648" y="138"/>
         </scene>
     </scenes>
 </document>
