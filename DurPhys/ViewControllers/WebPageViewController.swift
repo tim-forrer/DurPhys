@@ -25,6 +25,7 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
         
         if option.loginPossible {
             navBar.isHidden = true
+            self.title = option.label
             
         } else {
             navigationController?.setNavigationBarHidden(true, animated: false)
