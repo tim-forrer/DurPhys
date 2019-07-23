@@ -24,6 +24,10 @@
 	<string>LaunchScreen</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoicGh5c2ljcy1hcHAiLCJhIjoiY2p5ZW1hdjJ0MDd2cjNjbW15cG05eWVlOCJ9.ufvHMSw9z6wOToFW7HOdBg</string>
+	<key>NSLocationWhenInUseDescription</key>
+	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
