@@ -9,7 +9,7 @@
 import UIKit
 import SwipeableTabBarController
 
-class TeachingFormatsTabBarNavigationController: SwipeableTabBarController {
+class CustomTabBarController: SwipeableTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

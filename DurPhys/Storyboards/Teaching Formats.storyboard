@@ -138,7 +138,7 @@
         <!--Teaching Formats-->
         <scene sceneID="EDa-ya-kE0">
             <objects>
-                <tabBarController storyboardIdentifier="Teaching Formats" title="Teaching Formats" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="zDu-Hi-dEl" customClass="TeachingFormatsTabBarNavigationController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Teaching Formats" title="Teaching Formats" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="zDu-Hi-dEl" customClass="CustomTabBarController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fh7-2q-opz">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJf-dd-9M1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="-576"/>
+            <point key="canvasLocation" x="-239" y="-273"/>
         </scene>
         <!--Food/Drink-->
         <scene sceneID="vTr-X3-Br7">
@@ -40,12 +40,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ht-sD-2GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="843"/>
+            <point key="canvasLocation" x="-239" y="564"/>
         </scene>
         <!--Getting Around-->
         <scene sceneID="I3L-gT-0rZ">
             <objects>
-                <tabBarController storyboardIdentifier="Getting Around" title="Getting Around" id="lkj-W5-5sc" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Getting Around" title="Getting Around" id="lkj-W5-5sc" customClass="CustomTabBarController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uTY-K1-1p1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +69,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1R-4l-MBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="138"/>
+            <point key="canvasLocation" x="-238" y="138"/>
         </scene>
     </scenes>
 </document>
