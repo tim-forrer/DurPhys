@@ -13,6 +13,8 @@ class LecturesViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
+    let option = Option.nilOption()
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "lecturesToWebPage" {
             let destVC = segue.destination as! WebPageViewController
@@ -30,8 +32,6 @@ class LecturesViewController: UIViewController {
     }
 
     @IBAction func durhamBlogPressed(_ sender: Any) {
-        let option = Option.nilOption()
-        
         option.url = "https://community.dur.ac.uk/blogs/what-have-i-learned-in-my-first-year-at-uni-apart-from-physics/"
         
         performSegue(withIdentifier: "lecturesToWebPage", sender: option)
@@ -39,8 +39,6 @@ class LecturesViewController: UIViewController {
     }
     
     @IBAction func betterNotesPressed(_ sender: Any) {
-        let option = Option.nilOption()
-        
         option.url = "https://www.savethestudent.org/extra-guides/take-better-lecture-notes-8-easy-steps.html"
 
         performSegue(withIdentifier: "lecturesToWebPage", sender: option)

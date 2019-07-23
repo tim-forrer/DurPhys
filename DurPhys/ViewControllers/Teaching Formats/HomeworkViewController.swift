@@ -10,6 +10,8 @@ import UIKit
 
 class HomeworkViewController: UIViewController {
     
+    let option = Option.nilOption()
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "homeworkToWebPage" {
             let destVC = segue.destination as! WebPageViewController
@@ -25,18 +27,15 @@ class HomeworkViewController: UIViewController {
     
     
     @IBAction func problemSolvingStrategiesPressed(_ sender: Any) {
-        let option = Option.nilOption()
         option.url = "https://www.csun.edu/science/courses/525/old_files/thinking/probsolv_physics.htm"
         performSegue(withIdentifier: "homeworkToWebPage", sender: option)
     }
     
     @IBAction func instructionsForWeeklyProblemsPressed(_ sender: Any) {
-        let option = Option.nilOption()
         option.url = "https://www.dur.ac.uk/resources/physics/students/level1weeklyproblems.pdf"
         performSegue(withIdentifier: "homeworkToWebPage", sender: option)
     }
     @IBAction func tenStepsPressed(_ sender: Any) {
-        let option = Option.nilOption()
         option.url = "https://www.smarterthanthat.com/physics/physics-dont-panic-10-steps-to-solving-most-physics-problems/"
         performSegue(withIdentifier: "homeworkToWebPage", sender: option)
     }
