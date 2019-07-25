@@ -28,7 +28,7 @@ class MainMenuViewController: UIViewController{
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
         
-        Contact.loadContactsHTML()
+        //Contact.loadContactsHTML()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
