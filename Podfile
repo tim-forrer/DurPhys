@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+  platform :ios, '12.0'
 
 target 'DurPhys' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,5 +9,6 @@ target 'DurPhys' do
 
   pod "SwipeableTabBarController"
   pod "Mapbox-iOS-SDK", "~> 5.1"
+  pod "SwiftSoup"
 
 end

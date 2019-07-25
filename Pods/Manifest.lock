@@ -1,20 +1,24 @@
 PODS:
   - Mapbox-iOS-SDK (5.1.1)
+  - SwiftSoup (2.2.0)
   - SwipeableTabBarController (2.1.1)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 5.1)
+  - SwiftSoup
   - SwipeableTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Mapbox-iOS-SDK
+    - SwiftSoup
     - SwipeableTabBarController
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 528739007963ba7f63996d8ea3b382597627f272
+  SwiftSoup: 230991361c5ba249d140161860a3864a28b63860
   SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
 
-PODFILE CHECKSUM: a5e7f4a8fbfc5cc9c58c43cbb5765e0a6225dbfa
+PODFILE CHECKSUM: 886cb28a8b0fc00a6639e1d6f84681b91e3ed05c
 
 COCOAPODS: 1.7.5

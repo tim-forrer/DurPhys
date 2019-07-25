@@ -15,80 +15,202 @@
 			dependencies = (
 			);
 			name = "Mapbox-iOS-SDK";
+			productName = "Mapbox-iOS-SDK";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0667FBB229A6129D0C1EE0A3EC6A6FB9 /* Pods-DurPhys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */; };
-		20D55AFCC42D59D170A8C70333D89EB0 /* Pods-DurPhys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C10C563D493ADD1EBB8F5BD13D6496 /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0323040E0BAAB427F131B8B7593C1823 /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18280C50FD7C474809FCACE8426B2A2A /* QueryParser.swift */; };
+		07DC1E76B4AC8D6F706C134BE25BFCB6 /* HttpStatusException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264AAF5D42F26AA64E173CB9D1163785 /* HttpStatusException.swift */; };
+		08F669849B088847C5391DCA0D21EBCA /* XmlDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5364D7B8A42FBA5B232FFD2DCFCC6 /* XmlDeclaration.swift */; };
+		0ACC881DFA0D90EFAFA203F57BCABF31 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B402123A6F0C579E969EE924D82 /* OrderedDictionary.swift */; };
+		13646ECCC236443CE369AC3AB04C85A2 /* CombiningEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB312729302C0E4ADFE354F03D72339 /* CombiningEvaluator.swift */; };
+		184FEFB86BB797EC34B8245B2448C9B1 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C12F0A6331E71B83E53AC49F229455 /* StreamReader.swift */; };
+		1B1E44407BA5AB6B543BFD609D48FB4D /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E25A0083DDC20102A0B217A3822E420 /* Whitelist.swift */; };
+		1F6A5C0F3BEF9084C8E9066D3F8AD4F1 /* TokeniserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226449A870A7C09BE4EDE7D358CCBAE /* TokeniserState.swift */; };
+		20A1DFD1B80C60CDDBBB720DA308721F /* Pods-DurPhys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */; };
+		212095A3D1CE5571B351D4999B2D72F7 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594CB222A6286FEEA81DD226A411D426 /* ParseError.swift */; };
+		23605B9E6B3F4C6849BEB2995B8D5CC9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581AC533BB7DABF4EEEFC9D3F0C0852 /* Node.swift */; };
+		268BA1DBE8391AF20EE9D562480A2040 /* StructuralEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F118E9C5888E714029395F884369B /* StructuralEvaluator.swift */; };
+		314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 683ABB8F9D5D0B6A86EDDA09476E72E6 /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CE9D1921A536BC84B9C789DB45CB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		32CCC5C914C09629148F0A07CA4A1D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175D8FD92FB0AB4AE87CDF1F6D065B1 /* SwipeAnimationType.swift */; };
-		599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F6CEBC8ACF733EA2566555878100F9 /* SwipeTransitionAnimator.swift */; };
-		5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0BFA5358F273A66ABB6475CB243CD /* UIKit+Extensions.swift */; };
-		8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67E69A1D6BA2EBC04F918FD9B8A10F /* SwipeInteractor.swift */; };
-		9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C202B7F94E5713ABB56F8460ECE1D /* SwipeableTabBarController.swift */; };
-		BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFC0A83BA09194FB6385B14A5EAE77E /* SwipeTransitioningProtocol.swift */; };
-		F06C0F52200CC6886A756B0DBDEC240C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B63DF9B15F77A7278B995461CBE39 /* SwipeableTabBarController-dummy.m */; };
+		3A85CBC090CD9016F473398DEBBBC4D9 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F6ABEF061FF9FA198B6E7250F0D6D1 /* Element.swift */; };
+		3DD15E341B2A822AE4170B66EF84785B /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491109AD71B383DB1C73613C1438CB06 /* FormElement.swift */; };
+		45AE0479CEA0DCD1CC289FAC7A0D74CD /* Tokeniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4DAB8A0D73C803D3B769760128289 /* Tokeniser.swift */; };
+		48061A6A40378AA49349A4E8E6E815D5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF177CCA6FD1018DDB9B0E3FBA3054 /* Comment.swift */; };
+		4860E1263F573B4EEA7BDF236A1199D0 /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161DA651B25B16ABCD54257878BB2C48 /* SimpleDictionary.swift */; };
+		48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC91AEF090DBB31D23AF185B928A39B /* SwipeAnimationType.swift */; };
+		49669BB6E34D7BD8E96690743074A041 /* Pods-DurPhys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2DC0B5E57666B3222AD7F24E579353 /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD183334A47B112AAA3DADD2EC20AACA /* DocumentType.swift */; };
+		51C521B58C9C7F3E55CBBF64231CAD92 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0E1E2C777BBC577D44C3E01639AC7 /* Entities.swift */; };
+		599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06E3A8C138F87A8016F6793623F07D /* SwipeTransitionAnimator.swift */; };
+		59CCEF0DB3257C3791FB7FEF729656A1 /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A154CBD1DF3F5BAEA22D7D88B5389250 /* SwiftSoup-dummy.m */; };
+		5EA9213700B4A83923FE1F76199D7478 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D880D407AD8099F93D98A5ABF1CD33 /* TextNode.swift */; };
+		5F4C6190E5A08291473F5C0E88FC3739 /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D8605A08D4187101DC1CE28D5C3990B /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FEBA8FF78DF801D6E331957C77DA6 /* UIKit+Extensions.swift */; };
+		605E6909CF08E0DAD68A675C92906264 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CBF0DA1F84D1812A27E2B5430ABF85 /* String.swift */; };
+		6307C9763A4BF4AD4A57596F5756E3D6 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F420C58540AEAD13AD881CEC09FBCA55 /* Selector.swift */; };
+		6400A9389A0A3E67315FA4FD500FB283 /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0625E16A090F411C6B7586E45C3CB1 /* SwiftSoup.swift */; };
+		64641F162787638B7319C71A2986F2D1 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6EFFD3EC3FD88B557595BDA27E6402 /* Document.swift */; };
+		68912B01B6D7D4021137BF72C32294F0 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6FC24B86B8C16AEE307A6E9EC382B /* Collector.swift */; };
+		6D755DA0247FE8D37B6D95D48B8D1697 /* NodeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A7B35DE3EAD570E82B25463CF9BF2 /* NodeVisitor.swift */; };
+		6E8C2F72232BD8D69C06FD9BD135B0E0 /* HtmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCCEF2D9B49041154A3743D5D3911B /* HtmlTreeBuilder.swift */; };
+		717A618E1185ED3073BF6557DAD82429 /* UnicodeScalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CF8FA6B104E3A14A87B4CB9ECF96A3 /* UnicodeScalar.swift */; };
+		7383E209342B658049AAC2F6A47CD54E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28F577F0A46726EA917C29E3A15A81 /* Token.swift */; };
+		74ED1DAD719312ED2E1EAB6BB0BBFF71 /* BooleanAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECE4E8A7167A9C202AF444C295584C /* BooleanAttribute.swift */; };
+		787BA99F9006B790A7E2775CF4371A15 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A08BDAAC9ACA1C1237450D589DD996 /* Exception.swift */; };
+		7B5C603DF6AE98590BD5043DEE6533D2 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9EE6D3DA034A7F0B71ED54E8BD21E /* StringBuilder.swift */; };
+		8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4263B5635E1410FABDBCA5F89EBB1202 /* SwipeInteractor.swift */; };
+		8A156E7D9F56597ABF006024CE5A38B2 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDEBD936409E80BD92988DD2D722E1A /* Parser.swift */; };
+		8CCF800901928887AA517E01C12E7AA4 /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FBD1C218249A07621B227AB177BE8 /* CharacterExt.swift */; };
+		96D271E1F3B86DABCAFBF96FA0F2EC03 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56847ABBCC7C8F3040F1E86FCB05988C /* Attributes.swift */; };
+		9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74665E8C5AF4E791061C9E883DAAC6E /* SwipeableTabBarController.swift */; };
+		984F3128934C6FF64C4681754628FF0C /* CharacterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EA16A362A8744FAFCABFF690506CF8 /* CharacterReader.swift */; };
+		9C390892DA03BA76F8078B5E9F1EE971 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E676F4E122F7246C5C849ECC61BDF8C0 /* ArrayExt.swift */; };
+		9D9E42B84863721085CB2C0EE1467CA6 /* TokenQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2024AA9E75A3A1A988C30A2148F1A48 /* TokenQueue.swift */; };
+		9E2E92CA61302CFAA8D2F97AC088C5C3 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22BE6D2C5B997730CD1CF2D65EFA587 /* Attribute.swift */; };
+		9F0612E3E2BD1F85D7620321BEFBE2DC /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67605A7B2235587465EF3E33A6996D /* StringUtil.swift */; };
+		A072BEECFC9A659AC25573E82E8E0D65 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57442F9FAAB58F7D369DA8B2371241F3 /* Validate.swift */; };
+		A5C7DD41D995EAAA0E92F240D5B0523B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A815B081D1C20E722584BEDC86E1BA5C /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A939EA0238F0150B3B45FFAB8793D /* OrderedSet.swift */; };
+		AE698A9FA4B6EDA81A7F68DB435E3309 /* DataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306EC35295C9F3691495EF1EC4D6FCA /* DataNode.swift */; };
+		AE993559119E69F0C50BCC2EBBF77E61 /* SerializationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2381A949C6DA4D95A83854DA5034B6 /* SerializationException.swift */; };
+		AF50D130B49C380ED075104BB7671FAB /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7431DAF2B3050B6C0FEF72679A81EE4 /* Tag.swift */; };
+		B22E0A04FCA9C46583CDE32FD83CFE1E /* ParseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F911D19C4646867A22CA25D6E6378 /* ParseSettings.swift */; };
+		BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C3C472A9DD7BFE17E54EF3A5050F0 /* SwipeTransitioningProtocol.swift */; };
+		BF10823605FA7A0062852CA043794186 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0055FBC2030C7DCFAE1083AE5EB88B0 /* Connection.swift */; };
+		C88398AADEBDF75E34AEF8564807EBBA /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A48E3A1DF179FFC5169B98EA1ABEF /* TreeBuilder.swift */; };
+		CCCB6C8A300C9117E119983C5E693781 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9275E914519D9163051A67A919A3E387 /* Cleaner.swift */; };
+		D44EE0B232CCEDE658102DE87A02DAD2 /* NodeTraversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EFAD7EE0C44B00FFB212105CFAF105 /* NodeTraversor.swift */; };
+		DB16F4FC1AC7BEFE72972A8B7F7629B1 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC85A148A3815457D4B066A7E22FA78 /* XmlTreeBuilder.swift */; };
+		E18636DA726A4EB4566C30DC572CEF30 /* ParseErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2431901F20138066905D24DACCA613D /* ParseErrorList.swift */; };
+		E25940181A204C2DDDE31DC346035755 /* HtmlTreeBuilderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C52742D7C8D21758DC70EF387FBA6 /* HtmlTreeBuilderState.swift */; };
+		EC2ADA20DC4D6D68A1CED448533F7987 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13849E20791A7D16F4E54844B274D1A7 /* Pattern.swift */; };
+		F17880FE84897581A0353EA6C49E8909 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FD347161B8B710DB2CD0776286AFB /* Evaluator.swift */; };
+		F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C2F990ED36690B9F2C7C83FA7307E /* SwipeableTabBarController-dummy.m */; };
+		F8C0CA7AF2CC574511A5C8C02DEDCF43 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DB08A47672411014662EDC1AE17C2 /* Elements.swift */; };
+		FAF882C254A4D68E3B8DB2F392F5AE8D /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CB29B6BAD64E465BA56411744175A9 /* DataUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D62FC57FA7EECF2BB924589300C96CB /* PBXContainerItemProxy */ = {
+		446714308992C32487AF65E8F905E9CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3CD2985EC5826C32DE2E7CBE62FB81ED;
-			remoteInfo = SwipeableTabBarController;
+			remoteGlobalIDString = D89F48405DFAFEF441B4E758A15117A5;
+			remoteInfo = SwiftSoup;
 		};
-		C907890CF0A88F65F838E7470021A9FA /* PBXContainerItemProxy */ = {
+		801A6BEDC0FAF9AFFAF23DF119C99A3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6746AB6F4D992402B59D1651512EA19E;
 			remoteInfo = "Mapbox-iOS-SDK";
 		};
+		AAD27003356A88A3782ADB79CD06C33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD2985EC5826C32DE2E7CBE62FB81ED;
+			remoteInfo = SwipeableTabBarController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0031DBD518C37A4FFB66C9D3CBF7476E /* Pods-DurPhys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DurPhys-umbrella.h"; sourceTree = "<group>"; };
-		04E3A242EBBBBC5874027F4F359E16F1 /* SwipeableTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwipeableTabBarController-Info.plist"; sourceTree = "<group>"; };
-		2FFC0A83BA09194FB6385B14A5EAE77E /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		03D880D407AD8099F93D98A5ABF1CD33 /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
+		088F118E9C5888E714029395F884369B /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
+		0BE5364D7B8A42FBA5B232FFD2DCFCC6 /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
+		0D6EFFD3EC3FD88B557595BDA27E6402 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		0DC85A148A3815457D4B066A7E22FA78 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
+		13849E20791A7D16F4E54844B274D1A7 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		14FF177CCA6FD1018DDB9B0E3FBA3054 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
+		161DA651B25B16ABCD54257878BB2C48 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
+		18280C50FD7C474809FCACE8426B2A2A /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
+		1B67605A7B2235587465EF3E33A6996D /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
+		1E25A0083DDC20102A0B217A3822E420 /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
+		1EB312729302C0E4ADFE354F03D72339 /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
+		20EFAD7EE0C44B00FFB212105CFAF105 /* NodeTraversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeTraversor.swift; path = Sources/NodeTraversor.swift; sourceTree = "<group>"; };
+		24C12F0A6331E71B83E53AC49F229455 /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = Sources/StreamReader.swift; sourceTree = "<group>"; };
+		264AAF5D42F26AA64E173CB9D1163785 /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
+		264C3C472A9DD7BFE17E54EF3A5050F0 /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		27844B19A1E1270110EB87C5A13EAD13 /* SwiftSoup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSoup-Info.plist"; sourceTree = "<group>"; };
+		2EC6FC24B86B8C16AEE307A6E9EC382B /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		3079C1C1B6E8DE7C1C8AAB6A61FF2BD9 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33B9EE6D3DA034A7F0B71ED54E8BD21E /* StringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBuilder.swift; path = Sources/StringBuilder.swift; sourceTree = "<group>"; };
 		357EE4CD84D04533B1837ADC2862049F /* Pods-DurPhys-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DurPhys-frameworks.sh"; sourceTree = "<group>"; };
-		55F6CEBC8ACF733EA2566555878100F9 /* SwipeTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionAnimator.swift; path = SwipeableTabBarController/Classes/SwipeTransitionAnimator.swift; sourceTree = "<group>"; };
-		5BE66300E7FB0470BCFE5C9085CDA810 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		3581AC533BB7DABF4EEEFC9D3F0C0852 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		39F6ABEF061FF9FA198B6E7250F0D6D1 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		3C28F577F0A46726EA917C29E3A15A81 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
+		4226449A870A7C09BE4EDE7D358CCBAE /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
+		4263B5635E1410FABDBCA5F89EBB1202 /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
+		48DAA8C8C8FE5CE7FB4DECF077B48E73 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		491109AD71B383DB1C73613C1438CB06 /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
+		4A1A939EA0238F0150B3B45FFAB8793D /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
+		4D8605A08D4187101DC1CE28D5C3990B /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		56847ABBCC7C8F3040F1E86FCB05988C /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		57442F9FAAB58F7D369DA8B2371241F3 /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
+		580C2F990ED36690B9F2C7C83FA7307E /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		594CB222A6286FEEA81DD226A411D426 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
 		5E08F98323ACC587C90EDBA6B4FB8DDE /* Pods-DurPhys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DurPhys.debug.xcconfig"; sourceTree = "<group>"; };
-		6175D8FD92FB0AB4AE87CDF1F6D065B1 /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
-		65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5F911D19C4646867A22CA25D6E6378 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
+		60CBF0DA1F84D1812A27E2B5430ABF85 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
+		6306EC35295C9F3691495EF1EC4D6FCA /* DataNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataNode.swift; path = Sources/DataNode.swift; sourceTree = "<group>"; };
+		63998C84CA98CF324688131716526348 /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
+		65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		683ABB8F9D5D0B6A86EDDA09476E72E6 /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
 		6E1C6416C5077B06112C3DF87A78C413 /* Pods-DurPhys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DurPhys.modulemap"; sourceTree = "<group>"; };
+		73ECE4E8A7167A9C202AF444C295584C /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
 		741681C9112CB8D88DC5B8BC64CABED2 /* Pods-DurPhys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DurPhys-acknowledgements.plist"; sourceTree = "<group>"; };
-		7DD0979048285EB1DDE206E4766EA9B5 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
 		7FE9EFC8B3631F5AF2B27F935ECF4084 /* Pods-DurPhys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DurPhys-dummy.m"; sourceTree = "<group>"; };
-		967D5723D639BC0C1468BFDE3EF99C51 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DurPhys.framework; path = "Pods-DurPhys.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC4B63DF9B15F77A7278B995461CBE39 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		85CF8FA6B104E3A14A87B4CB9ECF96A3 /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
+		883DB08A47672411014662EDC1AE17C2 /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
+		90EA16A362A8744FAFCABFF690506CF8 /* CharacterReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterReader.swift; path = Sources/CharacterReader.swift; sourceTree = "<group>"; };
+		9275E914519D9163051A67A919A3E387 /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
+		9671A85F0B8C39857802BDBE1982EE86 /* SwiftSoup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.xcconfig; sourceTree = "<group>"; };
+		98C2B0DDA4ED9AFF2E6FFC68203CDCFA /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC4DAB8A0D73C803D3B769760128289 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
+		9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDEBD936409E80BD92988DD2D722E1A /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		A0390147FE78D108490B12BE1317DA5D /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		A154CBD1DF3F5BAEA22D7D88B5389250 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
+		A2431901F20138066905D24DACCA613D /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
+		A74665E8C5AF4E791061C9E883DAAC6E /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		AA2381A949C6DA4D95A83854DA5034B6 /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
 		AEBF018C026F892B99E59E86940E7DE9 /* Pods-DurPhys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DurPhys-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5B0BFA5358F273A66ABB6475CB243CD /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
-		BD67E69A1D6BA2EBC04F918FD9B8A10F /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
-		C8C10C563D493ADD1EBB8F5BD13D6496 /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
-		CA30AA9DAF8DBFD2302F920E03373A27 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
-		D76C202B7F94E5713ABB56F8460ECE1D /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		B48C52742D7C8D21758DC70EF387FBA6 /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
+		BAC91AEF090DBB31D23AF185B928A39B /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
+		BEB7158E516643A901796621A7BD27A4 /* Mapbox-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mapbox-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		C0055FBC2030C7DCFAE1083AE5EB88B0 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
+		C68FD347161B8B710DB2CD0776286AFB /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
+		C7431DAF2B3050B6C0FEF72679A81EE4 /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
+		CD183334A47B112AAA3DADD2EC20AACA /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
+		CD76D63CC17A1D4229444235959D2CB7 /* SwipeableTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwipeableTabBarController-Info.plist"; sourceTree = "<group>"; };
+		D2024AA9E75A3A1A988C30A2148F1A48 /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
+		D22BE6D2C5B997730CD1CF2D65EFA587 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
+		D6CCCEF2D9B49041154A3743D5D3911B /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
+		D7E0E1E2C777BBC577D44C3E01639AC7 /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
+		D93FBD1C218249A07621B227AB177BE8 /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
+		DD06E3A8C138F87A8016F6793623F07D /* SwipeTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionAnimator.swift; path = SwipeableTabBarController/Classes/SwipeTransitionAnimator.swift; sourceTree = "<group>"; };
+		DE5A48E3A1DF179FFC5169B98EA1ABEF /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
+		E676F4E122F7246C5C849ECC61BDF8C0 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
+		ED5F8B402123A6F0C579E969EE924D82 /* OrderedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedDictionary.swift; path = Sources/OrderedDictionary.swift; sourceTree = "<group>"; };
+		EE0625E16A090F411C6B7586E45C3CB1 /* SwiftSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSoup.swift; path = Sources/SwiftSoup.swift; sourceTree = "<group>"; };
+		EE7A7B35DE3EAD570E82B25463CF9BF2 /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
 		EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
-		F3F6FA1A8260BF903D1A5079ED41CEC0 /* Mapbox-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mapbox-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		F420C58540AEAD13AD881CEC09FBCA55 /* Selector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Selector.swift; path = Sources/Selector.swift; sourceTree = "<group>"; };
+		F5A08BDAAC9ACA1C1237450D589DD996 /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
+		F83FEBA8FF78DF801D6E331957C77DA6 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		F8CB29B6BAD64E465BA56411744175A9 /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
+		FD63451FC47D622CBAEAFEE922C26C45 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		FF9EE180A01327A8518D675E84A56018 /* Pods-DurPhys-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DurPhys-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		002001619CC26F8E96E16EC4E2FF2143 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F06C0F52200CC6886A756B0DBDEC240C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09B81CDE76191C834662505FE81A34E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,25 +219,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91F99EDB7638ECFFFDDBBE28EFDAC5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CE9D1921A536BC84B9C789DB45CB9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA3C25FF8D0CE6F53DE344F076CD143B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C7DD41D995EAAA0E92F240D5B0523B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DFDB81E284690D248DE64E5613BDB71 /* Frameworks */ = {
+		212237C3857B6C2FF2544B8EC48BDA8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5BE66300E7FB0470BCFE5C9085CDA810 /* Mapbox.framework */,
+				8E53EE2F1ADBDCABC85D7771A11F5B96 /* Mapbox-iOS-SDK */,
+				8139C564B931EFD71766E0C78D35BC8A /* SwiftSoup */,
+				35B35A9F381D6F90D72343FA4980CC7C /* SwipeableTabBarController */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		28206A9EDC8DF70EFBE9A1397A2E8442 /* Mapbox-iOS-SDK */ = {
+		35B35A9F381D6F90D72343FA4980CC7C /* SwipeableTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				1DFDB81E284690D248DE64E5613BDB71 /* Frameworks */,
-				679AFA21A147F507B0938DC553BD1876 /* Support Files */,
+				A74665E8C5AF4E791061C9E883DAAC6E /* SwipeableTabBarController.swift */,
+				BAC91AEF090DBB31D23AF185B928A39B /* SwipeAnimationType.swift */,
+				4263B5635E1410FABDBCA5F89EBB1202 /* SwipeInteractor.swift */,
+				DD06E3A8C138F87A8016F6793623F07D /* SwipeTransitionAnimator.swift */,
+				264C3C472A9DD7BFE17E54EF3A5050F0 /* SwipeTransitioningProtocol.swift */,
+				F83FEBA8FF78DF801D6E331957C77DA6 /* UIKit+Extensions.swift */,
+				985DF7317387540CA7ADDAE18BDF566A /* Support Files */,
 			);
-			name = "Mapbox-iOS-SDK";
-			path = "Mapbox-iOS-SDK";
+			path = SwipeableTabBarController;
 			sourceTree = "<group>";
 		};
 		4F6A06B821308AC52787CE5E41D7A8D9 /* Pods-DurPhys */ = {
@@ -135,36 +279,77 @@
 			path = "Target Support Files/Pods-DurPhys";
 			sourceTree = "<group>";
 		};
-		522D68932399F0389AFC7FD88D004233 /* Support Files */ = {
+		8139C564B931EFD71766E0C78D35BC8A /* SwiftSoup */ = {
 			isa = PBXGroup;
 			children = (
-				967D5723D639BC0C1468BFDE3EF99C51 /* SwipeableTabBarController.modulemap */,
-				7DD0979048285EB1DDE206E4766EA9B5 /* SwipeableTabBarController.xcconfig */,
-				AC4B63DF9B15F77A7278B995461CBE39 /* SwipeableTabBarController-dummy.m */,
-				04E3A242EBBBBC5874027F4F359E16F1 /* SwipeableTabBarController-Info.plist */,
-				CA30AA9DAF8DBFD2302F920E03373A27 /* SwipeableTabBarController-prefix.pch */,
-				C8C10C563D493ADD1EBB8F5BD13D6496 /* SwipeableTabBarController-umbrella.h */,
+				E676F4E122F7246C5C849ECC61BDF8C0 /* ArrayExt.swift */,
+				D22BE6D2C5B997730CD1CF2D65EFA587 /* Attribute.swift */,
+				56847ABBCC7C8F3040F1E86FCB05988C /* Attributes.swift */,
+				73ECE4E8A7167A9C202AF444C295584C /* BooleanAttribute.swift */,
+				D93FBD1C218249A07621B227AB177BE8 /* CharacterExt.swift */,
+				90EA16A362A8744FAFCABFF690506CF8 /* CharacterReader.swift */,
+				9275E914519D9163051A67A919A3E387 /* Cleaner.swift */,
+				2EC6FC24B86B8C16AEE307A6E9EC382B /* Collector.swift */,
+				1EB312729302C0E4ADFE354F03D72339 /* CombiningEvaluator.swift */,
+				14FF177CCA6FD1018DDB9B0E3FBA3054 /* Comment.swift */,
+				C0055FBC2030C7DCFAE1083AE5EB88B0 /* Connection.swift */,
+				6306EC35295C9F3691495EF1EC4D6FCA /* DataNode.swift */,
+				F8CB29B6BAD64E465BA56411744175A9 /* DataUtil.swift */,
+				0D6EFFD3EC3FD88B557595BDA27E6402 /* Document.swift */,
+				CD183334A47B112AAA3DADD2EC20AACA /* DocumentType.swift */,
+				39F6ABEF061FF9FA198B6E7250F0D6D1 /* Element.swift */,
+				883DB08A47672411014662EDC1AE17C2 /* Elements.swift */,
+				D7E0E1E2C777BBC577D44C3E01639AC7 /* Entities.swift */,
+				C68FD347161B8B710DB2CD0776286AFB /* Evaluator.swift */,
+				F5A08BDAAC9ACA1C1237450D589DD996 /* Exception.swift */,
+				491109AD71B383DB1C73613C1438CB06 /* FormElement.swift */,
+				D6CCCEF2D9B49041154A3743D5D3911B /* HtmlTreeBuilder.swift */,
+				B48C52742D7C8D21758DC70EF387FBA6 /* HtmlTreeBuilderState.swift */,
+				264AAF5D42F26AA64E173CB9D1163785 /* HttpStatusException.swift */,
+				3581AC533BB7DABF4EEEFC9D3F0C0852 /* Node.swift */,
+				20EFAD7EE0C44B00FFB212105CFAF105 /* NodeTraversor.swift */,
+				EE7A7B35DE3EAD570E82B25463CF9BF2 /* NodeVisitor.swift */,
+				ED5F8B402123A6F0C579E969EE924D82 /* OrderedDictionary.swift */,
+				4A1A939EA0238F0150B3B45FFAB8793D /* OrderedSet.swift */,
+				594CB222A6286FEEA81DD226A411D426 /* ParseError.swift */,
+				A2431901F20138066905D24DACCA613D /* ParseErrorList.swift */,
+				9FDEBD936409E80BD92988DD2D722E1A /* Parser.swift */,
+				5F5F911D19C4646867A22CA25D6E6378 /* ParseSettings.swift */,
+				13849E20791A7D16F4E54844B274D1A7 /* Pattern.swift */,
+				18280C50FD7C474809FCACE8426B2A2A /* QueryParser.swift */,
+				F420C58540AEAD13AD881CEC09FBCA55 /* Selector.swift */,
+				AA2381A949C6DA4D95A83854DA5034B6 /* SerializationException.swift */,
+				161DA651B25B16ABCD54257878BB2C48 /* SimpleDictionary.swift */,
+				24C12F0A6331E71B83E53AC49F229455 /* StreamReader.swift */,
+				60CBF0DA1F84D1812A27E2B5430ABF85 /* String.swift */,
+				33B9EE6D3DA034A7F0B71ED54E8BD21E /* StringBuilder.swift */,
+				1B67605A7B2235587465EF3E33A6996D /* StringUtil.swift */,
+				088F118E9C5888E714029395F884369B /* StructuralEvaluator.swift */,
+				EE0625E16A090F411C6B7586E45C3CB1 /* SwiftSoup.swift */,
+				C7431DAF2B3050B6C0FEF72679A81EE4 /* Tag.swift */,
+				03D880D407AD8099F93D98A5ABF1CD33 /* TextNode.swift */,
+				3C28F577F0A46726EA917C29E3A15A81 /* Token.swift */,
+				9EC4DAB8A0D73C803D3B769760128289 /* Tokeniser.swift */,
+				4226449A870A7C09BE4EDE7D358CCBAE /* TokeniserState.swift */,
+				D2024AA9E75A3A1A988C30A2148F1A48 /* TokenQueue.swift */,
+				DE5A48E3A1DF179FFC5169B98EA1ABEF /* TreeBuilder.swift */,
+				85CF8FA6B104E3A14A87B4CB9ECF96A3 /* UnicodeScalar.swift */,
+				57442F9FAAB58F7D369DA8B2371241F3 /* Validate.swift */,
+				1E25A0083DDC20102A0B217A3822E420 /* Whitelist.swift */,
+				0BE5364D7B8A42FBA5B232FFD2DCFCC6 /* XmlDeclaration.swift */,
+				0DC85A148A3815457D4B066A7E22FA78 /* XmlTreeBuilder.swift */,
+				E5185FEECDCA44B1E4F870C94CC54168 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwipeableTabBarController";
+			path = SwiftSoup;
 			sourceTree = "<group>";
 		};
-		679AFA21A147F507B0938DC553BD1876 /* Support Files */ = {
+		8E53EE2F1ADBDCABC85D7771A11F5B96 /* Mapbox-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				F3F6FA1A8260BF903D1A5079ED41CEC0 /* Mapbox-iOS-SDK.xcconfig */,
+				AE81C506AABB36432D8298C49A47D474 /* Frameworks */,
+				D1900761A5E96264748EAEB50E1AC914 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Mapbox-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		6C625A87CFE387E390D5E48CF4F2A329 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */,
-				65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */,
-			);
-			name = Products;
+			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		8E5ABEAEB516863B15BCC6884FADDE41 /* Targets Support Files */ = {
@@ -175,6 +360,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		928AE19397431DCCC0685F5BD4557215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */,
+				5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */,
+				65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		985DF7317387540CA7ADDAE18BDF566A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0390147FE78D108490B12BE1317DA5D /* SwipeableTabBarController.modulemap */,
+				3079C1C1B6E8DE7C1C8AAB6A61FF2BD9 /* SwipeableTabBarController.xcconfig */,
+				580C2F990ED36690B9F2C7C83FA7307E /* SwipeableTabBarController-dummy.m */,
+				CD76D63CC17A1D4229444235959D2CB7 /* SwipeableTabBarController-Info.plist */,
+				48DAA8C8C8FE5CE7FB4DECF077B48E73 /* SwipeableTabBarController-prefix.pch */,
+				683ABB8F9D5D0B6A86EDDA09476E72E6 /* SwipeableTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeableTabBarController";
+			sourceTree = "<group>";
+		};
+		AE81C506AABB36432D8298C49A47D474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD63451FC47D622CBAEAFEE922C26C45 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,30 +400,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C4D9C39DFA3D2375856E0819760DCC9A /* SwipeableTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				D76C202B7F94E5713ABB56F8460ECE1D /* SwipeableTabBarController.swift */,
-				6175D8FD92FB0AB4AE87CDF1F6D065B1 /* SwipeAnimationType.swift */,
-				BD67E69A1D6BA2EBC04F918FD9B8A10F /* SwipeInteractor.swift */,
-				55F6CEBC8ACF733EA2566555878100F9 /* SwipeTransitionAnimator.swift */,
-				2FFC0A83BA09194FB6385B14A5EAE77E /* SwipeTransitioningProtocol.swift */,
-				B5B0BFA5358F273A66ABB6475CB243CD /* UIKit+Extensions.swift */,
-				522D68932399F0389AFC7FD88D004233 /* Support Files */,
-			);
-			name = SwipeableTabBarController;
-			path = SwipeableTabBarController;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F286A78EBA1AB26CE8EFD0B2E95E7512 /* Pods */,
-				6C625A87CFE387E390D5E48CF4F2A329 /* Products */,
+				212237C3857B6C2FF2544B8EC48BDA8B /* Pods */,
+				928AE19397431DCCC0685F5BD4557215 /* Products */,
 				8E5ABEAEB516863B15BCC6884FADDE41 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1900761A5E96264748EAEB50E1AC914 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB7158E516643A901796621A7BD27A4 /* Mapbox-iOS-SDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -217,31 +428,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F286A78EBA1AB26CE8EFD0B2E95E7512 /* Pods */ = {
+		E5185FEECDCA44B1E4F870C94CC54168 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				28206A9EDC8DF70EFBE9A1397A2E8442 /* Mapbox-iOS-SDK */,
-				C4D9C39DFA3D2375856E0819760DCC9A /* SwipeableTabBarController */,
+				63998C84CA98CF324688131716526348 /* SwiftSoup.modulemap */,
+				9671A85F0B8C39857802BDBE1982EE86 /* SwiftSoup.xcconfig */,
+				A154CBD1DF3F5BAEA22D7D88B5389250 /* SwiftSoup-dummy.m */,
+				27844B19A1E1270110EB87C5A13EAD13 /* SwiftSoup-Info.plist */,
+				98C2B0DDA4ED9AFF2E6FFC68203CDCFA /* SwiftSoup-prefix.pch */,
+				4D8605A08D4187101DC1CE28D5C3990B /* SwiftSoup-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSoup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8B5029397CA21EF06A122907FD2A5399 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				20D55AFCC42D59D170A8C70333D89EB0 /* Pods-DurPhys-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9C59F06087E33542B3DD0D7DCEF588E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB4C428105AE2B5F04B887EA6FB77BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C6190E5A08291473F5C0E88FC3739 /* SwiftSoup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F1E75AD66F01DBA4EDA47A9CBD646 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49669BB6E34D7BD8E96690743074A041 /* Pods-DurPhys-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,22 +492,41 @@
 		};
 		B1FF38B64A48D62A04E90AC633E8ACFF /* Pods-DurPhys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B345E1C9995B116AC1F1F303C71CEDB1 /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */;
+			buildConfigurationList = 49DE35ECC496DE8A2967C1DF4A06940F /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */;
 			buildPhases = (
-				8B5029397CA21EF06A122907FD2A5399 /* Headers */,
-				2E687756EC4058A2DD79C084BA4F7C11 /* Sources */,
-				002001619CC26F8E96E16EC4E2FF2143 /* Frameworks */,
-				BC61582D3520CC2C4F7DE744544D1123 /* Resources */,
+				E25F1E75AD66F01DBA4EDA47A9CBD646 /* Headers */,
+				E5CC69FC8112AFEA68E392D9D3F54E46 /* Sources */,
+				91F99EDB7638ECFFFDDBBE28EFDAC5FF /* Frameworks */,
+				792C1BF4C25B737DFD5F2D54171E5502 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				43008DD7BB821D41045EE4E9F48310AC /* PBXTargetDependency */,
-				930927822E396BA21F59325031743C01 /* PBXTargetDependency */,
+				FA72F5876F86DD36835ABD71EBF35B77 /* PBXTargetDependency */,
+				73ED5DDA4A3FBBE0EB6A25CE84B13330 /* PBXTargetDependency */,
+				737A16244507C471420540C2E4119841 /* PBXTargetDependency */,
 			);
 			name = "Pods-DurPhys";
 			productName = "Pods-DurPhys";
 			productReference = 9F0C228353961937783FBAFC9DDDF44D /* Pods_DurPhys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C662AE5354AFF1184BB5205EAFAD64 /* Build configuration list for PBXNativeTarget "SwiftSoup" */;
+			buildPhases = (
+				BEB4C428105AE2B5F04B887EA6FB77BA /* Headers */,
+				2B35B20F754B9B73D4B17E77AE7B68D9 /* Sources */,
+				DA3C25FF8D0CE6F53DE344F076CD143B /* Frameworks */,
+				EC434C17106FD2518CB3618747654313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSoup;
+			productName = SwiftSoup;
+			productReference = 5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -294,6 +537,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					3CD2985EC5826C32DE2E7CBE62FB81ED = {
+						LastSwiftMigration = 1030;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -303,19 +551,20 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6C625A87CFE387E390D5E48CF4F2A329 /* Products */;
+			productRefGroup = 928AE19397431DCCC0685F5BD4557215 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6746AB6F4D992402B59D1651512EA19E /* Mapbox-iOS-SDK */,
 				B1FF38B64A48D62A04E90AC633E8ACFF /* Pods-DurPhys */,
+				D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */,
 				3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC61582D3520CC2C4F7DE744544D1123 /* Resources */ = {
+		792C1BF4C25B737DFD5F2D54171E5502 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,14 +578,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC434C17106FD2518CB3618747654313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E687756EC4058A2DD79C084BA4F7C11 /* Sources */ = {
+		2B35B20F754B9B73D4B17E77AE7B68D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0667FBB229A6129D0C1EE0A3EC6A6FB9 /* Pods-DurPhys-dummy.m in Sources */,
+				9C390892DA03BA76F8078B5E9F1EE971 /* ArrayExt.swift in Sources */,
+				9E2E92CA61302CFAA8D2F97AC088C5C3 /* Attribute.swift in Sources */,
+				96D271E1F3B86DABCAFBF96FA0F2EC03 /* Attributes.swift in Sources */,
+				74ED1DAD719312ED2E1EAB6BB0BBFF71 /* BooleanAttribute.swift in Sources */,
+				8CCF800901928887AA517E01C12E7AA4 /* CharacterExt.swift in Sources */,
+				984F3128934C6FF64C4681754628FF0C /* CharacterReader.swift in Sources */,
+				CCCB6C8A300C9117E119983C5E693781 /* Cleaner.swift in Sources */,
+				68912B01B6D7D4021137BF72C32294F0 /* Collector.swift in Sources */,
+				13646ECCC236443CE369AC3AB04C85A2 /* CombiningEvaluator.swift in Sources */,
+				48061A6A40378AA49349A4E8E6E815D5 /* Comment.swift in Sources */,
+				BF10823605FA7A0062852CA043794186 /* Connection.swift in Sources */,
+				AE698A9FA4B6EDA81A7F68DB435E3309 /* DataNode.swift in Sources */,
+				FAF882C254A4D68E3B8DB2F392F5AE8D /* DataUtil.swift in Sources */,
+				64641F162787638B7319C71A2986F2D1 /* Document.swift in Sources */,
+				4B2DC0B5E57666B3222AD7F24E579353 /* DocumentType.swift in Sources */,
+				3A85CBC090CD9016F473398DEBBBC4D9 /* Element.swift in Sources */,
+				F8C0CA7AF2CC574511A5C8C02DEDCF43 /* Elements.swift in Sources */,
+				51C521B58C9C7F3E55CBBF64231CAD92 /* Entities.swift in Sources */,
+				F17880FE84897581A0353EA6C49E8909 /* Evaluator.swift in Sources */,
+				787BA99F9006B790A7E2775CF4371A15 /* Exception.swift in Sources */,
+				3DD15E341B2A822AE4170B66EF84785B /* FormElement.swift in Sources */,
+				6E8C2F72232BD8D69C06FD9BD135B0E0 /* HtmlTreeBuilder.swift in Sources */,
+				E25940181A204C2DDDE31DC346035755 /* HtmlTreeBuilderState.swift in Sources */,
+				07DC1E76B4AC8D6F706C134BE25BFCB6 /* HttpStatusException.swift in Sources */,
+				23605B9E6B3F4C6849BEB2995B8D5CC9 /* Node.swift in Sources */,
+				D44EE0B232CCEDE658102DE87A02DAD2 /* NodeTraversor.swift in Sources */,
+				6D755DA0247FE8D37B6D95D48B8D1697 /* NodeVisitor.swift in Sources */,
+				0ACC881DFA0D90EFAFA203F57BCABF31 /* OrderedDictionary.swift in Sources */,
+				A815B081D1C20E722584BEDC86E1BA5C /* OrderedSet.swift in Sources */,
+				212095A3D1CE5571B351D4999B2D72F7 /* ParseError.swift in Sources */,
+				E18636DA726A4EB4566C30DC572CEF30 /* ParseErrorList.swift in Sources */,
+				8A156E7D9F56597ABF006024CE5A38B2 /* Parser.swift in Sources */,
+				B22E0A04FCA9C46583CDE32FD83CFE1E /* ParseSettings.swift in Sources */,
+				EC2ADA20DC4D6D68A1CED448533F7987 /* Pattern.swift in Sources */,
+				0323040E0BAAB427F131B8B7593C1823 /* QueryParser.swift in Sources */,
+				6307C9763A4BF4AD4A57596F5756E3D6 /* Selector.swift in Sources */,
+				AE993559119E69F0C50BCC2EBBF77E61 /* SerializationException.swift in Sources */,
+				4860E1263F573B4EEA7BDF236A1199D0 /* SimpleDictionary.swift in Sources */,
+				184FEFB86BB797EC34B8245B2448C9B1 /* StreamReader.swift in Sources */,
+				605E6909CF08E0DAD68A675C92906264 /* String.swift in Sources */,
+				7B5C603DF6AE98590BD5043DEE6533D2 /* StringBuilder.swift in Sources */,
+				9F0612E3E2BD1F85D7620321BEFBE2DC /* StringUtil.swift in Sources */,
+				268BA1DBE8391AF20EE9D562480A2040 /* StructuralEvaluator.swift in Sources */,
+				59CCEF0DB3257C3791FB7FEF729656A1 /* SwiftSoup-dummy.m in Sources */,
+				6400A9389A0A3E67315FA4FD500FB283 /* SwiftSoup.swift in Sources */,
+				AF50D130B49C380ED075104BB7671FAB /* Tag.swift in Sources */,
+				5EA9213700B4A83923FE1F76199D7478 /* TextNode.swift in Sources */,
+				7383E209342B658049AAC2F6A47CD54E /* Token.swift in Sources */,
+				45AE0479CEA0DCD1CC289FAC7A0D74CD /* Tokeniser.swift in Sources */,
+				1F6A5C0F3BEF9084C8E9066D3F8AD4F1 /* TokeniserState.swift in Sources */,
+				9D9E42B84863721085CB2C0EE1467CA6 /* TokenQueue.swift in Sources */,
+				C88398AADEBDF75E34AEF8564807EBBA /* TreeBuilder.swift in Sources */,
+				717A618E1185ED3073BF6557DAD82429 /* UnicodeScalar.swift in Sources */,
+				A072BEECFC9A659AC25573E82E8E0D65 /* Validate.swift in Sources */,
+				1B1E44407BA5AB6B543BFD609D48FB4D /* Whitelist.swift in Sources */,
+				08F669849B088847C5391DCA0D21EBCA /* XmlDeclaration.swift in Sources */,
+				DB16F4FC1AC7BEFE72972A8B7F7629B1 /* XmlTreeBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,25 +666,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5CC69FC8112AFEA68E392D9D3F54E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A1DFD1B80C60CDDBBB720DA308721F /* Pods-DurPhys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		43008DD7BB821D41045EE4E9F48310AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Mapbox-iOS-SDK";
-			target = 6746AB6F4D992402B59D1651512EA19E /* Mapbox-iOS-SDK */;
-			targetProxy = C907890CF0A88F65F838E7470021A9FA /* PBXContainerItemProxy */;
-		};
-		930927822E396BA21F59325031743C01 /* PBXTargetDependency */ = {
+		737A16244507C471420540C2E4119841 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwipeableTabBarController;
 			target = 3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */;
-			targetProxy = 1D62FC57FA7EECF2BB924589300C96CB /* PBXContainerItemProxy */;
+			targetProxy = AAD27003356A88A3782ADB79CD06C33F /* PBXContainerItemProxy */;
+		};
+		73ED5DDA4A3FBBE0EB6A25CE84B13330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSoup;
+			target = D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */;
+			targetProxy = 446714308992C32487AF65E8F905E9CA /* PBXContainerItemProxy */;
+		};
+		FA72F5876F86DD36835ABD71EBF35B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mapbox-iOS-SDK";
+			target = 6746AB6F4D992402B59D1651512EA19E /* Mapbox-iOS-SDK */;
+			targetProxy = 801A6BEDC0FAF9AFFAF23DF119C99A3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+		041045DBD469D17720C14AEC4BE6B8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		099493964BE7ADFA39A5A89445AB8868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9671A85F0B8C39857802BDBE1982EE86 /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,7 +824,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +837,24 @@
 			};
 			name = Debug;
 		};
-		3C47D2432C401B147306204198D9D9F3 /* Debug */ = {
+		46BFB9A54CE3465FD3218BDF323DC483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB7158E516643A901796621A7BD27A4 /* Mapbox-iOS-SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91A25B3268782D4526E2048DD7BDA2DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E08F98323ACC587C90EDBA6B4FB8DDE /* Pods-DurPhys.debug.xcconfig */;
 			buildSettings = {
@@ -453,7 +871,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +892,129 @@
 			};
 			name = Debug;
 		};
-		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+		96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3079C1C1B6E8DE7C1C8AAB6A61FF2BD9 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3BA82F4F6DB660EE4757BD8D7E17B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9671A85F0B8C39857802BDBE1982EE86 /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4439E605361E4523071694D265A0A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB7158E516643A901796621A7BD27A4 /* Mapbox-iOS-SDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB0105A2B135ED80686657AFE9F8C1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3079C1C1B6E8DE7C1C8AAB6A61FF2BD9 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -522,7 +1062,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,157 +1074,32 @@
 			};
 			name = Release;
 		};
-		46BFB9A54CE3465FD3218BDF323DC483 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3F6FA1A8260BF903D1A5079ED41CEC0 /* Mapbox-iOS-SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD0979048285EB1DDE206E4766EA9B5 /* SwipeableTabBarController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
-				PRODUCT_MODULE_NAME = SwipeableTabBarController;
-				PRODUCT_NAME = SwipeableTabBarController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C4439E605361E4523071694D265A0A63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3F6FA1A8260BF903D1A5079ED41CEC0 /* Mapbox-iOS-SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DB0105A2B135ED80686657AFE9F8C1C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DD0979048285EB1DDE206E4766EA9B5 /* SwipeableTabBarController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
-				PRODUCT_MODULE_NAME = SwipeableTabBarController;
-				PRODUCT_NAME = SwipeableTabBarController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EC17BDF4B384D8CD98F734642A5BA479 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFDA13C7F2CAE373B6FFCF706C29B90C /* Pods-DurPhys.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DurPhys/Pods-DurPhys.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
-				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49DE35ECC496DE8A2967C1DF4A06940F /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91A25B3268782D4526E2048DD7BDA2DC /* Debug */,
+				041045DBD469D17720C14AEC4BE6B8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C662AE5354AFF1184BB5205EAFAD64 /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3BA82F4F6DB660EE4757BD8D7E17B55 /* Debug */,
+				099493964BE7ADFA39A5A89445AB8868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -703,15 +1118,6 @@
 			buildConfigurations = (
 				C4439E605361E4523071694D265A0A63 /* Debug */,
 				46BFB9A54CE3465FD3218BDF323DC483 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B345E1C9995B116AC1F1F303C71CEDB1 /* Build configuration list for PBXNativeTarget "Pods-DurPhys" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C47D2432C401B147306204198D9D9F3 /* Debug */,
-				EC17BDF4B384D8CD98F734642A5BA479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

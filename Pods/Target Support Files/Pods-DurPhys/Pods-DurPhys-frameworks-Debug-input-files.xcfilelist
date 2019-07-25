@@ -3,4 +3,5 @@ ${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework
 ${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM
 ${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/EA6917E5-CEC8-3463-A109-1DE3D406A0AB.bcsymbolmap
 ${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/9521B0FE-B195-3C64-9123-696C44DE3DEE.bcsymbolmap
+${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework
 ${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework

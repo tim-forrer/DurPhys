@@ -21,6 +21,7 @@
 		229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* WebPageViewController.swift */; };
 		22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */; };
 		22AE6A1F22E5B56B009A22D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */; };
+		22F2828922E96339004B7DC8 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2828822E96339004B7DC8 /* Contacts.swift */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
 		E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94082F622D48F8700CDF8B4 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		229BB45622DC7EA60053FD2B /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
 		22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		22F2828822E96339004B7DC8 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		CE9AB21E4084C5E8B3787A1E /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */,
 				22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */,
 				226BDB5222E619BA005D298E /* Option.swift */,
+				22F2828822E96339004B7DC8 /* Contacts.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
 				226BDB5322E619BA005D298E /* Option.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
+				22F2828922E96339004B7DC8 /* Contacts.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
 				22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */,
