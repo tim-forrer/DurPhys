@@ -21,7 +21,7 @@
 		229BB45722DC7EA60053FD2B /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BB45622DC7EA60053FD2B /* WebPageViewController.swift */; };
 		22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */; };
 		22AE6A1F22E5B56B009A22D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */; };
-		22F2828922E96339004B7DC8 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2828822E96339004B7DC8 /* Contacts.swift */; };
+		22F2828922E96339004B7DC8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2828822E96339004B7DC8 /* Contact.swift */; };
 		E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */; };
 		E94082F522D48F8600CDF8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94082F322D48F8600CDF8B4 /* Main.storyboard */; };
 		E94082F722D48F8700CDF8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94082F622D48F8700CDF8B4 /* Assets.xcassets */; };
@@ -34,6 +34,8 @@
 		E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FA22D7469000B49E11 /* Utils.swift */; };
 		E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */; };
 		E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */; };
+		E9A2A46122E9C75C0053D255 /* ImportantContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2A46022E9C75C0053D255 /* ImportantContactsTableViewController.swift */; };
+		E9A2A46322E9C7D50053D255 /* ImportantContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2A46222E9C7D50053D255 /* ImportantContactsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +54,7 @@
 		229BB45622DC7EA60053FD2B /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
 		22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		22F2828822E96339004B7DC8 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		22F2828822E96339004B7DC8 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		CE9AB21E4084C5E8B3787A1E /* Pods_DurPhys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DurPhys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EC22D48F8600CDF8B4 /* DurPhys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurPhys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
 		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E9A2A46022E9C75C0053D255 /* ImportantContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantContactsTableViewController.swift; sourceTree = "<group>"; };
+		E9A2A46222E9C7D50053D255 /* ImportantContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantContactsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +159,11 @@
 		E9A0B2F622D7333800B49E11 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9A0B2FF22D7701D00B49E11 /* Main Menu */,
 				22E8D36522E7170B00DDCB33 /* Getting Around */,
 				22916A9722E46956002F91A7 /* Teaching Formats */,
-				E9A0B2FF22D7701D00B49E11 /* Main Menu */,
 				229BB45622DC7EA60053FD2B /* WebPageViewController.swift */,
+				E9A2A46022E9C75C0053D255 /* ImportantContactsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,7 +200,8 @@
 				22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */,
 				22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */,
 				226BDB5222E619BA005D298E /* Option.swift */,
-				22F2828822E96339004B7DC8 /* Contacts.swift */,
+				22F2828822E96339004B7DC8 /* Contact.swift */,
+				E9A2A46222E9C7D50053D255 /* ImportantContactsTableViewCell.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -326,13 +332,15 @@
 				2260268E22E75A9200573603 /* EducationViewController.swift in Sources */,
 				22AE6A1F22E5B56B009A22D5 /* CustomTabBarController.swift in Sources */,
 				22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */,
+				E9A2A46322E9C7D50053D255 /* ImportantContactsTableViewCell.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
 				226BDB5322E619BA005D298E /* Option.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
-				22F2828922E96339004B7DC8 /* Contacts.swift in Sources */,
+				22F2828922E96339004B7DC8 /* Contact.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
+				E9A2A46122E9C75C0053D255 /* ImportantContactsTableViewController.swift in Sources */,
 				22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */,
 				22916A9B22E48410002F91A7 /* TutorialsViewController.swift in Sources */,
 				E940830422D490B800CDF8B4 /* MainMenuCollectionViewCell.swift in Sources */,
