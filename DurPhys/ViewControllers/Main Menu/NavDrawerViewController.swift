@@ -113,9 +113,39 @@ class NavDrawerViewController: UITableViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
+        let loginPopUp = UIAlertController(title: "Login", message: "Please login using your CIS credentials", preferredStyle: .alert)
+        loginPopUp.addTextField(configurationHandler: {textField in
+            textField.placeholder = "Username"
+        })
+        loginPopUp.addTextField(configurationHandler: {textField in
+            textField.placeholder = "Password"
+            textField.isSecureTextEntry = true
+        })
+        loginPopUp.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        loginPopUp.addAction(UIAlertAction(title: "Login", style: .default, handler: {action in
+            let user = loginPopUp.textFields?[0].text
+            let pass = loginPopUp.textFields?[1].text
+            if user == "" || pass == "" {
+                //tell user to enter credentials
+                let loginBlank = UIAlertController(title: "Please enter username/password", message: "You cannot leave username or password fields blank.", preferredStyle: .alert)
+                loginBlank.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                self.present(loginBlank, animated: true)
+                
+            } else if Utils.loginCheck(user: user!, pass: pass!) == false {
+                //tell user to use valid credentials
+                let loginFalse = UIAlertController(title: "Please enter a valid username/password", message: "You have entered an invalid username and/or password, please try again", preferredStyle: .alert)
+                loginFalse.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                self.present(loginFalse, animated: true)
+                
+            } else {
+                //login successful, save credentials
+                let loginSuccess = UIAlertController(title: "Login Successful", message: "You have logged in successfully", preferredStyle: .alert)
+                loginSuccess.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                self.present(loginSuccess, animated: true)
+            }
+        }))
+        
+        self.present(loginPopUp, animated: true)
     }
     
-}
-
-protocol NavDrawerViewControllerDelegate {
 }

@@ -18,7 +18,7 @@ class ContainerViewController: UIViewController {
 
     var navDrawerViewController: NavDrawerViewController?
     
-    let centerPanelExpandedOffset: CGFloat = 100
+    let centerPanelExpandedOffset: CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,11 +101,8 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
     }
     
     func addChildSidePanelController(_ navDrawerController: NavDrawerViewController) {
-        //navDrawerController.delegate = mainMenuViewController
         view.insertSubview(navDrawerController.view, at: 0)
-        
         addChild(navDrawerController)
-        
         navDrawerController.didMove(toParent: self)
     }
     
@@ -113,7 +110,7 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
         if shouldShowShadow {
             mainMenuNavigationController.view.layer.shadowOpacity = 0.8
         } else {
-            mainMenuNavigationController.view.layer.shadowOpacity = 0.8
+            mainMenuNavigationController.view.layer.shadowOpacity = 0
         }
     }
     

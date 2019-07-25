@@ -49,11 +49,13 @@ class Utils {
         }
         
         task.resume()
-        if statusCode == 200 {
-            return true
-        } else {
+        print(statusCode)
+        if statusCode != 200 {
+            print("returning false")
             return false
         }
+        print("returning true")
+        return true
     }
     
 }

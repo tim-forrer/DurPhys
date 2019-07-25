@@ -19,6 +19,9 @@ class MainMenuViewController: UIViewController{
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
     
+    @IBOutlet weak var backgroundView: UIView!
+    
+    
     // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,7 +91,4 @@ extension MainMenuViewController: UICollectionViewDelegate {
             
         }
     }
-}
-
-extension MainMenuViewController: NavDrawerViewControllerDelegate {
 }
