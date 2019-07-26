@@ -10,89 +10,49 @@ import UIKit
 
 class ImportantContactsTableViewController: UITableViewController {
     
-    let contactList = Contact.loadContactsHTML()
+    let contactList = Contact.contacts()
+    @IBOutlet weak var searcBar: UISearchBar!
+    var filteredContact = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = true
         
         tableView.delegate = self
         tableView.dataSource = self
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return Contact.sections().count
+        let contactSections = Contact.sections(contactList: contactList)
+        return contactSections.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let contactSections = Contact.sections(contactList: contactList)
+        return contactSections[section]
     }
 
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var numberOfContactsInSection = 0
-        let currentSection = Contact.sections()[section]
-        for contact in contactList {
-            if contact.section == currentSection {
-                numberOfContactsInSection += 1
-            }
-        }
-        return numberOfContactsInSection
+        let contactSections = Contact.sections(contactList: contactList)
+        let twoDimArray = Contact.twoDimArray(sections: contactSections, contacts: contactList)
+        return twoDimArray[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importantContactsCell", for: indexPath) as! ImportantContactsTableViewCell
-        cell.name.text = contactList[indexPath.item].name
-        cell.position.text = contactList[indexPath.item].position
-        cell.room.text = contactList[indexPath.item].room
+        
+        let contactSections = Contact.sections(contactList: contactList)
+        let twoDimArray = Contact.twoDimArray(sections: contactSections, contacts: contactList)
+        
+        cell.name.text = twoDimArray[indexPath.section][indexPath.row].name
+        cell.position.text = twoDimArray[indexPath.section][indexPath.row].position
+        cell.room.text = twoDimArray[indexPath.section][indexPath.row].room
 
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

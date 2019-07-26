@@ -9,9 +9,10 @@
 import UIKit
 
 class ImportantContactsTableViewCell: UITableViewCell {
-
+  
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var position: UILabel!
     @IBOutlet weak var room: UILabel!
+    
     
 }

@@ -27,43 +27,42 @@ class Contact {
     
     
     // this passes the html from the physics staff page list into find contacts
-    class func loadContactsHTML() -> [Contact] {
+    class func loadContactsHTML() -> String? {
         let url = URL(string: "https://www.dur.ac.uk/physics/staff/list/")
-        var htmlDump: String = ""
         do {
             let html = try String(contentsOf: url!)
-            htmlDump = html
+            return html
         } catch let error as NSError {
             print("Error: \(error)")
+            return nil
         }
-        return findContacts(html: htmlDump)
     }
     
     //this parses the html until we've got only the table rows
     //the table rows are then passes into a final parser which finds the individual vlues for name etc.
-    class func findContacts(html: String) -> [Contact] {
-        var rows: [Element] = []
+    class func findContacts(html: String) -> [Element]? {
         do {
             let doc: Document = try SwiftSoup.parse(html)
             let table: Element = try doc.select("table").first()!
             let tableBody: Element = try table.select("tbody").first()!
-            let bodyRows: [Element] = try tableBody.select("tr").array()
-            rows = bodyRows
+            let tableBodyRows: [Element] = try tableBody.select("tr").array()
+            return tableBodyRows
             
         } catch Exception.Error(_ , let message) { //"let type" removed where underscore is
             print(message)
+            return nil
         } catch {
             print("error")
+            return nil
         }
-        return returnStaff(tableRows: rows)
     }
     
-    class func returnStaff(tableRows: [Element]) -> [Contact] {
+    class func returnStaff(tableBodyRows: [Element]) -> [Contact] {
         var staffList: [Contact] = []
         do {
             var rowSpanRemaining = 0 //this is the initial value of the rowspan for the first row
             var section = "test"
-            for tableColumn in tableRows {
+            for tableColumn in tableBodyRows {
                 let staffMember = Contact(section: "test", name: "test", position: nil, room: nil, email: "test")
                 let info = try tableColumn.select("td").array()
                 var index = 1
@@ -97,15 +96,38 @@ class Contact {
         return staffList
     }
     
-    class func sections() -> [String] {
-        let contacts = loadContactsHTML()
+    class func contacts() -> [Contact] {
+        print("repeat")
+        let html = loadContactsHTML()
+        let staffTable = findContacts(html: html!)!
+        let staffList = returnStaff(tableBodyRows: staffTable)
+        return staffList
+    }
+    
+    class func sections(contactList: [Contact]) -> [String] {
         var sectionTitles: [String] = []
-        for contact in contacts {
+        for contact in contactList {
             if !sectionTitles.contains(contact.section) {
                 sectionTitles.append(contact.section)
             }
         }
         return sectionTitles
+    }
+    
+    class func twoDimArray(sections: [String], contacts: [Contact]) -> [[Contact]] {
+        var twoDimensionalArray: [[Contact]] = []
+        var contactList = contacts
+        for section in sections {
+            var currentSection: [Contact] = []
+            for contact in contactList {
+                if contact.section == section {
+                    currentSection.append(contact) //can optimise here to remove the contact from contacts once it's put into a section
+                    contactList.removeFirst()
+                }
+            }
+            twoDimensionalArray.append(currentSection)
+        }
+        return twoDimensionalArray
     }
     
 }
