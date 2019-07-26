@@ -80,12 +80,6 @@ class Contact {
                 staffMember.position = try info[index + 1].text()
                 staffMember.room = try info[index + 3].text()
                 staffMember.email = try info[index + 4].text()
-                print(staffMember.section)
-                print(staffMember.name)
-                print(staffMember.position!)
-                print(staffMember.room!)
-                print(staffMember.email)
-                print(rowSpanRemaining)
                 staffList.append(staffMember)
             }
         } catch Exception.Error( _, let message) { //removed "let type" where the underscore is
@@ -97,7 +91,6 @@ class Contact {
     }
     
     class func contacts() -> [Contact] {
-        print("repeat")
         let html = loadContactsHTML()
         let staffTable = findContacts(html: html!)!
         let staffList = returnStaff(tableBodyRows: staffTable)
@@ -122,7 +115,7 @@ class Contact {
             for contact in contactList {
                 if contact.section == section {
                     currentSection.append(contact) //can optimise here to remove the contact from contacts once it's put into a section
-                    contactList.removeFirst()
+                    contactList.removeFirst() //attempt at that optimsation
                 }
             }
             twoDimensionalArray.append(currentSection)

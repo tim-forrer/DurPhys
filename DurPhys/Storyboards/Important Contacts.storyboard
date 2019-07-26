@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for contact" showsCancelButton="YES" id="toc-3g-yQ4">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for contact" id="toc-3g-yQ4">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="barTintColor" red="0.40784313729999999" green="0.14117647059999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +88,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="searcBar" destination="toc-3g-yQ4" id="wlE-Jw-D7f"/>
+                        <outlet property="searchBar" destination="toc-3g-yQ4" id="YTz-u4-qBp"/>
                         <outlet property="tableView" destination="tRL-EY-GPU" id="Npu-uy-SNj"/>
                     </connections>
                 </tableViewController>

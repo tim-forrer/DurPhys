@@ -11,16 +11,16 @@ import UIKit
 class ImportantContactsTableViewController: UITableViewController {
     
     let contactList = Contact.contacts()
-    @IBOutlet weak var searcBar: UISearchBar!
-    var filteredContact = [String]()
+    @IBOutlet weak var searchBar: UISearchBar!
+    var filteredContactList = [Contact]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.clearsSelectionOnViewWillAppear = true
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        filteredContactList = contactList
     }
 
     // MARK: - Table view data source
