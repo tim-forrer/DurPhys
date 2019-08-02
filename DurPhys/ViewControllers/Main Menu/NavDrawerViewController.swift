@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class NavDrawerViewController: UITableViewController {
     
@@ -108,11 +109,65 @@ class NavDrawerViewController: UITableViewController {
             return navOptions[0][0] //just a random default value so there is a return outside of the nested loops
         }
         let navOption = getNavOption()
-        performSegue(withIdentifier: "navDrawerToWebPage", sender: navOption)
+        if navOption.section != "General" {
+            performSegue(withIdentifier: "navDrawerToWebPage", sender: navOption)
+        } else if navOption.label == "Report Bugs" {
+            showMailComposer()
+        } //else display the about page
         
     }
     
     @IBAction func loginPressed(_ sender: Any) {
+        handleLogin()
+    }
+    
+}
+
+extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
+    
+    func showMailComposer() {
+        
+        guard MFMailComposeViewController.canSendMail() else {
+            //Show an alert to say your device can't send emails
+            return
+        }
+        
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["physics.app@durham.ac.uk"])
+        composer.setSubject("Physics App Bug Report")
+        composer.setMessageBody("", isHTML: false)
+        present(composer, animated: true)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if let _ = error {
+            //Show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        switch result {
+        case .failed:
+            let emailFailed = self.defaultAlert(title: "Error", message: "There was an error when sending your email. That's unfortunate as I assume you were about to email us regarding a separate issue. Please manually email physics.app@durham.ac.uk and we'll try to resolve your issue as best we can. Well, issues now.")
+            self.present(emailFailed, animated: true)
+            controller.dismiss(animated: true)
+        default:
+            controller.dismiss(animated: true)
+        }
+    }
+}
+
+
+//MARK: - Additional Functions
+extension NavDrawerViewController {
+    
+    func defaultAlert(title: String, message: String) -> UIAlertController{
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        return alert
+    }
+    
+    func handleLogin() {
         let loginPopUp = UIAlertController(title: "Login", message: "Please login using your CIS credentials", preferredStyle: .alert)
         loginPopUp.addTextField(configurationHandler: {textField in
             textField.placeholder = "Username"
@@ -127,25 +182,21 @@ class NavDrawerViewController: UITableViewController {
             let pass = loginPopUp.textFields?[1].text
             if user == "" || pass == "" {
                 //tell user to enter credentials
-                let loginBlank = UIAlertController(title: "Please enter username/password", message: "You cannot leave username or password fields blank.", preferredStyle: .alert)
-                loginBlank.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                let loginBlank = self.defaultAlert(title: "Please enter username/password", message: "You cannot leave username or password fields blank.")
                 self.present(loginBlank, animated: true)
                 
             } else if Utils.loginCheck(user: user!, pass: pass!) == false {
                 //tell user to use valid credentials
-                let loginFalse = UIAlertController(title: "Please enter a valid username/password", message: "You have entered an invalid username and/or password, please try again", preferredStyle: .alert)
-                loginFalse.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                let loginFalse = self.defaultAlert(title: "Please enter a valid username/password", message: "You have entered an invalid username and/or password, please try again")
                 self.present(loginFalse, animated: true)
                 
             } else {
                 //login successful, save credentials
-                let loginSuccess = UIAlertController(title: "Login Successful", message: "You have logged in successfully", preferredStyle: .alert)
-                loginSuccess.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                let loginSuccess = self.defaultAlert(title: "Login Successful", message: "You have logged in successfully")
                 self.present(loginSuccess, animated: true)
             }
         }))
         
         self.present(loginPopUp, animated: true)
     }
-    
 }
