@@ -37,20 +37,23 @@ class ImportantContactsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count = 0
         let contactSections = Contact.sections(contactList: contactList)
-        let twoDimArray = Contact.twoDimArray(sections: contactSections, contacts: contactList)
-        return twoDimArray[section].count
+        for contact in contactList {
+            if contact.section == contactSections[section] {
+                count += 1
+            }
+        }
+        return count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importantContactsCell", for: indexPath) as! ImportantContactsTableViewCell
+        let currentStaffMember = contactList[indexPath.item]
         
-        let contactSections = Contact.sections(contactList: contactList)
-        let twoDimArray = Contact.twoDimArray(sections: contactSections, contacts: contactList)
-        
-        cell.name.text = twoDimArray[indexPath.section][indexPath.row].name
-        cell.position.text = twoDimArray[indexPath.section][indexPath.row].position
-        cell.room.text = twoDimArray[indexPath.section][indexPath.row].room
+        cell.name.text = currentStaffMember.name
+        cell.position.text = currentStaffMember.position
+        cell.room.text = currentStaffMember.room
 
         return cell
     }

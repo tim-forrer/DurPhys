@@ -107,20 +107,4 @@ class Contact {
         return sectionTitles
     }
     
-    class func twoDimArray(sections: [String], contacts: [Contact]) -> [[Contact]] {
-        var twoDimensionalArray: [[Contact]] = []
-        var contactList = contacts
-        for section in sections {
-            var currentSection: [Contact] = []
-            for contact in contactList {
-                if contact.section == section {
-                    currentSection.append(contact) //can optimise here to remove the contact from contacts once it's put into a section
-                    contactList.removeFirst() //attempt at that optimsation
-                }
-            }
-            twoDimensionalArray.append(currentSection)
-        }
-        return twoDimensionalArray
-    }
-    
 }
