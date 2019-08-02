@@ -11,7 +11,8 @@ This app is designed to work with iPhone 5S and above. iPads are not actively su
 - [x] Design of main menu.
 - [x] Navigation Drawer
 - [x] Design Teaching Formats pages.
-- [ ] Scrape the physics staff page for Important Contacts (just need to implement search bar and sending an email).
+- [x] Scrape the physics staff page for Important Contacts (may want to add preferred email once username and passwords are setup).
+- [ ] Setup keychain for storing user credentials
   
 ### Still to do:
 - [ ] App login using https://timetable.dur.ac.uk to verify credentials (may change the test url).
