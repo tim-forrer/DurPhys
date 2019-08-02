@@ -7,8 +7,9 @@ target 'DurPhys' do
 
   # Pods for DurPhys
 
-  pod "SwipeableTabBarController"
-  pod "Mapbox-iOS-SDK", "~> 5.1"
-  pod "SwiftSoup"
+  pod 'SwipeableTabBarController'
+  pod 'Mapbox-iOS-SDK', '~> 5.1'
+  pod 'SwiftSoup'
+  pod 'KeychainSwift', '~> 16.0'
 
 end
