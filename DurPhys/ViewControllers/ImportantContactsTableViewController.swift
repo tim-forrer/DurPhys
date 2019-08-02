@@ -20,36 +20,24 @@ class ImportantContactsTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        searchBar.delegate = self
+        
         filteredContactList = contactList
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        let contactSections = Contact.sections(contactList: contactList)
-        return contactSections.count
+        return 1
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let contactSections = Contact.sections(contactList: contactList)
-        return contactSections[section]
-    }
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var count = 0
-        let contactSections = Contact.sections(contactList: contactList)
-        for contact in contactList {
-            if contact.section == contactSections[section] {
-                count += 1
-            }
-        }
-        return count
+        return filteredContactList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importantContactsCell", for: indexPath) as! ImportantContactsTableViewCell
-        let currentStaffMember = contactList[indexPath.item]
+        let currentStaffMember = filteredContactList[indexPath.item]
         
         cell.name.text = currentStaffMember.name
         cell.position.text = currentStaffMember.position
@@ -58,4 +46,17 @@ class ImportantContactsTableViewController: UITableViewController {
         return cell
     }
 
+}
+
+extension ImportantContactsTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            filteredContactList = contactList
+        } else {
+        filteredContactList = contactList.filter({
+            $0.name.lowercased().contains(searchText.lowercased())
+        })
+        }
+        tableView.reloadData()
+    }
 }

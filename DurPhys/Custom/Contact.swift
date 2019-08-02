@@ -97,14 +97,4 @@ class Contact {
         return staffList
     }
     
-    class func sections(contactList: [Contact]) -> [String] {
-        var sectionTitles: [String] = []
-        for contact in contactList {
-            if !sectionTitles.contains(contact.section) {
-                sectionTitles.append(contact.section)
-            }
-        }
-        return sectionTitles
-    }
-    
 }
