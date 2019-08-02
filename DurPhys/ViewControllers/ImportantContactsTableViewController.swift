@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ImportantContactsTableViewController: UITableViewController {
     
@@ -41,10 +42,20 @@ class ImportantContactsTableViewController: UITableViewController {
         
         cell.name.text = currentStaffMember.name
         cell.position.text = currentStaffMember.position
+        cell.position.lineBreakMode = .byTruncatingTail
         cell.room.text = currentStaffMember.room
+        cell.emailButton.setTitle(currentStaffMember.email, for: .normal)
+        
 
         return cell
     }
+    
+    // MARK: - Actions
+    
+    @IBAction func sendEmailTapped(_ sender: UIButton) {
+        showMailComposer(email: sender.titleLabel!.text!)
+    }
+    
 
 }
 
@@ -59,4 +70,38 @@ extension ImportantContactsTableViewController: UISearchBarDelegate {
         }
         tableView.reloadData()
     }
+}
+
+extension ImportantContactsTableViewController: MFMailComposeViewControllerDelegate {
+    func showMailComposer(email: String) {
+        
+        guard MFMailComposeViewController.canSendMail() else {
+            //Show an alert to say your device can't send emails
+            return
+        }
+        
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients([email])
+        present(composer, animated: true)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if let _ = error {
+            //Show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        switch result {
+        case .failed:
+            let emailFailed = UIAlertController(title: "Error", message: "There was an error with sending your email. Please try again or send us a bug report if this keeps happening.", preferredStyle: .alert)
+            emailFailed.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+            self.present(emailFailed, animated: true)
+            controller.dismiss(animated: true)
+        default:
+            controller.dismiss(animated: true)
+        }
+    }
+    
+    
 }
