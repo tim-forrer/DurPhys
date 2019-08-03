@@ -59,7 +59,7 @@ private extension UIStoryboard {
 
 extension ContainerViewController: MainMenuViewControllerDelegate {
     
-    func toggleNavDrawer(){
+    @objc func toggleNavDrawer(){
         if !navDrawerShowing {
             addNavDrawerViewController()
         }

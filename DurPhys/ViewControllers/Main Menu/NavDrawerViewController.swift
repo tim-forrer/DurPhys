@@ -8,11 +8,12 @@
 
 import UIKit
 import MessageUI
+import KeychainSwift
 
 class NavDrawerViewController: UITableViewController {
     
     // MARK: - Declarations
-    
+    let keychain = KeychainSwift()
     let navOptions = Option.navOptions()
     
     @IBOutlet weak var navDrawerTableView: UITableView!
@@ -22,14 +23,27 @@ class NavDrawerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewStyle()
+        loginButtonStyle()
+        
+    }
+    
+    // MARK: - Customisation
+    func tableViewStyle() {
         navDrawerTableView.layer.masksToBounds = false
         navDrawerTableView.layer.shadowColor = UIColor.black.cgColor
         navDrawerTableView.layer.shadowRadius = 20.0
         navDrawerTableView.layer.shadowOpacity = 1.0
         navDrawerTableView.layer.shadowOffset = .zero
-        
     }
     
+    func loginButtonStyle() {
+        loginButton.layer.cornerRadius = 10
+        loginButton.layer.borderWidth = 2
+        loginButton.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    //MARK: - Setup of TableView
     override func numberOfSections(in tableView: UITableView) -> Int {
         var sections: [String] = []
         for section in navOptions {
@@ -137,7 +151,7 @@ extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
         composer.setToRecipients(["physics.app@durham.ac.uk"])
         composer.setSubject("Physics App Bug Report")
         composer.setMessageBody("", isHTML: false)
-        present(composer, animated: true)
+        UIApplication.shared.keyWindow?.rootViewController?.present(composer, animated: true)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
@@ -158,7 +172,7 @@ extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
 }
 
 
-//MARK: - Additional Functions
+//MARK: - Login functions
 extension NavDrawerViewController {
     
     func defaultAlert(title: String, message: String) -> UIAlertController{
@@ -168,6 +182,7 @@ extension NavDrawerViewController {
     }
     
     func handleLogin() {
+        
         let loginPopUp = UIAlertController(title: "Login", message: "Please login using your CIS credentials", preferredStyle: .alert)
         loginPopUp.addTextField(configurationHandler: {textField in
             textField.placeholder = "Username"
@@ -178,25 +193,59 @@ extension NavDrawerViewController {
         })
         loginPopUp.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         loginPopUp.addAction(UIAlertAction(title: "Login", style: .default, handler: {action in
-            let user = loginPopUp.textFields?[0].text
-            let pass = loginPopUp.textFields?[1].text
-            if user == "" || pass == "" {
-                //tell user to enter credentials
-                let loginBlank = self.defaultAlert(title: "Please enter username/password", message: "You cannot leave username or password fields blank.")
-                self.present(loginBlank, animated: true)
-                
-            } else if Utils.loginCheck(user: user!, pass: pass!) == false {
-                //tell user to use valid credentials
-                let loginFalse = self.defaultAlert(title: "Please enter a valid username/password", message: "You have entered an invalid username and/or password, please try again")
-                self.present(loginFalse, animated: true)
-                
+            self.keychain.set((loginPopUp.textFields?[0].text)!, forKey: "username")
+            self.keychain.set((loginPopUp.textFields?[1].text)!, forKey: "password")
+            if self.credentialsBlank(username: self.keychain.get("username")!, password: self.keychain.get("password")!) {
+                return
             } else {
-                //login successful, save credentials
-                let loginSuccess = self.defaultAlert(title: "Login Successful", message: "You have logged in successfully")
-                self.present(loginSuccess, animated: true)
+                self.performLogin(username: self.keychain.get("username")!, password: self.keychain.get("password")!)
             }
-        }))
+            }
+        ))
         
         self.present(loginPopUp, animated: true)
     }
+    
+    func credentialsBlank(username: String, password: String) -> Bool {
+        if username.isEmpty && password.isEmpty {
+            let alert = defaultAlert(title: "Username and Password cannot be blank.", message: "You cannot leave the username and password fields blank. Please enter your CIS credentials.")
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+            return true
+        }
+        return false
+    }
+    
+    func performLogin(username: String, password: String) {
+        var request = URLRequest(url: URL(string: "https://timetable.dur.ac.uk")!)
+        
+        request.httpMethod = "GET"
+        
+        let headerValue = self.keychain.get("username")! + ":" + self.keychain.get("password")!
+        let utfHeaderValue = headerValue.data(using: .utf8, allowLossyConversion: false)
+        let base64HeaderValue = utfHeaderValue?.base64EncodedString()
+        
+        let finalHeaderValue = "Basic " + base64HeaderValue!
+        
+        
+        request.setValue(finalHeaderValue, forHTTPHeaderField: "Authorization")
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print("error=\(String(describing: error))")
+                return
+            }
+            
+            let httpStatus = response as? HTTPURLResponse
+            print("statusCode should be 200, but is \(httpStatus!.statusCode)")
+            print("response = \(String(describing: response))")
+            print(finalHeaderValue)
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(String(describing: responseString))")
+            
+        }
+        task.resume()
+    }
+    
+    
 }

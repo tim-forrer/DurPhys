@@ -27,6 +27,8 @@ class MainMenuViewController: UIViewController{
         super.viewDidLoad()
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
+        
+        self.navigationController?.navigationItem.leftBarButtonItem?.title = "Menu"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,16 +43,6 @@ class MainMenuViewController: UIViewController{
     
     @IBAction func menuToggle(_ sender: Any) {
        delegate?.toggleNavDrawer()
-    }
-    @IBAction func swipeRight(_ sender: Any) {
-        if !delegate!.navDrawerShowing {
-            delegate?.toggleNavDrawer()
-        }
-    }
-    @IBAction func swipeLeft(_ sender: Any) {
-        if delegate!.navDrawerShowing {
-            delegate?.toggleNavDrawer()
-        }
     }
 }
 
@@ -81,6 +73,7 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 // MARK: - Collection View Actions
 extension MainMenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
         let menuOption = Option.menuOptions()[indexPath.row]
         if menuOption.url != nil {
             performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
@@ -91,3 +84,4 @@ extension MainMenuViewController: UICollectionViewDelegate {
         }
     }
 }
+

@@ -102,17 +102,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdV-Yr-hsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Dyi-qB-HOZ">
-                    <connections>
-                        <action selector="swipeRight:" destination="urN-SC-4AV" id="RcR-R2-CRm"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="YgH-oh-Unn">
-                    <connections>
-                        <action selector="swipeLeft:" destination="urN-SC-4AV" id="RFD-KC-Kwm"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <tapGestureRecognizer id="cEH-4Z-5Ny"/>
             </objects>
             <point key="canvasLocation" x="1868.1159420289857" y="-392.41071428571428"/>
         </scene>
@@ -137,14 +126,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="249" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="89" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-mA-UY8">
-                                    <rect key="frame" x="287" y="0.0" width="69" height="89"/>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="249" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="89" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-mA-UY8">
+                                    <rect key="frame" x="287" y="15" width="69" height="59"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="69" id="iX3-Tj-l0C"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="Login">
-                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
                                         <action selector="loginPressed:" destination="JCa-aZ-go2" eventType="touchUpInside" id="T9i-kN-SoS"/>
@@ -154,11 +143,11 @@
                             <color key="backgroundColor" red="0.40784313729999999" green="0.14117647059999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="M2t-MI-keI" firstAttribute="top" secondItem="b69-f9-cqt" secondAttribute="top" id="LC4-Ng-8DK"/>
+                                <constraint firstAttribute="bottom" secondItem="AyI-mA-UY8" secondAttribute="bottom" constant="15" id="LFN-h2-MJD"/>
                                 <constraint firstAttribute="trailing" secondItem="AyI-mA-UY8" secondAttribute="trailing" constant="58" id="O2c-du-90f"/>
-                                <constraint firstAttribute="bottom" secondItem="AyI-mA-UY8" secondAttribute="bottom" id="OnH-bW-5oC"/>
                                 <constraint firstItem="M2t-MI-keI" firstAttribute="leading" secondItem="b69-f9-cqt" secondAttribute="leading" constant="8" id="P0E-oW-qCU"/>
                                 <constraint firstItem="AyI-mA-UY8" firstAttribute="leading" secondItem="M2t-MI-keI" secondAttribute="trailing" constant="10" id="j8b-RH-ajA"/>
-                                <constraint firstItem="AyI-mA-UY8" firstAttribute="top" secondItem="b69-f9-cqt" secondAttribute="top" id="nA0-Mb-ayd"/>
+                                <constraint firstItem="AyI-mA-UY8" firstAttribute="top" secondItem="b69-f9-cqt" secondAttribute="top" constant="15" id="kzK-Ow-VRb"/>
                                 <constraint firstAttribute="bottom" secondItem="M2t-MI-keI" secondAttribute="bottom" id="r3M-Wb-zVU"/>
                             </constraints>
                         </view>
