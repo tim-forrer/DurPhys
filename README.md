@@ -12,10 +12,10 @@ This app is designed to work with iPhone 5S and above. iPads are not actively su
 - [x] Navigation Drawer
 - [x] Design Teaching Formats pages.
 - [x] Scrape the physics staff page for Important Contacts (may want to add preferred email once username and passwords are setup).
-- [ ] Setup keychain for storing user credentials
+- [x] App login using https://timetable.dur.ac.uk to verify credentials.
+- [x] Setup keychain for storing user credentials
   
 ### Still to do:
-- [ ] App login using https://timetable.dur.ac.uk to verify credentials (may change the test url).
 - [ ] JS Injection of aforementioned credientials into PSP, Email and DUO pages.
 - [ ] Scrape appropriate module information for use in Course Information.
 - [ ] Set up mapbox (or similarly appropriate API).
