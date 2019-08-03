@@ -77,6 +77,9 @@ extension ImportantContactsTableViewController: MFMailComposeViewControllerDeleg
         
         guard MFMailComposeViewController.canSendMail() else {
             //Show an alert to say your device can't send emails
+            let emailAlert = UIAlertController(title: "Cannot display email composer", message: "Your device email settings have not been setup/have been setup incorrectly", preferredStyle: .alert)
+            emailAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            present(emailAlert, animated: true)
             return
         }
         

@@ -143,6 +143,7 @@ extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
         
         guard MFMailComposeViewController.canSendMail() else {
             //Show an alert to say your device can't send emails
+            present(self.defaultAlert(title: "Cannot Display Email Composer", message: "Your device has email preferences have not been setup/have been setup incorrectly."), animated: true)
             return
         }
         
