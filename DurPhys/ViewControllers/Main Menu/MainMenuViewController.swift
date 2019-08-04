@@ -16,9 +16,9 @@ protocol MainMenuViewControllerDelegate {
 class MainMenuViewController: UIViewController{
     
     // MARK: - Declarations
+    var delegate: MainMenuViewControllerDelegate?
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
-    
     @IBOutlet weak var backgroundView: UIView!
     
     
@@ -39,8 +39,6 @@ class MainMenuViewController: UIViewController{
     }
     
     // MARK: - Navigation Bar Actions
-    var delegate: MainMenuViewControllerDelegate?
-    
     @IBAction func menuToggle(_ sender: Any) {
        delegate?.toggleNavDrawer()
     }

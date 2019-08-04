@@ -23,6 +23,7 @@ class NavDrawerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(self.keychain.get("username") ?? "none set")
         tableViewStyle()
         loginButtonStyle()
         
@@ -41,6 +42,14 @@ class NavDrawerViewController: UITableViewController {
         loginButton.layer.cornerRadius = 10
         loginButton.layer.borderWidth = 2
         loginButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        loginButton.titleLabel?.numberOfLines = 2
+        loginButton.titleLabel?.textAlignment = .center
+        if Utils.loggedIn {
+            loginButton.setTitle("Logged In", for: .normal)
+        } else {
+            loginButton.setTitle("Log In", for: .normal)
+        }
     }
     
     //MARK: - Setup of TableView
@@ -120,7 +129,7 @@ class NavDrawerViewController: UITableViewController {
                     }
                 }
             }
-            return navOptions[0][0] //just a random default value so there is a return outside of the nested loops
+            return navOptions[0][0] //just a random default value so there is a return outside of the nested loops, this should never be called
         }
         let navOption = getNavOption()
         if navOption.section != "General" {
@@ -132,11 +141,16 @@ class NavDrawerViewController: UITableViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        handleLogin()
+        if Utils.loggedIn {
+            logOut()
+        } else {
+            handleLogin()
+        }
     }
     
 }
 
+// MARK: - Mail Composer Delegate
 extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
     
     func showMailComposer() {
@@ -173,7 +187,7 @@ extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
 }
 
 
-//MARK: - Login functions
+// MARK: - Login functions
 extension NavDrawerViewController {
     
     func defaultAlert(title: String, message: String) -> UIAlertController{
@@ -199,7 +213,7 @@ extension NavDrawerViewController {
             if self.credentialsBlank(username: self.keychain.get("username")!, password: self.keychain.get("password")!) {
                 return
             } else {
-                self.performLogin(username: self.keychain.get("username")!, password: self.keychain.get("password")!)
+                self.performLogin()
             }
             }
         ))
@@ -217,7 +231,7 @@ extension NavDrawerViewController {
         return false
     }
     
-    func performLogin(username: String, password: String) {
+    func performLogin() {
         var request = URLRequest(url: URL(string: "https://timetable.dur.ac.uk")!)
         
         request.httpMethod = "GET"
@@ -225,27 +239,42 @@ extension NavDrawerViewController {
         let headerValue = self.keychain.get("username")! + ":" + self.keychain.get("password")!
         let utfHeaderValue = headerValue.data(using: .utf8, allowLossyConversion: false)
         let base64HeaderValue = utfHeaderValue?.base64EncodedString()
-        
         let finalHeaderValue = "Basic " + base64HeaderValue!
-        
-        
         request.setValue(finalHeaderValue, forHTTPHeaderField: "Authorization")
+        
+        
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
+            guard let _ = data, error == nil else {
                 print("error=\(String(describing: error))")
                 return
             }
             
             let httpStatus = response as? HTTPURLResponse
             print("statusCode should be 200, but is \(httpStatus!.statusCode)")
-            print("response = \(String(describing: response))")
-            print(finalHeaderValue)
             
-            let responseString = String(data: data, encoding: .utf8)
-            print("responseString = \(String(describing: responseString))")
+            if httpStatus!.statusCode != 200 {
+                let loginError = self.defaultAlert(title: "Login Error", message: "There was an error whilst logging in. Please try again.")
+                self.present(loginError, animated: true)
+            } else {
+                DispatchQueue.main.async {
+                    let loginSuccess = self.defaultAlert(title: "Login Successful", message: "You have logged in successfully as \(String(describing: self.keychain.get("username")!))")
+                    self.present(loginSuccess, animated: true)
+                    self.loginButton.setTitle("Logged in", for: .normal)
+                    Utils.loggedIn = true
+                }
+            }
+
             
         }
         task.resume()
+    }
+    
+    func logOut() {
+        self.loginButton.setTitle("Login", for: .normal)
+        keychain.clear()
+        Utils.loggedIn = false
+        let logOutSuccess = self.defaultAlert(title: "Logout Successful", message: "You have successfully logged out")
+        self.present(logOutSuccess, animated: true)
     }
     
     

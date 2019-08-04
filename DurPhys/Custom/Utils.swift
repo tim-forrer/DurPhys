@@ -13,50 +13,8 @@ class Utils: UIViewController {
     static let palatinate = UIColor(red: 104/255, green: 36/255, blue: 109/255, alpha: 1.0)
     static let heather = UIColor(red: 203/255, green: 168/255, blue: 177/255, alpha: 1.0)
     
-    class func loginCheck(user: String, pass: String) -> Bool {
-        
-        let params: [String: String] = ["user" : user,
-                                        "pass" : pass,
-                                        "Submit": "Log on"]
-        
-        var statusCode: Int = 0
-        
-        let url = URL(string: "https://teaching.physics.dur.ac.uk/")!
-        var request = URLRequest(url: url)
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.httpMethod = "POST"
-        
-        request.httpBody = params.percentEscaped().data(using: .utf8)
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data,
-                let response = response as? HTTPURLResponse,
-                error == nil else {                                              // check for fundamental networking error
-                    print("error", error ?? "Unknown error")
-                    return
-            }
-            
-            guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
-                print("statusCode should be 2xx, but is \(response.statusCode)")
-                print("response = \(response)")
-                return
-            }
-            
-            let _ = String(data: data, encoding: .utf8) //responseString was taken out where the underscore is
-            //print("responseString = \(responseString), response code = \(response.statusCode)")
-            print(response.statusCode)
-            statusCode = response.statusCode
-        }
-        
-        task.resume()
-        print(statusCode)
-        if statusCode != 200 {
-            print("returning false")
-            return false
-        }
-        print("returning true")
-        return true
-    }
+    static var loggedIn = false
+    
     
 }
 
@@ -88,5 +46,19 @@ extension Array where Element: Equatable {
     mutating func remove(object: Element) {
         guard let index = firstIndex(of: object) else {return}
         remove(at: index)
+    }
+}
+
+extension UIStoryboard {
+    static func mainStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: Bundle.main)
+    }
+    
+    static func navDrawerViewController() -> NavDrawerViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier: "navDrawerViewController") as? NavDrawerViewController
+    }
+    
+    static func mainMenuViewController() -> MainMenuViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier: "mainMenuViewController") as? MainMenuViewController
     }
 }

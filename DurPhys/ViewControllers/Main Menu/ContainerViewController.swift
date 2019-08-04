@@ -10,16 +10,14 @@ import UIKit
 
 class ContainerViewController: UIViewController {
     
-    // MARK: - Init
+    // MARK: - Declarations
     var navDrawerShowing = false
-    
     var mainMenuNavigationController: UINavigationController!
     var mainMenuViewController: MainMenuViewController!
-
     var navDrawerViewController: NavDrawerViewController?
-    
     let centerPanelExpandedOffset: CGFloat = 50
     
+    // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,22 +39,7 @@ class ContainerViewController: UIViewController {
     }
 }
 
-private extension UIStoryboard {
-    static func mainStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
-    }
-    
-    static func navDrawerViewController() -> NavDrawerViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "navDrawerViewController") as? NavDrawerViewController
-    }
-    
-    static func mainMenuViewController() -> MainMenuViewController? {
-        return mainStoryboard().instantiateViewController(withIdentifier: "mainMenuViewController") as? MainMenuViewController
-    }
-}
-
 // MARK: - MainMenuViewController delegate
-
 extension ContainerViewController: MainMenuViewControllerDelegate {
     
     @objc func toggleNavDrawer(){

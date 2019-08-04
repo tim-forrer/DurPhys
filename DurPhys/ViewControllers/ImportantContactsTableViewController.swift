@@ -11,10 +11,13 @@ import MessageUI
 
 class ImportantContactsTableViewController: UITableViewController {
     
+    // MARK: - Declarations
+    var filteredContactList = [Contact]()
     let contactList = Contact.contacts()
     @IBOutlet weak var searchBar: UISearchBar!
-    var filteredContactList = [Contact]()
     
+    
+    // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,6 +62,7 @@ class ImportantContactsTableViewController: UITableViewController {
 
 }
 
+// MARK: - Searchbar Delegate
 extension ImportantContactsTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == "" {
@@ -72,6 +76,7 @@ extension ImportantContactsTableViewController: UISearchBarDelegate {
     }
 }
 
+// MARK: - Mail Composer Delegate
 extension ImportantContactsTableViewController: MFMailComposeViewControllerDelegate {
     func showMailComposer(email: String) {
         

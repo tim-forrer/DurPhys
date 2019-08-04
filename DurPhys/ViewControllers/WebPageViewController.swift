@@ -12,14 +12,13 @@ import WebKit
 class WebPageViewController: UIViewController, WKNavigationDelegate {
     
     // MARK: - Declarations
-    @IBOutlet weak var webView: WKWebView!
-    
-    @IBOutlet weak var navBar: UINavigationBar!
-    
-    @IBOutlet weak var navBarTitle: UINavigationItem!
-    
     var option: Option!
     
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var navBar: UINavigationBar!
+    @IBOutlet weak var navBarTitle: UINavigationItem!
+    
+    // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,10 +41,9 @@ class WebPageViewController: UIViewController, WKNavigationDelegate {
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = false
         
-        if option.loginPossible {
-            print("Attempting login")
-        }
     }
+    
+    //MARK: - Actions
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true) {}
     }
