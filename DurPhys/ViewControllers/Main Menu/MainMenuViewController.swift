@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - MainMenuViewControllerDelegate
 protocol MainMenuViewControllerDelegate {
     func toggleNavDrawer()
     var navDrawerShowing: Bool {get}
@@ -27,8 +28,6 @@ class MainMenuViewController: UIViewController{
         super.viewDidLoad()
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
-        
-        self.navigationController?.navigationItem.leftBarButtonItem?.title = "Menu"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

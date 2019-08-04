@@ -196,12 +196,12 @@
 			isa = PBXGroup;
 			children = (
 				E940830322D490B800CDF8B4 /* MainMenuCollectionViewCell.swift */,
-				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
 				22AE6A1C22E5AD14009A22D5 /* UICustomButton.swift */,
 				22AE6A1E22E5B56B009A22D5 /* CustomTabBarController.swift */,
 				226BDB5222E619BA005D298E /* Option.swift */,
 				22F2828822E96339004B7DC8 /* Contact.swift */,
 				E9A2A46222E9C7D50053D255 /* ImportantContactsTableViewCell.swift */,
+				E9A0B2FA22D7469000B49E11 /* Utils.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
