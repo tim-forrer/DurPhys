@@ -15,7 +15,7 @@ class Utils: UIViewController {
     
     static var loggedIn = false
     
-    
+    static let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 }
 
 extension Dictionary {

@@ -77,6 +77,7 @@ extension MainMenuViewController: UICollectionViewDelegate {
         } else {
             let nextStoryboard = UIStoryboard(name: menuOption.label!, bundle: nil)
             let newViewController = nextStoryboard.instantiateViewController(withIdentifier: menuOption.label!)
+            newViewController.title = menuOption.label
             navigationController?.pushViewController(newViewController, animated: true)
         }
     }
