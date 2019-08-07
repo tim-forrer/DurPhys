@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		130E4F7F994B9DA11A5CD8D4 /* Pods_DurPhys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9AB21E4084C5E8B3787A1E /* Pods_DurPhys.framework */; };
+		222A2E0722FAFFED000D5D27 /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A2E0622FAFFED000D5D27 /* TimetableCollectionViewCell.swift */; };
+		224DDB9522F97CBC000B1D37 /* CourseInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DDB9422F97CBC000B1D37 /* CourseInfoParser.swift */; };
+		224DDB9722F989B8000B1D37 /* ModuleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DDB9622F989B8000B1D37 /* ModuleDetail.swift */; };
 		2258339622E713B100FF50BE /* Education.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2258339522E713B100FF50BE /* Education.storyboard */; };
-		225882AB22F87CF400E03BDE /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225882AA22F87CF400E03BDE /* TimetableCollectionViewCell.swift */; };
-		225882AD22F87D1A00E03BDE /* TimetableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225882AC22F87D1A00E03BDE /* TimetableTableViewCell.swift */; };
+		225E710D22FAE3A6006AFA2B /* ModulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E710C22FAE3A6006AFA2B /* ModulesTableViewCell.swift */; };
 		2260268E22E75A9200573603 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260268D22E75A9200573603 /* EducationViewController.swift */; };
 		226BDB5322E619BA005D298E /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BDB5222E619BA005D298E /* Option.swift */; };
 		226EFF1A22E078FA00226D86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226EFF1922E078FA00226D86 /* WebKit.framework */; };
 		22728F5F22F706640093BF58 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728F5E22F706640093BF58 /* Module.swift */; };
-		22728F6122F70C600093BF58 /* ModuleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728F6022F70C600093BF58 /* ModuleListTableViewCell.swift */; };
 		22728F6422F70D220093BF58 /* CourseInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728F6322F70D220093BF58 /* CourseInformationTableViewController.swift */; };
 		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
 		22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9822E469A7002F91A7 /* LecturesViewController.swift */; };
@@ -46,14 +47,15 @@
 /* Begin PBXFileReference section */
 		0B937455ADF37453D2596A37 /* Pods-DurPhys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.debug.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.debug.xcconfig"; sourceTree = "<group>"; };
 		0DA29ED068EA6A8959D155DF /* Pods-DurPhys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DurPhys.release.xcconfig"; path = "Target Support Files/Pods-DurPhys/Pods-DurPhys.release.xcconfig"; sourceTree = "<group>"; };
+		222A2E0622FAFFED000D5D27 /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
+		224DDB9422F97CBC000B1D37 /* CourseInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoParser.swift; sourceTree = "<group>"; };
+		224DDB9622F989B8000B1D37 /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
 		2258339522E713B100FF50BE /* Education.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Education.storyboard; sourceTree = "<group>"; };
-		225882AA22F87CF400E03BDE /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
-		225882AC22F87D1A00E03BDE /* TimetableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableTableViewCell.swift; sourceTree = "<group>"; };
+		225E710C22FAE3A6006AFA2B /* ModulesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesTableViewCell.swift; sourceTree = "<group>"; };
 		2260268D22E75A9200573603 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		226BDB5222E619BA005D298E /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		226EFF1922E078FA00226D86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		22728F5E22F706640093BF58 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		22728F6022F70C600093BF58 /* ModuleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleListTableViewCell.swift; sourceTree = "<group>"; };
 		22728F6322F70D220093BF58 /* CourseInformationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInformationTableViewController.swift; sourceTree = "<group>"; };
 		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
 		22916A9822E469A7002F91A7 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +121,8 @@
 			children = (
 				E940830322D490B800CDF8B4 /* MainMenuCollectionViewCell.swift */,
 				E9A2A46222E9C7D50053D255 /* ImportantContactsTableViewCell.swift */,
-				22728F6022F70C600093BF58 /* ModuleListTableViewCell.swift */,
-				225882AA22F87CF400E03BDE /* TimetableCollectionViewCell.swift */,
-				225882AC22F87D1A00E03BDE /* TimetableTableViewCell.swift */,
+				225E710C22FAE3A6006AFA2B /* ModulesTableViewCell.swift */,
+				222A2E0622FAFFED000D5D27 /* TimetableCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -132,6 +133,7 @@
 				226BDB5222E619BA005D298E /* Option.swift */,
 				22F2828822E96339004B7DC8 /* Contact.swift */,
 				22728F5E22F706640093BF58 /* Module.swift */,
+				224DDB9622F989B8000B1D37 /* ModuleDetail.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,6 +194,7 @@
 				E94082EF22D48F8600CDF8B4 /* AppDelegate.swift */,
 				E94082F622D48F8700CDF8B4 /* Assets.xcassets */,
 				E94082FB22D48F8800CDF8B4 /* Info.plist */,
+				224DDB9422F97CBC000B1D37 /* CourseInfoParser.swift */,
 			);
 			path = DurPhys;
 			sourceTree = "<group>";
@@ -366,23 +369,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */,
-				225882AD22F87D1A00E03BDE /* TimetableTableViewCell.swift in Sources */,
+				224DDB9522F97CBC000B1D37 /* CourseInfoParser.swift in Sources */,
 				E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */,
+				224DDB9722F989B8000B1D37 /* ModuleDetail.swift in Sources */,
 				22916AA122E48453002F91A7 /* HomeworkViewController.swift in Sources */,
+				222A2E0722FAFFED000D5D27 /* TimetableCollectionViewCell.swift in Sources */,
 				2260268E22E75A9200573603 /* EducationViewController.swift in Sources */,
 				22AE6A1F22E5B56B009A22D5 /* CustomTabBarController.swift in Sources */,
 				22AE6A1D22E5AD14009A22D5 /* UICustomButton.swift in Sources */,
 				E9A2A46322E9C7D50053D255 /* ImportantContactsTableViewCell.swift in Sources */,
 				E940830222D48FCB00CDF8B4 /* MainMenuViewController.swift in Sources */,
 				E94082F022D48F8600CDF8B4 /* AppDelegate.swift in Sources */,
-				225882AB22F87CF400E03BDE /* TimetableCollectionViewCell.swift in Sources */,
 				226BDB5322E619BA005D298E /* Option.swift in Sources */,
 				22728F6422F70D220093BF58 /* CourseInformationTableViewController.swift in Sources */,
-				22728F6122F70C600093BF58 /* ModuleListTableViewCell.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
 				22F2828922E96339004B7DC8 /* Contact.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				22728F5F22F706640093BF58 /* Module.swift in Sources */,
+				225E710D22FAE3A6006AFA2B /* ModulesTableViewCell.swift in Sources */,
 				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
 				E9A2A46122E9C75C0053D255 /* ImportantContactsTableViewController.swift in Sources */,
 				22916A9F22E4843A002F91A7 /* ExamsViewController.swift in Sources */,
