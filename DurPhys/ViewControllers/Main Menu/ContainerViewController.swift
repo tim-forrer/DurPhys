@@ -31,6 +31,7 @@ class ContainerViewController: UIViewController {
         mainMenuNavigationController.navigationBar.isTranslucent = false
         mainMenuNavigationController.navigationBar.tintColor = .white
         mainMenuNavigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        mainMenuViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(toggleNavDrawer))
         
         view.addSubview(mainMenuNavigationController.view)
         addChild(mainMenuNavigationController)

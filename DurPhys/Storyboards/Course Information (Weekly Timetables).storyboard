@@ -12,12 +12,12 @@
         <!--Course Information Table View Controller-->
         <scene sceneID="1XU-HJ-bsf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xVt-bQ-GRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="Course Information (Weekly Timetables)" id="Yon-Xi-zq1" customClass="CourseInformationTableViewController" customModule="DurPhys" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XZi-OA-vOj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ModulesTableViewCell" rowHeight="300" id="yCj-xt-ctM" customClass="ModulesTableViewCell" customModule="DurPhys" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="300"/>
@@ -39,37 +39,73 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wWt-aM-jei">
-                                            <rect key="frame" x="20" y="74" width="394" height="217.5"/>
+                                            <rect key="frame" x="20" y="74" width="374" height="217.5"/>
                                             <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pq8-pB-Zn4">
-                                                <size key="itemSize" width="135" height="200"/>
+                                                <size key="itemSize" width="166" height="200"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimetableCollectionViewCell" id="Cna-yq-UbV" customClass="TimetableCollectionViewCell" customModule="DurPhys" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="9" width="135" height="200"/>
+                                                    <rect key="frame" x="0.0" y="9" width="166" height="200"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="200"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="i9d-9s-rPt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="200"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBD-7Q-YQj">
-                                                                        <rect key="frame" x="0.0" y="2" width="135" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="2" width="166" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VME-Y9-vCV" customClass="TimetableTableView" customModule="DurPhys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="31" width="166" height="169"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <prototypes>
+                                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimetableTableViewCell" id="cfp-gr-LHK" customClass="TimetableTableViewCell" customModule="DurPhys" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="28" width="166" height="44"/>
+                                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfp-gr-LHK" id="w1f-VT-SaO">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="43.5"/>
+                                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-Gq-fgg">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="43.5"/>
+                                                                                            <color key="backgroundColor" red="0.40784313729999999" green="0.14117647059999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                    </subviews>
+                                                                                    <constraints>
+                                                                                        <constraint firstItem="3FE-Gq-fgg" firstAttribute="leading" secondItem="w1f-VT-SaO" secondAttribute="leading" id="2Ct-mb-EUf"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="3FE-Gq-fgg" secondAttribute="bottom" id="9Lt-dr-Lnc"/>
+                                                                                        <constraint firstItem="3FE-Gq-fgg" firstAttribute="top" secondItem="w1f-VT-SaO" secondAttribute="top" id="RWW-is-kJL"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="3FE-Gq-fgg" secondAttribute="trailing" id="TGg-0h-8PD"/>
+                                                                                    </constraints>
+                                                                                </tableViewCellContentView>
+                                                                                <connections>
+                                                                                    <outlet property="moduleDetail" destination="3FE-Gq-fgg" id="YRh-pa-UpZ"/>
+                                                                                </connections>
+                                                                            </tableViewCell>
+                                                                        </prototypes>
+                                                                    </tableView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="VME-Y9-vCV" secondAttribute="bottom" id="1Hw-wd-Ie5"/>
+                                                                    <constraint firstItem="VME-Y9-vCV" firstAttribute="leading" secondItem="i9d-9s-rPt" secondAttribute="leading" id="4u0-nz-8T7"/>
                                                                     <constraint firstItem="bBD-7Q-YQj" firstAttribute="top" secondItem="i9d-9s-rPt" secondAttribute="top" constant="2" id="9Ic-mV-fz0"/>
                                                                     <constraint firstItem="bBD-7Q-YQj" firstAttribute="leading" secondItem="i9d-9s-rPt" secondAttribute="leading" id="CbY-Ba-Pgd"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="VME-Y9-vCV" secondAttribute="trailing" id="UOV-IV-7K9"/>
                                                                     <constraint firstAttribute="trailing" secondItem="bBD-7Q-YQj" secondAttribute="trailing" id="nww-YW-Eia"/>
+                                                                    <constraint firstItem="VME-Y9-vCV" firstAttribute="top" secondItem="bBD-7Q-YQj" secondAttribute="bottom" constant="8" id="o48-gc-Hg9"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -81,17 +117,19 @@
                                                         <constraint firstAttribute="trailing" secondItem="i9d-9s-rPt" secondAttribute="trailing" id="isr-42-SbK"/>
                                                     </constraints>
                                                     <connections>
+                                                        <outlet property="timetableTableView" destination="VME-Y9-vCV" id="MPN-dr-eAk"/>
                                                         <outlet property="weekday" destination="bBD-7Q-YQj" id="5sD-iy-BjI"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.79607843140000001" green="0.6588235294" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="wWt-aM-jei" secondAttribute="bottom" constant="8" id="7dj-eb-bm3"/>
                                         <constraint firstItem="wWt-aM-jei" firstAttribute="top" secondItem="U21-NU-ycF" secondAttribute="bottom" constant="8" id="Cdu-ws-Cx8"/>
                                         <constraint firstItem="rEc-bL-1e4" firstAttribute="top" secondItem="hWU-do-mHu" secondAttribute="topMargin" id="KWD-09-OcV"/>
-                                        <constraint firstAttribute="trailing" secondItem="wWt-aM-jei" secondAttribute="trailing" id="Nr7-d0-I5K"/>
+                                        <constraint firstAttribute="trailing" secondItem="wWt-aM-jei" secondAttribute="trailing" constant="20" id="Nr7-d0-I5K"/>
                                         <constraint firstItem="U21-NU-ycF" firstAttribute="top" secondItem="rEc-bL-1e4" secondAttribute="bottom" constant="8" id="gCk-2B-I5X"/>
                                         <constraint firstItem="U21-NU-ycF" firstAttribute="leading" secondItem="hWU-do-mHu" secondAttribute="leadingMargin" id="mcF-mW-Qji"/>
                                         <constraint firstItem="wWt-aM-jei" firstAttribute="leading" secondItem="hWU-do-mHu" secondAttribute="leading" constant="20" id="ohD-BA-tUo"/>
@@ -110,7 +148,11 @@
                             <outlet property="delegate" destination="Yon-Xi-zq1" id="Z06-iJ-wvo"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="superTableView" destination="XZi-OA-vOj" id="qYp-cB-k48"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVt-bQ-GRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-868.11594202898561" y="194.86607142857142"/>
         </scene>

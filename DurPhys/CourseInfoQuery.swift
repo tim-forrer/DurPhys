@@ -12,12 +12,15 @@ import KeychainSwift
 
 class CourseInfoQuery{
     
-    class func requestTimetable(moduleCode: String, completionBlock: @escaping (String) -> Void) -> Void
-    {
+    let defaultSession = URLSession(configuration: .default)
+    var dataTask: URLSessionDataTask?
+    var errorMessage: String = ""
+    
+    func getModuleTimetable(moduleCode: String, completionHandler: @escaping([[ModuleDetail]])->Void) {
         let keychain = KeychainSwift()
-        let requestURL = URL(string: "https://timetable.dur.ac.uk/reporting/individual;module;name;\(moduleCode)%0D%0A?days=1-5&weeks=20&periods=5-41&template=module+individual&height=100&week=100")
-        var request = URLRequest(url: requestURL!)
         
+        guard let url = URL(string: "https://timetable.dur.ac.uk/reporting/individual;module;name;\(moduleCode)%0D%0A?days=1-5&weeks=20&periods=5-41&template=module+individual&height=100&week=100") else { return }
+        var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let headerValue = keychain.get("username")! + ":" + keychain.get("password")!
         let utfHeaderValue = headerValue.data(using: .utf8, allowLossyConversion: false)
@@ -25,25 +28,35 @@ class CourseInfoQuery{
         let finalHeaderValue = "Basic " + base64HeaderValue!
         request.setValue(finalHeaderValue, forHTTPHeaderField: "Authorization")
         
-        let requestTask = URLSession.shared.dataTask(with: request) {
-            (data: Data?, response: URLResponse?, error: Error?) in
-            
-            if(error != nil) {
-                print("Error: \(String(describing: error))")
-            }else
-            {
-                let outputStr  = String(data: data!, encoding: String.Encoding.utf8) as String?
-                //send this block to required place
+        dataTask = defaultSession.dataTask(with: request) { [weak self] data, response, error in
+            if let error = error {
+                self?.errorMessage += "DataTask error: " + error.localizedDescription + "\n"
+            } else if
+                let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 {
+                let moduleDetails = self!.parseDataToModuleDetails(data: data)
                 DispatchQueue.main.async {
-                    completionBlock(outputStr!)
+                    completionHandler(moduleDetails)
                 }
             }
         }
-        
-        requestTask.resume()
+        dataTask?.resume()
     }
+    
+    private func parseDataToModuleDetails(data: Data) -> [[ModuleDetail]]{
+        let dataString = String(data: data, encoding: String.Encoding.utf8) as String?
+        var moduleDetailsForWeek: [[ModuleDetail]] = []
+        for (index, _ ) in Utils.weekdays.enumerated() {
+            let tableRowCells = getTableRowCells(html: dataString!, weekday: index)
+            let moduleDetails = getModuleDetails(moduleInfoForWeekday: tableRowCells!)
+            moduleDetailsForWeek.append(moduleDetails)
+        }
+        return moduleDetailsForWeek
+    }
+    
 
-    class func tableRowCellsForDay(html: String, weekday: Int) -> [Element]? { //this will return the timetable information for a given weekday
+    private func getTableRowCells(html: String, weekday: Int) -> [Element]? { //this will return the timetable information for a given weekday
         do {
             let doc: Document = try SwiftSoup.parse(html)
             let tables: [Element] = try doc.getElementsByTag("table").array()
@@ -63,27 +76,27 @@ class CourseInfoQuery{
         }
     }
 
-    class func moduleInfo(moduleInfoForWeekday: [Element]) -> [ModuleDetail] { //returns an array of ModuleDetail for that given day
+    private func getModuleDetails(moduleInfoForWeekday: [Element]) -> [ModuleDetail] { //returns an array of ModuleDetail for that given day
         var timeIndex = 0 //tracks what time it is, 9:00 being timeIndex 0, and incrementing in periods of 15mins
-        var moduleInfoArray = [ModuleDetail]()
+        var moduleDetails: [ModuleDetail] = []
         do {
             for tableRowCell in moduleInfoForWeekday {
                 if try tableRowCell.text() != "" {
-                    let moduleDetail = retrieveModuleInfoForGivenTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
-                    moduleInfoArray.append(moduleDetail!)
+                    let moduleDetail = getModuleDetailForTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
+                    moduleDetails.append(moduleDetail!)
                     timeIndex += 4
                 } else {
                     timeIndex += 1
                 }
             }
-            return moduleInfoArray
+            return moduleDetails
         } catch {
-            print("There was an error")
-            return  moduleInfoArray
+            print("There was an error when getting module details")
+            return []
         }
     }
 
-    class func retrieveModuleInfoForGivenTime(tableRowCell: Element, timeIndex: Int) -> ModuleDetail? {
+    private func getModuleDetailForTime(tableRowCell: Element, timeIndex: Int) -> ModuleDetail? {
         let moduleDetail = ModuleDetail(detail: "placeholder", name: "placeholder", staffMember: "placeholder", location: "placeholder", time: "placeholder")
         do {
             let subTables = try tableRowCell.select("table").array()
@@ -105,24 +118,6 @@ class CourseInfoQuery{
             print("Error: \(error)")
             return nil
         }
-    }
-    
-    class func allModulesInfo() -> [[[ModuleDetail]]]{
-        var allModulesInfo: [[[ModuleDetail]]] = []
-        for module in Module.modules() { //iterates over each module
-            let moduleCode = module.dept + String(module.code)
-            CourseInfoParser.requestTimetable(moduleCode: moduleCode) { (output) in
-                var fullWeekModuleDetail: [[ModuleDetail]] = []
-                for (index, _) in Utils.weekdays.enumerated() { //iterates over each day
-                    let tableRowCells = CourseInfoParser.tableRowCellsForDay(html: output, weekday: index)
-                    let moduleDetailForDay = CourseInfoParser.moduleInfo(moduleInfoForWeekday: tableRowCells!)
-                    fullWeekModuleDetail.append(moduleDetailForDay)
-                }
-                allModulesInfo.append(fullWeekModuleDetail)
-                print(allModulesInfo)
-            }
-        }
-        return allModulesInfo
     }
 
 }

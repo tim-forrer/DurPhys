@@ -13,11 +13,13 @@ class Module {
     let name: String
     let code: Int
     let dept: String
+    let fullCode: String
     
     init(name: String, code: Int, dept: String) {
         self.name = name
         self.code = code
-        self.dept = dept
+        self.dept = dept //separated code and dept in case sorting by department was desired at some stage
+        self.fullCode = dept + String(code)
     }
     
     class func modules() -> [Module] {
@@ -25,7 +27,7 @@ class Module {
         
         let introToAstro = Module(name: "Introduction To Astronomy", code: 1081, dept: "PHYS")
         let foundationsOfPhys = Module(name: "Foundations of Physics 1", code: 1122, dept: "PHYS")
-        let discSkillsInPhys = Module(name: "Discovery Skills in Phyiscs", code: 1101, dept: "PHYS")
+        let discSkillsInPhys = Module(name: "Discovery Skills in Physics", code: 1101, dept: "PHYS")
         let mathsTookit = Module(name: "Maths Toolkit for Scientists", code: 1141, dept: "PHYS")
         
         let sma = Module(name: "Single Mathematics A", code: 1561, dept: "MATH")

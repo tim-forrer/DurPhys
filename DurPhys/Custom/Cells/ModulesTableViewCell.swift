@@ -13,7 +13,7 @@ class ModulesTableViewCell: UITableViewCell {
     @IBOutlet weak var moduleName: UILabel!
     @IBOutlet weak var moduleCode: UILabel!
     @IBOutlet private weak var timetableCollectionView: UICollectionView!
-    private var timetableCollectionViewShowing: Bool = true
+    
     var collectionViewOffset: CGFloat {
         get {
             return timetableCollectionView.contentOffset.x
@@ -28,11 +28,6 @@ class ModulesTableViewCell: UITableViewCell {
         timetableCollectionView.dataSource = dataSourceDelegate
         timetableCollectionView.tag = row
         timetableCollectionView.reloadData()
-    }
-    
-    func toggleTimetableCollectionView() {
-        timetableCollectionView.isHidden = !timetableCollectionViewShowing
-        timetableCollectionViewShowing = !timetableCollectionViewShowing
     }
     
 }

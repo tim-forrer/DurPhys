@@ -18,6 +18,8 @@ class MainMenuViewController: UIViewController{
     
     // MARK: - Declarations
     var delegate: MainMenuViewControllerDelegate?
+    var courseInfoQuery = CourseInfoQuery()
+    var moduleDetails = [[ModuleDetail]]()
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
     @IBOutlet weak var backgroundView: UIView!
@@ -28,6 +30,7 @@ class MainMenuViewController: UIViewController{
         super.viewDidLoad()
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
