@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 // MARK: - MainMenuViewControllerDelegate
 protocol MainMenuViewControllerDelegate {
@@ -18,8 +19,7 @@ class MainMenuViewController: UIViewController{
     
     // MARK: - Declarations
     var delegate: MainMenuViewControllerDelegate?
-    var courseInfoQuery = CourseInfoQuery()
-    var moduleDetails = [[ModuleDetail]]()
+    var keychain = KeychainSwift()
     
     @IBOutlet weak var mainMenuCollectionView: UICollectionView!
     @IBOutlet weak var backgroundView: UIView!
@@ -30,6 +30,10 @@ class MainMenuViewController: UIViewController{
         super.viewDidLoad()
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
+        
+        showLoginPromptIfNeeded()
+        
+        
         
     }
     
@@ -73,15 +77,33 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
 // MARK: - Collection View Actions
 extension MainMenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
         let menuOption = Option.menuOptions()[indexPath.row]
+        
         if menuOption.url != nil {
             performSegue(withIdentifier: "menuToWebPage", sender: menuOption)
-        } else {
+        } else if menuOption.name != "courseInformation" || Utils.isLoggedIn() {
             let nextStoryboard = UIStoryboard(name: menuOption.label!, bundle: nil)
             let newViewController = nextStoryboard.instantiateViewController(withIdentifier: menuOption.label!)
             newViewController.title = menuOption.label
             navigationController?.pushViewController(newViewController, animated: true)
+        } else {
+            showLoginPromptIfNeeded()
+        }
+    }
+}
+
+// MARK: - Logged in check
+extension MainMenuViewController {
+    
+    func loginPrompt() -> UIAlertController {
+        let alert = UIAlertController(title: "User not logged in.", message: "You are not logged in, many sections of this app require you to be logged in for full functionality.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { _ in self.delegate?.toggleNavDrawer()}))
+        return alert
+    }
+    
+    func showLoginPromptIfNeeded() {
+        if !Utils.isLoggedIn() {
+            self.parent!.present(loginPrompt(), animated: true)
         }
     }
 }

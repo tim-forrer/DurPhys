@@ -121,17 +121,18 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Durham University Physics Department" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-MI-keI">
-                                    <rect key="frame" x="8" y="0.0" width="269" height="89"/>
+                                    <rect key="frame" x="8" y="0.0" width="263" height="89"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="249" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="89" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-mA-UY8">
-                                    <rect key="frame" x="287" y="15" width="69" height="59"/>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="249" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="89" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-mA-UY8">
+                                    <rect key="frame" x="281" y="15" width="75" height="59"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="69" id="iX3-Tj-l0C"/>
+                                        <constraint firstAttribute="width" constant="75" id="iX3-Tj-l0C"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                                     <state key="normal" title="Login">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>

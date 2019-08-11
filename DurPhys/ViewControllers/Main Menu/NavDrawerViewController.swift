@@ -45,7 +45,7 @@ class NavDrawerViewController: UITableViewController {
         loginButton.titleLabel?.adjustsFontSizeToFitWidth = true
         loginButton.titleLabel?.numberOfLines = 2
         loginButton.titleLabel?.textAlignment = .center
-        if Utils.loggedIn {
+        if Utils.isLoggedIn() {
             loginButton.setTitle("Logged In", for: .normal)
         } else {
             loginButton.setTitle("Log In", for: .normal)
@@ -141,7 +141,7 @@ class NavDrawerViewController: UITableViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        if Utils.loggedIn {
+        if Utils.isLoggedIn() {
             logOut()
         } else {
             handleLogin()
@@ -260,7 +260,6 @@ extension NavDrawerViewController {
                     let loginSuccess = self.defaultAlert(title: "Login Successful", message: "You have logged in successfully as \(String(describing: self.keychain.get("username")!))")
                     self.present(loginSuccess, animated: true)
                     self.loginButton.setTitle("Logged in", for: .normal)
-                    Utils.loggedIn = true
                 }
             }
 
@@ -272,7 +271,6 @@ extension NavDrawerViewController {
     func logOut() {
         self.loginButton.setTitle("Login", for: .normal)
         keychain.clear()
-        Utils.loggedIn = false
         let logOutSuccess = self.defaultAlert(title: "Logout Successful", message: "You have successfully logged out")
         self.present(logOutSuccess, animated: true)
     }

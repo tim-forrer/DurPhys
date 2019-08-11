@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class ContainerViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class ContainerViewController: UIViewController {
     var mainMenuViewController: MainMenuViewController!
     var navDrawerViewController: NavDrawerViewController?
     let centerPanelExpandedOffset: CGFloat = 50
+    let keychain = KeychainSwift()
     
     // MARK: - Init
     override func viewDidLoad() {
@@ -99,3 +101,4 @@ extension ContainerViewController: MainMenuViewControllerDelegate {
     }
     
 }
+

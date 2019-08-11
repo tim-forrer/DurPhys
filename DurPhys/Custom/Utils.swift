@@ -13,9 +13,12 @@ class Utils: UIViewController {
     
     static let palatinate = UIColor(red: 104/255, green: 36/255, blue: 109/255, alpha: 1.0)
     static let heather = UIColor(red: 203/255, green: 168/255, blue: 177/255, alpha: 1.0)
-    static var loggedIn = false
     static let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     
+    class func isLoggedIn() -> Bool {
+        let keychain = KeychainSwift()
+        return (keychain.get("username") != nil) && (keychain.get("password") != nil)
+    }
 }
 
 extension Dictionary {
