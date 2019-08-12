@@ -40,7 +40,7 @@
 		E940831422D4E5F900CDF8B4 /* Important Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831322D4E5F900CDF8B4 /* Important Contacts.storyboard */; };
 		E940831622D4E60900CDF8B4 /* Teaching Formats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831522D4E60900CDF8B4 /* Teaching Formats.storyboard */; };
 		E97C1B3423017747008967C4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C1B3323017747008967C4 /* Place.swift */; };
-		E97C1B3623017CAE008967C4 /* PlaceInfoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */; };
+		E97C1B3623017CAE008967C4 /* PlaceDetailsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C1B3523017CAE008967C4 /* PlaceDetailsQuery.swift */; };
 		E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FA22D7469000B49E11 /* Utils.swift */; };
 		E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */; };
 		E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */; };
@@ -86,7 +86,7 @@
 		E940831322D4E5F900CDF8B4 /* Important Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Important Contacts.storyboard"; sourceTree = "<group>"; };
 		E940831522D4E60900CDF8B4 /* Teaching Formats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Teaching Formats.storyboard"; sourceTree = "<group>"; };
 		E97C1B3323017747008967C4 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoQuery.swift; sourceTree = "<group>"; };
+		E97C1B3523017CAE008967C4 /* PlaceDetailsQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsQuery.swift; sourceTree = "<group>"; };
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
 		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 				E94082F622D48F8700CDF8B4 /* Assets.xcassets */,
 				E94082FB22D48F8800CDF8B4 /* Info.plist */,
 				224DDB9422F97CBC000B1D37 /* CourseInfoQuery.swift */,
-				E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */,
+				E97C1B3523017CAE008967C4 /* PlaceDetailsQuery.swift */,
 			);
 			path = DurPhys;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				22728F6422F70D220093BF58 /* CourseInformationTableViewController.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
 				22F2828922E96339004B7DC8 /* Contact.swift in Sources */,
-				E97C1B3623017CAE008967C4 /* PlaceInfoQuery.swift in Sources */,
+				E97C1B3623017CAE008967C4 /* PlaceDetailsQuery.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				222A2E0922FB169F000D5D27 /* TimetableTableViewCell.swift in Sources */,
 				22728F5F22F706640093BF58 /* Module.swift in Sources */,
