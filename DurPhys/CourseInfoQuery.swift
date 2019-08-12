@@ -80,13 +80,25 @@ class CourseInfoQuery{
         var timeIndex = 0 //tracks what time it is, 9:00 being timeIndex 0, and incrementing in periods of 15mins
         var moduleDetails: [ModuleDetail] = []
         do {
-            for tableRowCell in moduleInfoForWeekday {
-                if try tableRowCell.text() != "" {
-                    let moduleDetail = getModuleDetailForTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
-                    moduleDetails.append(moduleDetail!)
-                    timeIndex += 4
+            for (index, tableRowCell) in moduleInfoForWeekday.enumerated() { // tidy this up lots, very messy atm
+                if index > 0 {
+                    if try tableRowCell.text() != "" && moduleInfoForWeekday[index - 1].text() == "" {
+                        let moduleDetail = getModuleDetailForTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
+                        moduleDetails.append(moduleDetail!)
+                        timeIndex += 4
+                    } else if try tableRowCell.text() != "" && moduleInfoForWeekday[index - 1].text() != ""{
+                        let moduleDetail = getModuleDetailForTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
+                        moduleDetails.append(moduleDetail!)
+                    }
                 } else {
-                    timeIndex += 1
+                    if try tableRowCell.text() != "" {
+                        let moduleDetail = getModuleDetailForTime(tableRowCell: tableRowCell, timeIndex: timeIndex)
+                        moduleDetails.append(moduleDetail!)
+                        timeIndex += 4
+                    } else {
+                        timeIndex += 1
+                    }
+
                 }
             }
             return moduleDetails

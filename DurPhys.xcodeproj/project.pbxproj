@@ -20,7 +20,6 @@
 		22728F5F22F706640093BF58 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728F5E22F706640093BF58 /* Module.swift */; };
 		22728F6422F70D220093BF58 /* CourseInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728F6322F70D220093BF58 /* CourseInformationTableViewController.swift */; };
 		2287A4F022DF34BD003AF0DA /* WebPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */; };
-		2291263122FC55AA005D7AD1 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291263022FC55AA005D7AD1 /* temp.swift */; };
 		22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9822E469A7002F91A7 /* LecturesViewController.swift */; };
 		22916A9B22E48410002F91A7 /* TutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9A22E48410002F91A7 /* TutorialsViewController.swift */; };
 		22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22916A9C22E4842E002F91A7 /* LabsViewController.swift */; };
@@ -40,6 +39,8 @@
 		E940831222D4E5E700CDF8B4 /* Course Information (Weekly Timetables).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831122D4E5E700CDF8B4 /* Course Information (Weekly Timetables).storyboard */; };
 		E940831422D4E5F900CDF8B4 /* Important Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831322D4E5F900CDF8B4 /* Important Contacts.storyboard */; };
 		E940831622D4E60900CDF8B4 /* Teaching Formats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E940831522D4E60900CDF8B4 /* Teaching Formats.storyboard */; };
+		E97C1B3423017747008967C4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C1B3323017747008967C4 /* Place.swift */; };
+		E97C1B3623017CAE008967C4 /* PlaceInfoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */; };
 		E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FA22D7469000B49E11 /* Utils.swift */; };
 		E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */; };
 		E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */; };
@@ -62,7 +63,6 @@
 		22728F5E22F706640093BF58 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		22728F6322F70D220093BF58 /* CourseInformationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInformationTableViewController.swift; sourceTree = "<group>"; };
 		2287A4EF22DF34BD003AF0DA /* WebPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebPage.storyboard; sourceTree = "<group>"; };
-		2291263022FC55AA005D7AD1 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		22916A9822E469A7002F91A7 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
 		22916A9A22E48410002F91A7 /* TutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsViewController.swift; sourceTree = "<group>"; };
 		22916A9C22E4842E002F91A7 /* LabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +85,8 @@
 		E940831122D4E5E700CDF8B4 /* Course Information (Weekly Timetables).storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Course Information (Weekly Timetables).storyboard"; sourceTree = "<group>"; };
 		E940831322D4E5F900CDF8B4 /* Important Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Important Contacts.storyboard"; sourceTree = "<group>"; };
 		E940831522D4E60900CDF8B4 /* Teaching Formats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Teaching Formats.storyboard"; sourceTree = "<group>"; };
+		E97C1B3323017747008967C4 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoQuery.swift; sourceTree = "<group>"; };
 		E9A0B2FA22D7469000B49E11 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E9A0B2FD22D76FF700B49E11 /* NavDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
 		E9A0B30022D7709F00B49E11 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				22728F5E22F706640093BF58 /* Module.swift */,
 				224DDB9622F989B8000B1D37 /* ModuleDetail.swift */,
 				22681DED22FD79AD00C22FCE /* TimetableTableView.swift */,
+				E97C1B3323017747008967C4 /* Place.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 				E94082F622D48F8700CDF8B4 /* Assets.xcassets */,
 				E94082FB22D48F8800CDF8B4 /* Info.plist */,
 				224DDB9422F97CBC000B1D37 /* CourseInfoQuery.swift */,
-				2291263022FC55AA005D7AD1 /* temp.swift */,
+				E97C1B3523017CAE008967C4 /* PlaceInfoQuery.swift */,
 			);
 			path = DurPhys;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A0B2FE22D76FF700B49E11 /* NavDrawerViewController.swift in Sources */,
+				E97C1B3423017747008967C4 /* Place.swift in Sources */,
 				224DDB9522F97CBC000B1D37 /* CourseInfoQuery.swift in Sources */,
 				E9A0B2FB22D7469000B49E11 /* Utils.swift in Sources */,
 				224DDB9722F989B8000B1D37 /* ModuleDetail.swift in Sources */,
@@ -394,10 +398,10 @@
 				22728F6422F70D220093BF58 /* CourseInformationTableViewController.swift in Sources */,
 				22916A9D22E4842E002F91A7 /* LabsViewController.swift in Sources */,
 				22F2828922E96339004B7DC8 /* Contact.swift in Sources */,
+				E97C1B3623017CAE008967C4 /* PlaceInfoQuery.swift in Sources */,
 				E9A0B30122D7709F00B49E11 /* ContainerViewController.swift in Sources */,
 				222A2E0922FB169F000D5D27 /* TimetableTableViewCell.swift in Sources */,
 				22728F5F22F706640093BF58 /* Module.swift in Sources */,
-				2291263122FC55AA005D7AD1 /* temp.swift in Sources */,
 				225E710D22FAE3A6006AFA2B /* ModulesTableViewCell.swift in Sources */,
 				22916A9922E469A7002F91A7 /* LecturesViewController.swift in Sources */,
 				E9A2A46122E9C75C0053D255 /* ImportantContactsTableViewController.swift in Sources */,
