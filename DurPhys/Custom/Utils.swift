@@ -50,6 +50,10 @@ extension Array where Element: Equatable {
         guard let index = firstIndex(of: object) else {return}
         remove(at: index)
     }
+    
+    var last: Element {
+        return self[self.count - 1]
+    }
 }
 
 extension UIStoryboard {

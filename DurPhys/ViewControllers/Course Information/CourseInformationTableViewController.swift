@@ -17,7 +17,10 @@ class CourseInformationTableViewController: UITableViewController {
     let modules = Module.modules()
     var storedOffsets = [Int: CGFloat]()
     var courseInfoQuery = CourseInfoQuery()
-    var allModulesDetails = [[[ModuleDetail]]]()
+    var allModulesDetailsDict = [ String : [[ModuleDetail]] ]()
+    var allModulesDetailsArray: [[[ModuleDetail]]] = []
+    
+    var activitySpinner = UIActivityIndicatorView()
     
     @IBOutlet var superTableView: UITableView!
     @IBOutlet weak var timetableTableView: TimetableTableView!
@@ -26,8 +29,16 @@ class CourseInformationTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getAllModulesDetails() { [weak self] allModulesDetails in
-            self?.allModulesDetails = allModulesDetails
+        showActivitySpinner()
+        
+        getAllModulesDetails() { [weak self] in
+            print("executing completion handler")
+            for module in self!.modules {
+                print((self?.allModulesDetailsDict[module.fullCode]!)!)
+                self?.allModulesDetailsArray.append((self?.allModulesDetailsDict[module.fullCode]!)!)
+            }
+            self?.hideActivitySpinner()
+            self?.tableView.reloadData()
         }
     }
     
@@ -38,13 +49,10 @@ class CourseInformationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == superTableView {
             return modules.count
-        } else if allModulesDetails.isEmpty || !allModulesDetails.indices.contains((tableView as! TimetableTableView).superViewTag) {
+        } else if allModulesDetailsArray.isEmpty || !allModulesDetailsArray.indices.contains((tableView as! TimetableTableView).superViewTag) {
             return 1
         } else {
-            print(modules[(tableView as! TimetableTableView).superViewTag])
-            print(allModulesDetails[(tableView as! TimetableTableView).superViewTag])
-            print(allModulesDetails[(tableView as! TimetableTableView).superViewTag][tableView.tag])
-            let numRows = allModulesDetails[(tableView as! TimetableTableView).superViewTag][tableView.tag].count
+            let numRows = allModulesDetailsArray[(tableView as! TimetableTableView).superViewTag][tableView.tag].count
             return numRows
         }
     }
@@ -66,11 +74,11 @@ class CourseInformationTableViewController: UITableViewController {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TimetableTableViewCell") as! TimetableTableViewCell
-            if allModulesDetails.isEmpty || !allModulesDetails.indices.contains((tableView as! TimetableTableView).superViewTag) {
+            if allModulesDetailsArray.isEmpty || !allModulesDetailsArray.indices.contains((tableView as! TimetableTableView).superViewTag) {
                 cell.moduleDetail.text = "Loading..."
             } else {
                 //cell.moduleDetail.adjustsFontSizeToFitWidth = true
-                let moduleDetail = allModulesDetails[(tableView as! TimetableTableView).superViewTag][tableView.tag][indexPath.row]
+                let moduleDetail = allModulesDetailsArray[(tableView as! TimetableTableView).superViewTag][tableView.tag][indexPath.row]
                 let textString = getTextStringFromDetail(moduleDetail: moduleDetail)
                 cell.moduleDetail.text = textString
             }
@@ -117,25 +125,45 @@ extension CourseInformationTableViewController: UICollectionViewDataSource, UICo
     }
 }
 
+// MARK: - Handle retrieval of module information
 extension CourseInformationTableViewController {
     
-    func getAllModulesDetails(completionHandler: @escaping([[[ModuleDetail]]]) -> Void) {
+    func getAllModulesDetails(completionHandler: @escaping() -> Void) {
         for module in modules {
-            courseInfoQuery.getModuleTimetable(moduleCode: module.fullCode) { [weak self] moduleDetails in
-                self?.allModulesDetails.append(moduleDetails)
-                self?.tableView.reloadData()
+            courseInfoQuery.getModuleTimetable(moduleCode: module.fullCode) { [weak self] moduleCode, moduleDetails in
+                self?.allModulesDetailsDict[moduleCode] = moduleDetails
+                if moduleCode == self?.modules.last?.fullCode {
+                    print("function done, passing to completion handler")
+                    completionHandler()
+                }
             }
         }
-        completionHandler(self.allModulesDetails)
     }
     
     func getTextStringFromDetail(moduleDetail: ModuleDetail) -> String {
-        let time = moduleDetail.time + ": "
-        let format = moduleDetail.detail.split(separator: "/")[1] + " - "
+        let time = String((540 + moduleDetail.timeIndex * 15)/60) + ":00 : "
+        let format = moduleDetail.format + " - "
         let staffMember = moduleDetail.staffMember + " ("
-        let location = moduleDetail.location.split(separator: "/")[1] + ")"
+        let location = moduleDetail.location + ")"
         let string = time + format + staffMember + location
         
         return string
+    }
+}
+
+// MARK: - Style
+extension CourseInformationTableViewController {
+    
+    func showActivitySpinner() {
+        activitySpinner.center = self.view.center
+        activitySpinner.startAnimating()
+        self.view.alpha = 0.3
+        self.view.addSubview(activitySpinner)
+    }
+    
+    func hideActivitySpinner() {
+        activitySpinner.hidesWhenStopped = true
+        activitySpinner.stopAnimating()
+        self.view.alpha = 1
     }
 }

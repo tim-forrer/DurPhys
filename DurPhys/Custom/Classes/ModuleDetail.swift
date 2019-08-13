@@ -10,18 +10,16 @@ import Foundation
 
 class ModuleDetail {
     
-    var detail: String
-    var name: String
+    var format: String
     var staffMember: String
     var location: String
-    var time: String
+    var timeIndex: Int
     
-    init(detail: String, name: String, staffMember: String, location: String, time: String) {
-        self.detail = detail
-        self.name = name
+    init(format: String, staffMember: String, location: String, timeIndex: Int) {
+        self.format = format
         self.staffMember = staffMember
         self.location = location
-        self.time = time
+        self.timeIndex = timeIndex
     }
 
 }
