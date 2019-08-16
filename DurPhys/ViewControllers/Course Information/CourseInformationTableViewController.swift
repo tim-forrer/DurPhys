@@ -32,9 +32,7 @@ class CourseInformationTableViewController: UITableViewController {
         showActivitySpinner()
         
         getAllModulesDetails() { [weak self] in
-            print("executing completion handler")
             for module in self!.modules {
-                print((self?.allModulesDetailsDict[module.fullCode]!)!)
                 self?.allModulesDetailsArray.append((self?.allModulesDetailsDict[module.fullCode]!)!)
             }
             self?.hideActivitySpinner()
@@ -133,7 +131,6 @@ extension CourseInformationTableViewController {
             courseInfoQuery.getModuleTimetable(moduleCode: module.fullCode) { [weak self] moduleCode, moduleDetails in
                 self?.allModulesDetailsDict[moduleCode] = moduleDetails
                 if moduleCode == self?.modules.last?.fullCode {
-                    print("function done, passing to completion handler")
                     completionHandler()
                 }
             }

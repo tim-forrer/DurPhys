@@ -157,7 +157,7 @@ extension NavDrawerViewController: MFMailComposeViewControllerDelegate {
         
         guard MFMailComposeViewController.canSendMail() else {
             //Show an alert to say your device can't send emails
-            present(self.defaultAlert(title: "Cannot Display Email Composer", message: "Your device has email preferences have not been setup/have been setup incorrectly."), animated: true)
+            present(self.defaultAlert(title: "Cannot Display Email Composer", message: "Your device's email preferences have not been setup/have been setup incorrectly."), animated: true)
             return
         }
         
@@ -223,7 +223,7 @@ extension NavDrawerViewController {
     
     func credentialsBlank(username: String, password: String) -> Bool {
         if username.isEmpty && password.isEmpty {
-            let alert = defaultAlert(title: "Username and Password cannot be blank.", message: "You cannot leave the username and password fields blank. Please enter your CIS credentials.")
+            let alert = defaultAlert(title: "Username and Password blank.", message: "You cannot leave the username and password fields blank. Please enter your CIS credentials.")
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true)
             return true
